@@ -1,7 +1,6 @@
 models:
   - id: embeddinggemma-300m-qat-Q8_0
-    category:
-      - Embedding
+    category: Embedding
     owned_by: ggml-org
     model_family: embeddinggemma-300m-qat-q8_0-GGUF
     hf_url: https://huggingface.co/ggml-org/embeddinggemma-300m-qat-q8_0-GGUF

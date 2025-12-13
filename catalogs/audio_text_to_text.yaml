@@ -1,7 +1,6 @@
 models:
   - id: Qwen2-Audio-7B.Q8_0
-    category:
-      - Audio-Text-to-Text
+    category: Audio-Text-to-Text
     owned_by: mradermacher
     model_family: Qwen2-Audio-7B-GGUF
     hf_url: https://huggingface.co/mradermacher/Qwen2-Audio-7B-GGUF

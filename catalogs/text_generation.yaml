@@ -1,7 +1,6 @@
 models:
   - id: Qwen3-8B-Q8_0
-    category:
-      - Text-Generation
+    category: Text-Generation
     owned_by: Qwen
     model_family: Qwen3-8B-GGUF
     hf_url: https://huggingface.co/Qwen/Qwen3-8B-GGUF
