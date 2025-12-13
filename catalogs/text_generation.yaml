@@ -4,22 +4,18 @@ models:
     category: Text-Generation
     owned_by: Qwen
     model_family: Qwen3-8B-GGUF
-    hf_url: https://huggingface.co/Qwen/Qwen3-8B-GGUF
-    download:
-      model_url: https://huggingface.co/Qwen/Qwen3-8B-GGUF/resolve/main/Qwen3-8B-Q8_0.gguf
-      proj_url:
-      jinja_url:
-    size:
-      model: 8.71 GiB
-      proj: 0.0
-      jinja: 0.0
+    web_page: https://huggingface.co/Qwen/Qwen3-8B-GGUF
+    files:
+      model:
+        url: https://huggingface.co/Qwen/Qwen3-8B-GGUF/resolve/main/Qwen3-8B-Q8_0.gguf
+        size: 8.71 GiB
     capabilities:
-      endpoints:
-        - chat_completion
+      endpoint: chat_completion
       images: false
       audio: false
       video: false
       streaming: true
+      reasoning: true
       tooling: true
     metadata:
       created: 2025-05-03T0:00:00Z
@@ -32,21 +28,17 @@ models:
     owned_by: unsloth
     model_family: gpt-oss-20b-GGUF
     hf_url: https://huggingface.co/unsloth/gpt-oss-20b-GGUF
-    download:
-      model_url: https://huggingface.co/unsloth/gpt-oss-20b-GGUF/resolve/main/gpt-oss-20b-Q8_0.gguf
-      proj_url:
-      jinja_url:
-    size:
-      model: 12.1 GiB
-      proj: 0.0
-      jinja: 0.0
+    files:
+      model:
+        url: https://huggingface.co/unsloth/gpt-oss-20b-GGUF/resolve/main/gpt-oss-20b-Q8_0.gguf
+        size: 12.1 GiB
     capabilities:
-      endpoints:
-        - chat_completion
+      endpoint: chat_completion
       images: false
       audio: false
       video: false
       streaming: true
+      reasoning: true
       tooling: true
     metadata:
       created: 2025-08-08T0:00:00Z

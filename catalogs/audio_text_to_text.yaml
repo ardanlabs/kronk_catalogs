@@ -4,22 +4,21 @@ models:
     category: Audio-Text-to-Text
     owned_by: mradermacher
     model_family: Qwen2-Audio-7B-GGUF
-    hf_url: https://huggingface.co/mradermacher/Qwen2-Audio-7B-GGUF
-    download:
-      model_url: https://huggingface.co/mradermacher/Qwen2-Audio-7B-GGUF/resolve/main/Qwen2-Audio-7B.Q8_0.gguf
-      proj_url: https://huggingface.co/mradermacher/Qwen2-Audio-7B-GGUF/resolve/main/Qwen2-Audio-7B.mmproj-Q8_0.gguf
-      jinja_url:
-    size:
-      model: 8.25 GiB
-      proj: 695 MiB
-      jinja: 0.0
+    web_page: https://huggingface.co/mradermacher/Qwen2-Audio-7B-GGUF
+    files:
+      model:
+        url: https://huggingface.co/mradermacher/Qwen2-Audio-7B-GGUF/resolve/main/Qwen2-Audio-7B.Q8_0.gguf
+        size: 8.25 GiB
+      proj:
+        url: https://huggingface.co/mradermacher/Qwen2-Audio-7B-GGUF/resolve/main/Qwen2-Audio-7B.mmproj-Q8_0.gguf
+        size: 695 MiB
     capabilities:
-      endpoints:
-        - chat_completion
+      endpoint: chat_completion
       images: false
       audio: true
       video: false
       streaming: true
+      reasoning: false
       tooling: false
     metadata:
       created: 2025-06-04T0:00:00Z

@@ -4,22 +4,18 @@ models:
     category: Embedding
     owned_by: ggml-org
     model_family: embeddinggemma-300m-qat-q8_0-GGUF
-    hf_url: https://huggingface.co/ggml-org/embeddinggemma-300m-qat-q8_0-GGUF
-    download:
-      model_url: https://huggingface.co/ggml-org/embeddinggemma-300m-qat-q8_0-GGUF/resolve/main/embeddinggemma-300m-qat-Q8_0.gguf
-      proj_url:
-      jinja_url:
-    size:
-      model: 329 MiB
-      proj: 0.0
-      jinja: 0.0
+    web_page: https://huggingface.co/ggml-org/embeddinggemma-300m-qat-q8_0-GGUF
+    files:
+      model:
+        url: https://huggingface.co/ggml-org/embeddinggemma-300m-qat-q8_0-GGUF/resolve/main/embeddinggemma-300m-qat-Q8_0.gguf
+        size: 329 MiB
     capabilities:
-      endpoints:
-        - embeddings
+      endpoint: embeddings
       images: false
       audio: false
       video: false
       streaming: false
+      reasoning: false
       tooling: false
     metadata:
       created: 2025-09-01T0:00:00Z
