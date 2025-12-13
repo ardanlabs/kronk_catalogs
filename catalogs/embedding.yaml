@@ -1,3 +1,4 @@
+catalog: Embedding
 models:
   - id: embeddinggemma-300m-qat-Q8_0
     category: Embedding
