@@ -43,3 +43,25 @@ models:
       created: 2025-08-08T0:00:00Z
       collections: https://huggingface.co/collections/unsloth
       description: OpenAI's GPT-OSS (OpenAI Open-Source Series) are open-weight large language models designed for powerful reasoning, agentic tasks, and on-premises deployment, released under a permissive Apache 2.0 license.
+
+  - id: Qwen3-Coder-30B-A3B-Instruct-Q8_0
+    category: Text-Generation
+    owned_by: unsloth
+    model_family: Qwen3-Coder-30B-A3B-Instruct-GGUF
+    web_page: https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF
+    files:
+      model:
+        url: https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF/resolve/main/Qwen3-Coder-30B-A3B-Instruct-Q8_0.gguf
+        size: 32.5 GiB
+    capabilities:
+      endpoint: chat_completion
+      images: false
+      audio: false
+      video: false
+      streaming: true
+      reasoning: false
+      tooling: true
+    metadata:
+      created: 2025-08-05T0:00:00Z
+      collections: https://huggingface.co/collections/unsloth
+      description: The Qwen3-Coder-30B-A3B-Instruct is a specialized, instruction-tuned Mixture-of-Experts (MoE) model for agentic coding tasks. Developed by Alibaba, it excels in code generation, understanding large codebases, and using external tools with a high degree of efficiency.
