@@ -12,9 +12,6 @@ models:
       proj:
         url:
         size:
-      jinja:
-        url:
-        size:
     capabilities:
       endpoint: chat_completion
       images: false
