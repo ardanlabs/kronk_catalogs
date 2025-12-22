@@ -30,7 +30,7 @@ models:
     category: Text-Generation
     owned_by: unsloth
     model_family: gpt-oss-20b-GGUF
-    hf_url: https://huggingface.co/unsloth/gpt-oss-20b-GGUF
+    web_page: https://huggingface.co/unsloth/gpt-oss-20b-GGUF
     template: gpt-oss.jinja
     files:
       model:
