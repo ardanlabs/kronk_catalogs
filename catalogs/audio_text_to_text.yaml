@@ -12,6 +12,9 @@ models:
       proj:
         url: https://huggingface.co/mradermacher/Qwen2-Audio-7B-GGUF/resolve/main/Qwen2-Audio-7B.mmproj-Q8_0.gguf
         size: 695 MiB
+      jinja:
+        url:
+        size:
     capabilities:
       endpoint: chat_completion
       images: false

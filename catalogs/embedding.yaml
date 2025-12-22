@@ -9,6 +9,12 @@ models:
       model:
         url: https://huggingface.co/ggml-org/embeddinggemma-300m-qat-q8_0-GGUF/resolve/main/embeddinggemma-300m-qat-Q8_0.gguf
         size: 329 MiB
+      proj:
+        url:
+        size:
+      jinja:
+        url:
+        size:
     capabilities:
       endpoint: embeddings
       images: false

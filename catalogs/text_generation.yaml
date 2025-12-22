@@ -9,6 +9,12 @@ models:
       model:
         url: https://huggingface.co/Qwen/Qwen3-8B-GGUF/resolve/main/Qwen3-8B-Q8_0.gguf
         size: 8.71 GiB
+      proj:
+        url:
+        size:
+      jinja:
+        url:
+        size:
     capabilities:
       endpoint: chat_completion
       images: false
@@ -31,6 +37,12 @@ models:
       model:
         url: https://huggingface.co/unsloth/gpt-oss-20b-GGUF/resolve/main/gpt-oss-20b-Q8_0.gguf
         size: 12.1 GiB
+      proj:
+        url:
+        size:
+      jinja:
+        url:
+        size:
     capabilities:
       endpoint: chat_completion
       images: false
@@ -53,6 +65,12 @@ models:
       model:
         url: https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF/resolve/main/Qwen3-Coder-30B-A3B-Instruct-Q8_0.gguf
         size: 32.5 GiB
+      proj:
+        url:
+        size:
+      jinja:
+        url:
+        size:
     capabilities:
       endpoint: chat_completion
       images: false
