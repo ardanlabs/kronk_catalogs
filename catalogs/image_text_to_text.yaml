@@ -25,3 +25,29 @@ models:
       created: 2025-04-13T0:00:00Z
       collections: https://huggingface.co/collections/ggml-org
       description: The Qwen2.5-VL-3B-Instruct model is a compact, open-source, instruction-tuned, Vision-Language Model (VLM) balancing performance with efficiency, This model features robust capabilities in interpreting images, charts, and even long videos, enabling object localization, structured data extraction (JSON), and complex visual reasoning.
+
+  - id: gemma-3-4b-it-q4_0
+    category: Image-Text-to-Text
+    owned_by: google
+    model_family: gemma-3-4b-it-qat-q4_0-gguf
+    web_page: https://huggingface.co/google/gemma-3-4b-it-qat-q4_0-gguf
+    template: gemma-3.jinja
+    files:
+      models:
+        - url: https://huggingface.co/google/gemma-3-4b-it-qat-q4_0-gguf/resolve/main/gemma-3-4b-it-q4_0.gguf
+          size: 3.16 GiB
+      projs:
+        - url: https://huggingface.co/google/gemma-3-4b-it-qat-q4_0-gguf/resolve/main/mmproj-model-f16-4B.gguf
+          size: 851 MiB
+    capabilities:
+      endpoint: chat_completion
+      images: true
+      audio: false
+      video: true
+      streaming: true
+      reasoning: false
+      tooling: false
+    metadata:
+      created: 2025-04-11T0:00:00Z
+      collections: https://huggingface.co/collections/ggml-org
+      description: Gemma 3 is a new family of lightweight, open-weight AI models from Google, based on Gemini technology. It supports multiple types of data, such as text, images, and audio. It has a large context window of 128k and supports more than 140 languages.
