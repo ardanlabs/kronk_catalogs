@@ -37,9 +37,9 @@ models:
       models:
         - url: https://huggingface.co/google/gemma-3-4b-it-qat-q4_0-gguf/resolve/main/gemma-3-4b-it-q4_0.gguf
           size: 3.16 GiB
-      projs:
-        - url: https://huggingface.co/google/gemma-3-4b-it-qat-q4_0-gguf/resolve/main/mmproj-model-f16-4B.gguf
-          size: 851 MiB
+      proj:
+        url: https://huggingface.co/google/gemma-3-4b-it-qat-q4_0-gguf/resolve/main/mmproj-model-f16-4B.gguf
+        size: 851 MiB
     capabilities:
       endpoint: chat_completion
       images: true
