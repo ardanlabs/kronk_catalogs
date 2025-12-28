@@ -69,27 +69,27 @@ models:
       collections: https://huggingface.co/collections/unsloth
       description: The Qwen3-Coder-30B-A3B-Instruct is a specialized, instruction-tuned Mixture-of-Experts (MoE) model for agentic coding tasks. Developed by Alibaba, it excels in code generation, understanding large codebases, and using external tools with a high degree of efficiency.
 
-  # - id: Llama-3.3-70B-Instruct-Q8_0
-  #   category: Text-Generation
-  #   owned_by: unsloth
-  #   model_family: Llama-3.3-70B-Instruct-GGUF
-  #   web_page: https://huggingface.co/unsloth/Llama-3.3-70B-Instruct-GGUF
-  #   template:
-  #   files:
-  #     models:
-  #       - url: https://huggingface.co/unsloth/Llama-3.3-70B-Instruct-GGUF/resolve/main/Llama-3.3-70B-Instruct-Q8_0/Llama-3.3-70B-Instruct-Q8_0-00001-of-00002.gguf
-  #         size: 39.8 GiB
-  #       - url: https://huggingface.co/unsloth/Llama-3.3-70B-Instruct-GGUF/resolve/main/Llama-3.3-70B-Instruct-Q8_0/Llama-3.3-70B-Instruct-Q8_0-00002-of-00002.gguf
-  #         size: 35.2 GiB
-  #   capabilities:
-  #     endpoint: chat_completion
-  #     images: false
-  #     audio: false
-  #     video: false
-  #     streaming: true
-  #     reasoning: true
-  #     tooling: true
-  #   metadata:
-  #     created: 2025-05-10T0:00:00Z
-  #     collections: https://huggingface.co/collections/unsloth
-  #     description: Llama 3.3 70B is Meta's advanced, multilingual, open-source large language model (LLM) with 70 billion parameters, excelling in complex reasoning, dialogue, and coding tasks, delivering flagship-level performance (like 405B models) with better efficiency, optimized for text-only applications, and featuring improved instruction-following, safety, and tool-use capabilities for enterprise and research use.
+  - id: Llama-3.3-70B-Instruct-Q8_0
+    category: Text-Generation
+    owned_by: unsloth
+    model_family: Llama-3.3-70B-Instruct-GGUF
+    web_page: https://huggingface.co/unsloth/Llama-3.3-70B-Instruct-GGUF
+    template:
+    files:
+      models:
+        - url: https://huggingface.co/unsloth/Llama-3.3-70B-Instruct-GGUF/resolve/main/Llama-3.3-70B-Instruct-Q8_0/Llama-3.3-70B-Instruct-Q8_0-00001-of-00002.gguf
+          size: 39.8 GiB
+        - url: https://huggingface.co/unsloth/Llama-3.3-70B-Instruct-GGUF/resolve/main/Llama-3.3-70B-Instruct-Q8_0/Llama-3.3-70B-Instruct-Q8_0-00002-of-00002.gguf
+          size: 35.2 GiB
+    capabilities:
+      endpoint: chat_completion
+      images: false
+      audio: false
+      video: false
+      streaming: true
+      reasoning: true
+      tooling: true
+    metadata:
+      created: 2025-05-10T0:00:00Z
+      collections: https://huggingface.co/collections/unsloth
+      description: Llama 3.3 70B is Meta's advanced, multilingual, open-source large language model (LLM) with 70 billion parameters, excelling in complex reasoning, dialogue, and coding tasks, delivering flagship-level performance (like 405B models) with better efficiency, optimized for text-only applications, and featuring improved instruction-following, safety, and tool-use capabilities for enterprise and research use.
