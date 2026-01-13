@@ -93,3 +93,25 @@ models:
       created: 2025-05-10T0:00:00Z
       collections: https://huggingface.co/collections/unsloth
       description: Llama 3.3 70B is Meta's advanced, multilingual, open-source large language model (LLM) with 70 billion parameters, excelling in complex reasoning, dialogue, and coding tasks, delivering flagship-level performance (like 405B models) with better efficiency, optimized for text-only applications, and featuring improved instruction-following, safety, and tool-use capabilities for enterprise and research use.
+
+  - id: cerebras_Qwen3-Coder-REAP-25B-A3B-GGUF-Q8_0
+    category: Text-Generation
+    owned_by: bartowski
+    model_family: cerebras_Qwen3-Coder-REAP-25B-A3B-GGUF
+    web_page: https://huggingface.co/bartowski/cerebras_Qwen3-Coder-REAP-25B-A3B-GGUF
+    template:
+    files:
+      models:
+        - url: https://huggingface.co/bartowski/cerebras_Qwen3-Coder-REAP-25B-A3B-GGUF/resolve/main/cerebras_Qwen3-Coder-REAP-25B-A3B-Q8_0.gguf
+          size: 26.5 GiB
+    capabilities:
+      endpoint: chat_completion
+      images: false
+      audio: false
+      video: false
+      streaming: true
+      reasoning: false
+      tooling: true
+    metadata:
+      created: 2025-10-21T0:00:00Z
+      description: The Qwen3-Coder-30B-A3B-Instruct is a specialized, instruction-tuned Mixture-of-Experts (MoE) model for agentic coding tasks. Developed by Alibaba, it excels in code generation, understanding large codebases, and using external tools with a high degree of efficiency.
