@@ -114,4 +114,5 @@ models:
       tooling: true
     metadata:
       created: 2025-10-21T0:00:00Z
+      collections: https://huggingface.co/collections/bartowski
       description: The Qwen3-Coder-30B-A3B-Instruct is a specialized, instruction-tuned Mixture-of-Experts (MoE) model for agentic coding tasks. Developed by Alibaba, it excels in code generation, understanding large codebases, and using external tools with a high degree of efficiency.
