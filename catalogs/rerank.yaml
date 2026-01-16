@@ -1,7 +1,7 @@
 catalog: Rerank
 models:
   - id: bge-reranker-v2-m3-Q8_0
-    category: Embedding
+    category: Rerank
     owned_by: ggml-org
     model_family: bge-reranker-v2-m3-GGUF
     web_page: https://huggingface.co/gpustack/bge-reranker-v2-m3-GGUF
