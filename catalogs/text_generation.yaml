@@ -55,7 +55,7 @@ models:
     owned_by: unsloth
     model_family: Qwen3-Coder-30B-A3B-Instruct-GGUF
     web_page: https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF
-    template:
+    template: qwen3-coder.jinja
     files:
       models:
         - url: https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF/resolve/main/Qwen3-Coder-30B-A3B-Instruct-Q8_0.gguf
