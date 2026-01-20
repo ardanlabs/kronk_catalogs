@@ -1,20 +1,4 @@
-[gMASK]<sop>
-{%- if tools -%}
-<|system|>
-# Tools
-
-You may call one or more functions to assist with the user query.
-
-You are provided with function signatures within <tools></tools> XML tags:
-<tools>
-{% for tool in tools %}
-{{ tool | tojson }}
-{% endfor %}
-</tools>
-
-For each function call, output the function name and arguments within the following XML format:
-<tool_call>{function-name}<arg_key>{arg-key-1}</arg_key><arg_value>{arg-value-1}</arg_value><arg_key>{arg-key-2}</arg_key><arg_value>{arg-value-2}</arg_value>...</tool_call>
-{%- endif -%}
+{# GLM-4 template for gonja #}
 {%- macro visible_text(content) -%}
 {%- if content is string -%}
 {{- content }}
@@ -30,59 +14,60 @@ For each function call, output the function name and arguments within the follow
 {{- content }}
 {%- endif -%}
 {%- endmacro -%}
-{%- set ns = namespace(last_user_index=-1) %}
-{%- for m in messages %}
-{%- if m.role == 'user' %}
-{% set ns.last_user_index = loop.index0 -%}
+
+[gMASK]<sop>
+{%- if tools is defined and tools | length > 0 -%}
+<|system|>
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{%- for tool in tools %}
+{%- if tool.function is defined %}
+{%- set func = tool.function %}
+{%- else %}
+{%- set func = tool %}
 {%- endif %}
+{"type": "function", "function": {"name": "{{ func.name }}", "description": "{{ func.description }}", "parameters": {{ func.parameters | tojson }}}}
 {%- endfor %}
+</tools>
+
+For each function call, output the function name and arguments within the following XML format:
+<tool_call>
+<name>function_name</name>
+<arguments>{"arg_name": "arg_value"}</arguments>
+</tool_call>
+{%- endif -%}
+
 {% for m in messages %}
 {%- if m.role == 'user' -%}
 <|user|>{{ visible_text(m.content) }}
 {%- elif m.role == 'assistant' -%}
-<|assistant|>
-{%- set reasoning_content = '' %}
-{%- set content = visible_text(m.content) %}
-{%- if m.reasoning_content is string %}
-{%- set reasoning_content = m.reasoning_content %}
+<|assistant|></think>
+{%- if m.content is defined and m.content is string and m.content | length > 0 -%}
+{{ m.content }}
+{%- endif -%}
+{%- if m.tool_calls is defined and m.tool_calls | length > 0 %}
+{%- for tc in m.tool_calls %}
+{%- if tc.function is defined %}
+{%- set tcfunc = tc.function %}
 {%- else %}
-{%- if '</think>' in content %}
-{%- set reasoning_content = content.split('</think>')[0].rstrip('\n').split('<think>')[-1].lstrip('\n') %}
-{%- set content = content.split('</think>')[-1].lstrip('\n') %}
+{%- set tcfunc = tc %}
 {%- endif %}
+<tool_call>
+<name>{{ tcfunc.name }}</name>
+<arguments>{{ tcfunc.arguments }}</arguments>
+</tool_call>
+{%- endfor %}
 {%- endif %}
-{%- if ((clear_thinking is defined and not clear_thinking) or loop.index0 > ns.last_user_index) and reasoning_content -%}
-{{ '<think>' + reasoning_content.strip() + '</think>'}}
-{%- else -%}
-{{ '</think>' }}
-{%- endif -%}
-{%- if content.strip() -%}
-{{ content.strip() }}
-{%- endif -%}
-{% if m.tool_calls %}
-{% for tc in m.tool_calls %}
-{%- if tc.function %}
-{%- set tc = tc.function %}
-{%- endif %}
-{{- '<tool_call>' + tc.name -}}
-{% set _args = tc.arguments %}{% for k, v in _args.items() %}<arg_key>{{ k }}</arg_key><arg_value>{{ v | tojson if v is not string else v }}</arg_value>{% endfor %}</tool_call>{% endfor %}
-{% endif %}
 {%- elif m.role == 'tool' -%}
-{%- if m.content is string -%}
-{%- if loop.first or (messages[loop.index0 - 1].role != "tool") %}
-{{- '<|observation|>' }}
-{%- endif %}
-{{- '<tool_response>' }}
-{{- m.content }}
-{{- '</tool_response>' }}
-{%- else -%}
-<|observation|>{% for tr in m.content %}
-<tool_response>{{ tr.output if tr.output is defined else tr }}</tool_response>{% endfor -%}
-{% endif -%}
+<|observation|><tool_response>{{ m.content }}</tool_response>
 {%- elif m.role == 'system' -%}
 <|system|>{{ visible_text(m.content) }}
 {%- endif -%}
 {%- endfor -%}
 {%- if add_generation_prompt -%}
-<|assistant|>{{- '</think>' if (enable_thinking is defined and not enable_thinking) else '<think>' -}}
+<|assistant|><think>
 {%- endif -%}
