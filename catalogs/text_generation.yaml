@@ -102,7 +102,7 @@ models:
       collections: https://huggingface.co/collections/unsloth
       description: Llama 3.3 70B is Meta's advanced, multilingual, open-source large language model (LLM) with 70 billion parameters, excelling in complex reasoning, dialogue, and coding tasks, delivering flagship-level performance (like 405B models) with better efficiency, optimized for text-only applications, and featuring improved instruction-following, safety, and tool-use capabilities for enterprise and research use.
 
-  - id: cerebras_Qwen3-Coder-REAP-25B-A3B-GGUF-Q8_0
+  - id: cerebras_Qwen3-Coder-REAP-25B-A3B-Q8_0
     category: Text-Generation
     owned_by: bartowski
     model_family: cerebras_Qwen3-Coder-REAP-25B-A3B-GGUF
