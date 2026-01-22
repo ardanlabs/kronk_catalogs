@@ -151,3 +151,28 @@ models:
       created: 2026-01-20T0:00:00Z
       collections: https://huggingface.co/collections/unsloth
       description: GLM-4.7-Flash is a high-performance, lightweight Mixture-of-Experts (MoE) model released by Z.ai in January 2026, designed specifically for efficient coding, agentic workflows, and fast local deployment. It is positioned as the strongest in the 30B parameter class, balancing high performance with lower computational requirements.
+
+  - id: Devstral-Small-2-24B-Instruct-2512-UD-Q8_K_XL
+    category: Text-Generation
+    owned_by: unsloth
+    model_family: Devstral-Small-2-24B-Instruct-2512-GGUF
+    web_page: https://huggingface.co/unsloth/Devstral-Small-2-24B-Instruct-2512-GGUF
+    template:
+    files:
+      models:
+        - url: https://huggingface.co/unsloth/Devstral-Small-2-24B-Instruct-2512-GGUF/resolve/main/Devstral-Small-2-24B-Instruct-2512-UD-Q8_K_XL.gguf
+          size: 29.0 GiB
+    capabilities:
+      endpoint: chat_completion
+      images: false
+      audio: false
+      video: false
+      streaming: true
+      reasoning: false
+      tooling: true
+      embedding: false
+      rerank: false
+    metadata:
+      created: 2025-12-15T0:00:00Z
+      collections: https://huggingface.co/collections/unsloth
+      description: Devstral is an agentic LLM for software engineering tasks. Devstral Small 2 excels at using tools to explore codebases, editing multiple files and power software engineering agents.
