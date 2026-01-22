@@ -157,7 +157,7 @@ models:
     owned_by: unsloth
     model_family: Devstral-Small-2-24B-Instruct-2512-GGUF
     web_page: https://huggingface.co/unsloth/Devstral-Small-2-24B-Instruct-2512-GGUF
-    template:
+    template: devrel-small-2.jinja
     files:
       models:
         - url: https://huggingface.co/unsloth/Devstral-Small-2-24B-Instruct-2512-GGUF/resolve/main/Devstral-Small-2-24B-Instruct-2512-UD-Q8_K_XL.gguf
