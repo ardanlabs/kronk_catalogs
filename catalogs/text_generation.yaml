@@ -50,6 +50,31 @@ models:
       collections: https://huggingface.co/collections/unsloth
       description: OpenAI's GPT-OSS (OpenAI Open-Source Series) are open-weight large language models designed for powerful reasoning, agentic tasks, and on-premises deployment, released under a permissive Apache 2.0 license.
 
+  - id: gpt-oss-120b-F16
+    category: Text-Generation
+    owned_by: unsloth
+    model_family: gpt-oss-120b-GGUF
+    web_page: https://huggingface.co/unsloth/gpt-oss-120b-GGUF
+    template: gpt-oss.jinja
+    files:
+      models:
+        - url: https://huggingface.co/unsloth/gpt-oss-120b-GGUF/resolve/main/gpt-oss-120b-F16.gguf
+          size: 65.4 GiB
+    capabilities:
+      endpoint: chat_completion
+      images: false
+      audio: false
+      video: false
+      streaming: true
+      reasoning: true
+      tooling: true
+      embedding: false
+      rerank: false
+    metadata:
+      created: 2025-08-08T0:00:00Z
+      collections: https://huggingface.co/collections/unsloth
+      description: OpenAI's GPT-OSS (OpenAI Open-Source Series) are open-weight large language models designed for powerful reasoning, agentic tasks, and on-premises deployment, released under a permissive Apache 2.0 license.
+
   - id: Qwen3-Coder-30B-A3B-Instruct-Q8_0
     category: Text-Generation
     owned_by: unsloth
@@ -151,28 +176,3 @@ models:
       created: 2026-01-20T0:00:00Z
       collections: https://huggingface.co/collections/unsloth
       description: GLM-4.7-Flash is a high-performance, lightweight Mixture-of-Experts (MoE) model released by Z.ai in January 2026, designed specifically for efficient coding, agentic workflows, and fast local deployment. It is positioned as the strongest in the 30B parameter class, balancing high performance with lower computational requirements.
-
-  - id: Devstral-Small-2-24B-Instruct-2512-UD-Q8_K_XL
-    category: Text-Generation
-    owned_by: unsloth
-    model_family: Devstral-Small-2-24B-Instruct-2512-GGUF
-    web_page: https://huggingface.co/unsloth/Devstral-Small-2-24B-Instruct-2512-GGUF
-    template: devrel-small-2.jinja
-    files:
-      models:
-        - url: https://huggingface.co/unsloth/Devstral-Small-2-24B-Instruct-2512-GGUF/resolve/main/Devstral-Small-2-24B-Instruct-2512-UD-Q8_K_XL.gguf
-          size: 29.0 GiB
-    capabilities:
-      endpoint: chat_completion
-      images: false
-      audio: false
-      video: false
-      streaming: true
-      reasoning: false
-      tooling: true
-      embedding: false
-      rerank: false
-    metadata:
-      created: 2025-12-15T0:00:00Z
-      collections: https://huggingface.co/collections/unsloth
-      description: Devstral is an agentic LLM for software engineering tasks. Devstral Small 2 excels at using tools to explore codebases, editing multiple files and power software engineering agents.
