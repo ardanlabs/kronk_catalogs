@@ -48,7 +48,7 @@ models:
     metadata:
       created: 2025-08-08T0:00:00Z
       collections: https://huggingface.co/collections/unsloth
-      description: OpenAI's GPT-OSS (OpenAI Open-Source Series) are open-weight large language models designed for powerful reasoning, agentic tasks, and on-premises deployment, released under a permissive Apache 2.0 license. For production, general purpose, high reasoning use cases that fit into a single 80GB GPU (like NVIDIA H100 or AMD MI300X) (117B parameters with 5.1B active parameters).
+      description: OpenAI's GPT-OSS (OpenAI Open-Source Series) are open-weight large language models designed for powerful reasoning, agentic tasks, and on-premises deployment, released under a permissive Apache 2.0 license.
 
   - id: gpt-oss-20b-Q8_0
     category: Text-Generation
@@ -73,7 +73,7 @@ models:
     metadata:
       created: 2025-08-08T0:00:00Z
       collections: https://huggingface.co/collections/unsloth
-      description: OpenAI's GPT-OSS (OpenAI Open-Source Series) are open-weight large language models designed for powerful reasoning, agentic tasks, and on-premises deployment, released under a permissive Apache 2.0 license. For lower latency, and local or specialized use cases (21B parameters with 3.6B active parameters).
+      description: OpenAI's GPT-OSS (OpenAI Open-Source Series) are open-weight large language models designed for powerful reasoning, agentic tasks, and on-premises deployment, released under a permissive Apache 2.0 license.
 
   - id: GLM-4.7-Flash-Q8_0
     category: Text-Generation
@@ -187,6 +187,31 @@ models:
       models:
         - url: https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF/resolve/main/Qwen3-Coder-30B-A3B-Instruct-Q8_0.gguf
           size: 32.5 GiB
+    capabilities:
+      endpoint: chat_completion
+      images: false
+      audio: false
+      video: false
+      streaming: true
+      reasoning: false
+      tooling: true
+      embedding: false
+      rerank: false
+    metadata:
+      created: 2025-08-05T0:00:00Z
+      collections: https://huggingface.co/collections/unsloth
+      description: The Qwen3-Coder-30B-A3B-Instruct is a specialized, instruction-tuned Mixture-of-Experts (MoE) model for agentic coding tasks. Developed by Alibaba, it excels in code generation, understanding large codebases, and using external tools with a high degree of efficiency.
+
+  - id: Qwen3-Coder-30B-A3B-Instruct-UD-Q8_K_XL
+    category: Text-Generation
+    owned_by: unsloth
+    model_family: Qwen3-Coder-30B-A3B-Instruct-GGUF
+    web_page: https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF
+    template: qwen3-coder.jinja
+    files:
+      models:
+        - url: https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF/resolve/main/Qwen3-Coder-30B-A3B-Instruct-UD-Q8_K_XL.gguf
+          size: 36.0 GiB
     capabilities:
       endpoint: chat_completion
       images: false
