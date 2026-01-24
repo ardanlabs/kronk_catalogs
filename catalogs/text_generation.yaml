@@ -1,54 +1,29 @@
 catalog: Text-Generation
 models:
-  - id: Qwen3-8B-Q8_0
+  - id: cerebras_Qwen3-Coder-REAP-25B-A3B-Q8_0
     category: Text-Generation
-    owned_by: Qwen
-    model_family: Qwen3-8B-GGUF
-    web_page: https://huggingface.co/Qwen/Qwen3-8B-GGUF
-    template:
+    owned_by: bartowski
+    model_family: cerebras_Qwen3-Coder-REAP-25B-A3B-GGUF
+    web_page: https://huggingface.co/bartowski/cerebras_Qwen3-Coder-REAP-25B-A3B-GGUF
+    template: qwen3-coder.jinja
     files:
       models:
-        - url: https://huggingface.co/Qwen/Qwen3-8B-GGUF/resolve/main/Qwen3-8B-Q8_0.gguf
-          size: 8.71 GiB
+        - url: https://huggingface.co/bartowski/cerebras_Qwen3-Coder-REAP-25B-A3B-GGUF/resolve/main/cerebras_Qwen3-Coder-REAP-25B-A3B-Q8_0.gguf
+          size: 26.5 GiB
     capabilities:
       endpoint: chat_completion
       images: false
       audio: false
       video: false
       streaming: true
-      reasoning: true
+      reasoning: false
       tooling: true
       embedding: false
       rerank: false
     metadata:
-      created: 2025-05-03T0:00:00Z
-      collections: https://huggingface.co/collections/Qwen
-      description: Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.
-
-  - id: gpt-oss-20b-Q8_0
-    category: Text-Generation
-    owned_by: unsloth
-    model_family: gpt-oss-20b-GGUF
-    web_page: https://huggingface.co/unsloth/gpt-oss-20b-GGUF
-    template: gpt-oss.jinja
-    files:
-      models:
-        - url: https://huggingface.co/unsloth/gpt-oss-20b-GGUF/resolve/main/gpt-oss-20b-Q8_0.gguf
-          size: 12.1 GiB
-    capabilities:
-      endpoint: chat_completion
-      images: false
-      audio: false
-      video: false
-      streaming: true
-      reasoning: true
-      tooling: true
-      embedding: false
-      rerank: false
-    metadata:
-      created: 2025-08-08T0:00:00Z
-      collections: https://huggingface.co/collections/unsloth
-      description: OpenAI's GPT-OSS (OpenAI Open-Source Series) are open-weight large language models designed for powerful reasoning, agentic tasks, and on-premises deployment, released under a permissive Apache 2.0 license. For lower latency, and local or specialized use cases (21B parameters with 3.6B active parameters).
+      created: 2025-10-21T0:00:00Z
+      collections: https://huggingface.co/collections/bartowski
+      description: The Qwen3-Coder-30B-A3B-Instruct is a specialized, instruction-tuned Mixture-of-Experts (MoE) model for agentic coding tasks. Developed by Alibaba, it excels in code generation, understanding large codebases, and using external tools with a high degree of efficiency.
 
   - id: gpt-oss-120b-F16
     category: Text-Generation
@@ -75,43 +50,16 @@ models:
       collections: https://huggingface.co/collections/unsloth
       description: OpenAI's GPT-OSS (OpenAI Open-Source Series) are open-weight large language models designed for powerful reasoning, agentic tasks, and on-premises deployment, released under a permissive Apache 2.0 license. For production, general purpose, high reasoning use cases that fit into a single 80GB GPU (like NVIDIA H100 or AMD MI300X) (117B parameters with 5.1B active parameters).
 
-  - id: Qwen3-Coder-30B-A3B-Instruct-Q8_0
+  - id: gpt-oss-20b-Q8_0
     category: Text-Generation
     owned_by: unsloth
-    model_family: Qwen3-Coder-30B-A3B-Instruct-GGUF
-    web_page: https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF
-    template: qwen3-coder.jinja
+    model_family: gpt-oss-20b-GGUF
+    web_page: https://huggingface.co/unsloth/gpt-oss-20b-GGUF
+    template: gpt-oss.jinja
     files:
       models:
-        - url: https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF/resolve/main/Qwen3-Coder-30B-A3B-Instruct-Q8_0.gguf
-          size: 32.5 GiB
-    capabilities:
-      endpoint: chat_completion
-      images: false
-      audio: false
-      video: false
-      streaming: true
-      reasoning: false
-      tooling: true
-      embedding: false
-      rerank: false
-    metadata:
-      created: 2025-08-05T0:00:00Z
-      collections: https://huggingface.co/collections/unsloth
-      description: The Qwen3-Coder-30B-A3B-Instruct is a specialized, instruction-tuned Mixture-of-Experts (MoE) model for agentic coding tasks. Developed by Alibaba, it excels in code generation, understanding large codebases, and using external tools with a high degree of efficiency.
-
-  - id: Llama-3.3-70B-Instruct-Q8_0
-    category: Text-Generation
-    owned_by: unsloth
-    model_family: Llama-3.3-70B-Instruct-GGUF
-    web_page: https://huggingface.co/unsloth/Llama-3.3-70B-Instruct-GGUF
-    template:
-    files:
-      models:
-        - url: https://huggingface.co/unsloth/Llama-3.3-70B-Instruct-GGUF/resolve/main/Llama-3.3-70B-Instruct-Q8_0/Llama-3.3-70B-Instruct-Q8_0-00001-of-00002.gguf
-          size: 39.8 GiB
-        - url: https://huggingface.co/unsloth/Llama-3.3-70B-Instruct-GGUF/resolve/main/Llama-3.3-70B-Instruct-Q8_0/Llama-3.3-70B-Instruct-Q8_0-00002-of-00002.gguf
-          size: 35.2 GiB
+        - url: https://huggingface.co/unsloth/gpt-oss-20b-GGUF/resolve/main/gpt-oss-20b-Q8_0.gguf
+          size: 12.1 GiB
     capabilities:
       endpoint: chat_completion
       images: false
@@ -123,34 +71,9 @@ models:
       embedding: false
       rerank: false
     metadata:
-      created: 2025-05-10T0:00:00Z
+      created: 2025-08-08T0:00:00Z
       collections: https://huggingface.co/collections/unsloth
-      description: Llama 3.3 70B is Meta's advanced, multilingual, open-source large language model (LLM) with 70 billion parameters, excelling in complex reasoning, dialogue, and coding tasks, delivering flagship-level performance (like 405B models) with better efficiency, optimized for text-only applications, and featuring improved instruction-following, safety, and tool-use capabilities for enterprise and research use.
-
-  - id: cerebras_Qwen3-Coder-REAP-25B-A3B-Q8_0
-    category: Text-Generation
-    owned_by: bartowski
-    model_family: cerebras_Qwen3-Coder-REAP-25B-A3B-GGUF
-    web_page: https://huggingface.co/bartowski/cerebras_Qwen3-Coder-REAP-25B-A3B-GGUF
-    template: qwen3-coder.jinja
-    files:
-      models:
-        - url: https://huggingface.co/bartowski/cerebras_Qwen3-Coder-REAP-25B-A3B-GGUF/resolve/main/cerebras_Qwen3-Coder-REAP-25B-A3B-Q8_0.gguf
-          size: 26.5 GiB
-    capabilities:
-      endpoint: chat_completion
-      images: false
-      audio: false
-      video: false
-      streaming: true
-      reasoning: false
-      tooling: true
-      embedding: false
-      rerank: false
-    metadata:
-      created: 2025-10-21T0:00:00Z
-      collections: https://huggingface.co/collections/bartowski
-      description: The Qwen3-Coder-30B-A3B-Instruct is a specialized, instruction-tuned Mixture-of-Experts (MoE) model for agentic coding tasks. Developed by Alibaba, it excels in code generation, understanding large codebases, and using external tools with a high degree of efficiency.
+      description: OpenAI's GPT-OSS (OpenAI Open-Source Series) are open-weight large language models designed for powerful reasoning, agentic tasks, and on-premises deployment, released under a permissive Apache 2.0 license. For lower latency, and local or specialized use cases (21B parameters with 3.6B active parameters).
 
   - id: GLM-4.7-Flash-Q8_0
     category: Text-Generation
@@ -201,3 +124,80 @@ models:
       created: 2026-01-20T0:00:00Z
       collections: https://huggingface.co/collections/unsloth
       description: GLM-4.7-Flash is a high-performance, lightweight Mixture-of-Experts (MoE) model released by Z.ai in January 2026, designed specifically for efficient coding, agentic workflows, and fast local deployment. It is positioned as the strongest in the 30B parameter class, balancing high performance with lower computational requirements.
+
+  - id: Llama-3.3-70B-Instruct-Q8_0
+    category: Text-Generation
+    owned_by: unsloth
+    model_family: Llama-3.3-70B-Instruct-GGUF
+    web_page: https://huggingface.co/unsloth/Llama-3.3-70B-Instruct-GGUF
+    template:
+    files:
+      models:
+        - url: https://huggingface.co/unsloth/Llama-3.3-70B-Instruct-GGUF/resolve/main/Llama-3.3-70B-Instruct-Q8_0/Llama-3.3-70B-Instruct-Q8_0-00001-of-00002.gguf
+          size: 39.8 GiB
+        - url: https://huggingface.co/unsloth/Llama-3.3-70B-Instruct-GGUF/resolve/main/Llama-3.3-70B-Instruct-Q8_0/Llama-3.3-70B-Instruct-Q8_0-00002-of-00002.gguf
+          size: 35.2 GiB
+    capabilities:
+      endpoint: chat_completion
+      images: false
+      audio: false
+      video: false
+      streaming: true
+      reasoning: true
+      tooling: true
+      embedding: false
+      rerank: false
+    metadata:
+      created: 2025-05-10T0:00:00Z
+      collections: https://huggingface.co/collections/unsloth
+      description: Llama 3.3 70B is Meta's advanced, multilingual, open-source large language model (LLM) with 70 billion parameters, excelling in complex reasoning, dialogue, and coding tasks, delivering flagship-level performance (like 405B models) with better efficiency, optimized for text-only applications, and featuring improved instruction-following, safety, and tool-use capabilities for enterprise and research use.
+
+  - id: Qwen3-8B-Q8_0
+    category: Text-Generation
+    owned_by: Qwen
+    model_family: Qwen3-8B-GGUF
+    web_page: https://huggingface.co/Qwen/Qwen3-8B-GGUF
+    template:
+    files:
+      models:
+        - url: https://huggingface.co/Qwen/Qwen3-8B-GGUF/resolve/main/Qwen3-8B-Q8_0.gguf
+          size: 8.71 GiB
+    capabilities:
+      endpoint: chat_completion
+      images: false
+      audio: false
+      video: false
+      streaming: true
+      reasoning: true
+      tooling: true
+      embedding: false
+      rerank: false
+    metadata:
+      created: 2025-05-03T0:00:00Z
+      collections: https://huggingface.co/collections/Qwen
+      description: Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.
+
+  - id: Qwen3-Coder-30B-A3B-Instruct-Q8_0
+    category: Text-Generation
+    owned_by: unsloth
+    model_family: Qwen3-Coder-30B-A3B-Instruct-GGUF
+    web_page: https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF
+    template: qwen3-coder.jinja
+    files:
+      models:
+        - url: https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF/resolve/main/Qwen3-Coder-30B-A3B-Instruct-Q8_0.gguf
+          size: 32.5 GiB
+    capabilities:
+      endpoint: chat_completion
+      images: false
+      audio: false
+      video: false
+      streaming: true
+      reasoning: false
+      tooling: true
+      embedding: false
+      rerank: false
+    metadata:
+      created: 2025-08-05T0:00:00Z
+      collections: https://huggingface.co/collections/unsloth
+      description: The Qwen3-Coder-30B-A3B-Instruct is a specialized, instruction-tuned Mixture-of-Experts (MoE) model for agentic coding tasks. Developed by Alibaba, it excels in code generation, understanding large codebases, and using external tools with a high degree of efficiency.
