@@ -19,7 +19,7 @@ models:
       reasoning: false
       tooling: false
       embedding: true
-      rerank: true
+      rerank: false
     metadata:
       created: 2025-09-01T0:00:00Z
       collections: https://huggingface.co/collections/ggml-org
