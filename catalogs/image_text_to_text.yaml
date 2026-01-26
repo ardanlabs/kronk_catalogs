@@ -28,6 +28,13 @@ models:
       created: 2025-04-11T0:00:00Z
       collections: https://huggingface.co/collections/ggml-org
       description: Gemma 3 is a new family of lightweight, open-weight AI models from Google, based on Gemini technology. It supports multiple types of data, such as text, images, and audio. It has a large context window of 128k and supports more than 140 languages.
+    config:
+      context-window: 131072
+      nbatch: 2048
+      nubatch: 512
+      cache-type-k: q8_0
+      cache-type-v: q8_0
+      flash-attention: enabled
 
   - id: Qwen2.5-VL-3B-Instruct-Q8_0
     category: Image-Text-to-Text
@@ -56,3 +63,10 @@ models:
       created: 2025-04-13T0:00:00Z
       collections: https://huggingface.co/collections/ggml-org
       description: The Qwen2.5-VL-3B-Instruct model is a compact, open-source, instruction-tuned, Vision-Language Model (VLM) balancing performance with efficiency, This model features robust capabilities in interpreting images, charts, and even long videos, enabling object localization, structured data extraction (JSON), and complex visual reasoning.
+    config:
+      context-window: 8192
+      nbatch: 2048
+      nubatch: 512
+      cache-type-k: q8_0
+      cache-type-v: q8_0
+      flash-attention: enabled

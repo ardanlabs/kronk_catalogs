@@ -24,6 +24,14 @@ models:
       created: 2025-10-21T0:00:00Z
       collections: https://huggingface.co/collections/bartowski
       description: The Qwen3-Coder-30B-A3B-Instruct is a specialized, instruction-tuned Mixture-of-Experts (MoE) model for agentic coding tasks. Developed by Alibaba, it excels in code generation, understanding large codebases, and using external tools with a high degree of efficiency.
+    config:
+      context-window: 131072
+      nbatch: 2048
+      nubatch: 512
+      cache-type-k: q8_0
+      cache-type-v: q8_0
+      flash-attention: enabled
+      nseq-max: 2
 
   - id: gpt-oss-120b-F16
     category: Text-Generation
@@ -49,6 +57,14 @@ models:
       created: 2025-08-08T0:00:00Z
       collections: https://huggingface.co/collections/unsloth
       description: OpenAI's GPT-OSS (OpenAI Open-Source Series) are open-weight large language models designed for powerful reasoning, agentic tasks, and on-premises deployment, released under a permissive Apache 2.0 license.
+    config:
+      context-window: 131072
+      nbatch: 2048
+      nubatch: 512
+      cache-type-k: q8_0
+      cache-type-v: q8_0
+      flash-attention: enabled
+      nseq-max: 2
 
   - id: gpt-oss-20b-Q8_0
     category: Text-Generation
@@ -74,6 +90,14 @@ models:
       created: 2025-08-08T0:00:00Z
       collections: https://huggingface.co/collections/unsloth
       description: OpenAI's GPT-OSS (OpenAI Open-Source Series) are open-weight large language models designed for powerful reasoning, agentic tasks, and on-premises deployment, released under a permissive Apache 2.0 license.
+    config:
+      context-window: 98304
+      nbatch: 2048
+      nubatch: 512
+      cache-type-k: q8_0
+      cache-type-v: q8_0
+      flash-attention: enabled
+      nseq-max: 2
 
   - id: GLM-4.7-Flash-Q8_0
     category: Text-Generation
@@ -99,6 +123,14 @@ models:
       created: 2026-01-20T0:00:00Z
       collections: https://huggingface.co/collections/unsloth
       description: GLM-4.7-Flash is a high-performance, lightweight Mixture-of-Experts (MoE) model released by Z.ai in January 2026, designed specifically for efficient coding, agentic workflows, and fast local deployment. It is positioned as the strongest in the 30B parameter class, balancing high performance with lower computational requirements.
+    config:
+      context-window: 131072
+      nbatch: 2048
+      nubatch: 512
+      cache-type-k: q8_0
+      cache-type-v: q8_0
+      flash-attention: enabled
+      nseq-max: 2
 
   - id: GLM-4.7-Flash-UD-Q8_K_XL
     category: Text-Generation
@@ -124,6 +156,14 @@ models:
       created: 2026-01-20T0:00:00Z
       collections: https://huggingface.co/collections/unsloth
       description: GLM-4.7-Flash is a high-performance, lightweight Mixture-of-Experts (MoE) model released by Z.ai in January 2026, designed specifically for efficient coding, agentic workflows, and fast local deployment. It is positioned as the strongest in the 30B parameter class, balancing high performance with lower computational requirements.
+    config:
+      context-window: 131072
+      nbatch: 2048
+      nubatch: 512
+      cache-type-k: q8_0
+      cache-type-v: q8_0
+      flash-attention: enabled
+      nseq-max: 2
 
   - id: Llama-3.3-70B-Instruct-Q8_0
     category: Text-Generation
@@ -151,6 +191,14 @@ models:
       created: 2025-05-10T0:00:00Z
       collections: https://huggingface.co/collections/unsloth
       description: Llama 3.3 70B is Meta's advanced, multilingual, open-source large language model (LLM) with 70 billion parameters, excelling in complex reasoning, dialogue, and coding tasks, delivering flagship-level performance (like 405B models) with better efficiency, optimized for text-only applications, and featuring improved instruction-following, safety, and tool-use capabilities for enterprise and research use.
+    config:
+      context-window: 131072
+      nbatch: 2048
+      nubatch: 512
+      cache-type-k: q8_0
+      cache-type-v: q8_0
+      flash-attention: enabled
+      nseq-max: 2
 
   - id: Qwen3-8B-Q8_0
     category: Text-Generation
@@ -176,6 +224,14 @@ models:
       created: 2025-05-03T0:00:00Z
       collections: https://huggingface.co/collections/Qwen
       description: Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models.
+    config:
+      context-window: 40960
+      nbatch: 2048
+      nubatch: 512
+      cache-type-k: q8_0
+      cache-type-v: q8_0
+      flash-attention: enabled
+      nseq-max: 2
 
   - id: Qwen3-Coder-30B-A3B-Instruct-Q8_0
     category: Text-Generation
@@ -201,6 +257,14 @@ models:
       created: 2025-08-05T0:00:00Z
       collections: https://huggingface.co/collections/unsloth
       description: The Qwen3-Coder-30B-A3B-Instruct is a specialized, instruction-tuned Mixture-of-Experts (MoE) model for agentic coding tasks. Developed by Alibaba, it excels in code generation, understanding large codebases, and using external tools with a high degree of efficiency.
+    config:
+      context-window: 131072
+      nbatch: 2048
+      nubatch: 512
+      cache-type-k: q8_0
+      cache-type-v: q8_0
+      flash-attention: enabled
+      nseq-max: 2
 
   - id: Qwen3-Coder-30B-A3B-Instruct-UD-Q8_K_XL
     category: Text-Generation
@@ -226,3 +290,11 @@ models:
       created: 2025-08-05T0:00:00Z
       collections: https://huggingface.co/collections/unsloth
       description: The Qwen3-Coder-30B-A3B-Instruct is a specialized, instruction-tuned Mixture-of-Experts (MoE) model for agentic coding tasks. Developed by Alibaba, it excels in code generation, understanding large codebases, and using external tools with a high degree of efficiency.
+    config:
+      context-window: 131072
+      nbatch: 2048
+      nubatch: 512
+      cache-type-k: q8_0
+      cache-type-v: q8_0
+      flash-attention: enabled
+      nseq-max: 2
