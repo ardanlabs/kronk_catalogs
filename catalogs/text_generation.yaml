@@ -4,7 +4,7 @@ models:
     category: Text-Generation
     owned_by: bartowski
     model_family: cerebras_Qwen3-Coder-REAP-25B-A3B-GGUF
-    web_page: bartowski/cerebras_Qwen3-Coder-REAP-25B-A3B-GGUF
+    web_page: bartowski/cerebras_Qwen3-Coder-REAP-25B-A3B-GGUF/cerebras_Qwen3-Coder-REAP-25B-A3B-Q8_0.gguf
     template: qwen3-coder.jinja
     files:
       models:
@@ -37,7 +37,7 @@ models:
     category: Text-Generation
     owned_by: unsloth
     model_family: gpt-oss-120b-GGUF
-    web_page: unsloth/gpt-oss-120b-GGUF
+    web_page: unsloth/gpt-oss-120b-GGUF/gpt-oss-120b-F16.gguf
     template: gpt-oss.jinja
     files:
       models:
@@ -70,7 +70,7 @@ models:
     category: Text-Generation
     owned_by: unsloth
     model_family: gpt-oss-20b-GGUF
-    web_page: unsloth/gpt-oss-20b-GGUF
+    web_page: unsloth/gpt-oss-20b-GGUF/gpt-oss-20b-Q8_0.gguf
     template: gpt-oss.jinja
     files:
       models:
@@ -103,7 +103,7 @@ models:
     category: Text-Generation
     owned_by: unsloth
     model_family: GLM-4.7-Flash-GGUF
-    web_page: unsloth/GLM-4.7-Flash-GGUF
+    web_page: unsloth/GLM-4.7-Flash-GGUF/GLM-4.7-Flash-Q8_0.gguf
     template: glm-4.jinja
     files:
       models:
@@ -136,7 +136,7 @@ models:
     category: Text-Generation
     owned_by: unsloth
     model_family: GLM-4.7-Flash-GGUF
-    web_page: unsloth/GLM-4.7-Flash-GGUF
+    web_page: unsloth/GLM-4.7-Flash-GGUF/GLM-4.7-Flash-UD-Q8_K_XL.gguf
     template: glm-4.jinja
     files:
       models:
@@ -204,7 +204,7 @@ models:
     category: Text-Generation
     owned_by: Qwen
     model_family: Qwen3-8B-GGUF
-    web_page: Qwen/Qwen3-8B-GGUF
+    web_page: Qwen/Qwen3-8B-GGUF/Qwen3-8B-Q8_0.gguf
     template:
     files:
       models:
@@ -237,7 +237,7 @@ models:
     category: Text-Generation
     owned_by: unsloth
     model_family: Qwen3-Coder-30B-A3B-Instruct-GGUF
-    web_page: unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF
+    web_page: unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF/Qwen3-Coder-30B-A3B-Instruct-Q8_0.gguf
     template: qwen3-coder.jinja
     files:
       models:
@@ -270,7 +270,7 @@ models:
     category: Text-Generation
     owned_by: unsloth
     model_family: Qwen3-Coder-30B-A3B-Instruct-GGUF
-    web_page: unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF
+    web_page: unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF/Qwen3-Coder-30B-A3B-Instruct-UD-Q8_K_XL.gguf
     template: qwen3-coder.jinja
     files:
       models:

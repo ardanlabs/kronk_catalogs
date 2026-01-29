@@ -4,7 +4,7 @@ models:
     category: Embedding
     owned_by: ggml-org
     model_family: embeddinggemma-300m-qat-q8_0-GGUF
-    web_page: ggml-org/embeddinggemma-300m-qat-q8_0-GGUF
+    web_page: ggml-org/embeddinggemma-300m-qat-q8_0-GGUF/embeddinggemma-300m-qat-Q8_0.gguf
     template:
     files:
       models:
