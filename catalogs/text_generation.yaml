@@ -28,10 +28,14 @@ models:
       context-window: 131072
       nbatch: 2048
       nubatch: 512
-      cache-type-k: q8_0
-      cache-type-v: q8_0
+      cache-type-k: f16
+      cache-type-v: f16
       flash-attention: enabled
       nseq-max: 2
+      sampling-parameters:
+        temperature: 0.7
+        top_p: 0.8
+        top_k: 20
 
   - id: gpt-oss-120b-F16
     category: Text-Generation
@@ -61,10 +65,14 @@ models:
       context-window: 131072
       nbatch: 2048
       nubatch: 512
-      cache-type-k: q8_0
-      cache-type-v: q8_0
+      cache-type-k: f16
+      cache-type-v: f16
       flash-attention: enabled
       nseq-max: 2
+      sampling-parameters:
+        temperature: 1.0
+        top_p: 1.0
+        top_k: 50
 
   - id: gpt-oss-20b-Q8_0
     category: Text-Generation
@@ -98,6 +106,10 @@ models:
       cache-type-v: q8_0
       flash-attention: enabled
       nseq-max: 2
+      sampling-parameters:
+        temperature: 1.0
+        top_p: 1.0
+        top_k: 50
 
   - id: GLM-4.7-Flash-Q8_0
     category: Text-Generation
@@ -131,6 +143,10 @@ models:
       cache-type-v: q8_0
       flash-attention: enabled
       nseq-max: 2
+      sampling-parameters:
+        temperature: 0.7
+        top_p: 0.8
+        top_k: 20
 
   - id: GLM-4.7-Flash-UD-Q8_K_XL
     category: Text-Generation
@@ -160,10 +176,14 @@ models:
       context-window: 131072
       nbatch: 2048
       nubatch: 512
-      cache-type-k: q8_0
-      cache-type-v: q8_0
+      cache-type-k: f16
+      cache-type-v: f16
       flash-attention: enabled
       nseq-max: 2
+      sampling-parameters:
+        temperature: 0.7
+        top_p: 0.8
+        top_k: 20
 
   - id: Llama-3.3-70B-Instruct-Q8_0
     category: Text-Generation
@@ -195,8 +215,8 @@ models:
       context-window: 131072
       nbatch: 2048
       nubatch: 512
-      cache-type-k: q8_0
-      cache-type-v: q8_0
+      cache-type-k: f16
+      cache-type-v: f16
       flash-attention: enabled
       nseq-max: 2
 
@@ -232,6 +252,10 @@ models:
       cache-type-v: q8_0
       flash-attention: enabled
       nseq-max: 2
+      sampling-parameters:
+        temperature: 0.7
+        top_p: 0.8
+        top_k: 20
 
   - id: Qwen3-Coder-30B-A3B-Instruct-Q8_0
     category: Text-Generation
@@ -265,6 +289,10 @@ models:
       cache-type-v: q8_0
       flash-attention: enabled
       nseq-max: 2
+      sampling-parameters:
+        temperature: 0.7
+        top_p: 0.8
+        top_k: 20
 
   - id: Qwen3-Coder-30B-A3B-Instruct-UD-Q8_K_XL
     category: Text-Generation
@@ -294,7 +322,11 @@ models:
       context-window: 131072
       nbatch: 2048
       nubatch: 512
-      cache-type-k: q8_0
-      cache-type-v: q8_0
+      cache-type-k: f16
+      cache-type-v: f16
       flash-attention: enabled
       nseq-max: 2
+      sampling-parameters:
+        temperature: 0.7
+        top_p: 0.8
+        top_k: 20
