@@ -4,7 +4,7 @@ models:
     category: Audio-Text-to-Text
     owned_by: mradermacher
     model_family: Qwen2-Audio-7B-GGUF
-    web_page: mradermacher/Qwen2-Audio-7B-GGUF/Qwen2-Audio-7B.Q8_0.gguf
+    web_page: https://huggingface.co/mradermacher/Qwen2-Audio-7B-GGUF
     template:
     files:
       models:
