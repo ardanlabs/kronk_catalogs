@@ -8,7 +8,7 @@ models:
     template:
     files:
       models:
-        - url: gpustack/bge-reranker-v2-m3-GGUF/bge-reranker-v2-m3-Q8_0.gguf
+        - url: https://huggingface.co/gpustack/bge-reranker-v2-m3-GGUF/resolve/main/bge-reranker-v2-m3-Q8_0.gguf
           size: 636 MiB
     capabilities:
       endpoint: rerank
