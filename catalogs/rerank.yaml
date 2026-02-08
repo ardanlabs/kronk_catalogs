@@ -22,7 +22,7 @@ models:
       rerank: true
     metadata:
       created: 2024-09-09T0:00:00Z
-      collections: collections/gpustack
+      collections: https://huggingface.co/collections/gpustack
       description: The bge-reranker-v2-m3-GGUF is a quantized, lightweight cross-encoder model developed by the Beijing Academy of Artificial Intelligence (BAAI) for high-performance, multilingual re-ranking tasks. It is designed to take a query and a passage as input and directly output a similarity score (relevance) rather than generating embeddings, allowing for more accurate ranking in RAG (Retrieval-Augmented Generation) systems.
     config:
       context-window: 8192
