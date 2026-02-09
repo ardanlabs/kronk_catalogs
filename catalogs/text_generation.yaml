@@ -1,330 +1,339 @@
 catalog: Text-Generation
 models:
+  - id: cerebras_Qwen3-Coder-REAP-25B-A3B-Q8_0
+    category: Text-Generation
+    owned_by: bartowski
+    model_family: cerebras_Qwen3-Coder-REAP-25B-A3B-GGUF
+    web_page: https://huggingface.co/bartowski/cerebras_Qwen3-Coder-REAP-25B-A3B-GGUF
+    template: qwen3-coder.jinja
+    files:
+      models:
+        - url: https://huggingface.co/bartowski/cerebras_Qwen3-Coder-REAP-25B-A3B-GGUF/resolve/main/cerebras_Qwen3-Coder-REAP-25B-A3B-Q8_0.gguf
+          size: 26.5 GiB
+    capabilities:
+      endpoint: chat_completion
+      streaming: true
+      tooling: true
+    metadata:
+      created: 2025-10-21T00:00:00Z
+      collections: https://huggingface.co/collections/bartowski
+      description:
+        The Qwen3-Coder-30B-A3B-Instruct is a specialized, instruction-tuned
+        Mixture-of-Experts (MoE) model for agentic coding tasks. Developed by Alibaba,
+        it excels in code generation, understanding large codebases, and using external
+        tools with a high degree of efficiency.
+    config:
+      context-window: 131072
+      nbatch: 2048
+      nubatch: 512
+      cache-type-k: f16
+      cache-type-v: f16
+      nseq-max: 2
+      sampling-parameters:
+        temperature: 0.7
+        top_k: 20
+        top_p: 0.8
 
-- id: cerebras_Qwen3-Coder-REAP-25B-A3B-Q8_0
-  category: Text-Generation
-  owned_by: bartowski
-  model_family: cerebras_Qwen3-Coder-REAP-25B-A3B-GGUF
-  web_page: https://huggingface.co/bartowski/cerebras_Qwen3-Coder-REAP-25B-A3B-GGUF
-  template: qwen3-coder.jinja
-  files:
-    models:
-    - url: https://huggingface.co/bartowski/cerebras_Qwen3-Coder-REAP-25B-A3B-GGUF/resolve/main/cerebras_Qwen3-Coder-REAP-25B-A3B-Q8_0.gguf
-      size: 26.5 GiB
-  capabilities:
-    endpoint: chat_completion
-    streaming: true
-    tooling: true
-  metadata:
-    created: 2025-10-21T00:00:00Z
-    collections: https://huggingface.co/collections/bartowski
-    description: The Qwen3-Coder-30B-A3B-Instruct is a specialized, instruction-tuned
-      Mixture-of-Experts (MoE) model for agentic coding tasks. Developed by Alibaba,
-      it excels in code generation, understanding large codebases, and using external
-      tools with a high degree of efficiency.
-  config:
-    context-window: 131072
-    nbatch: 2048
-    nubatch: 512
-    cache-type-k: f16
-    cache-type-v: f16
-    nseq-max: 2
-    sampling-parameters:
-      temperature: 0.7
-      top_k: 20
-      top_p: 0.8
+  - id: gpt-oss-120b-F16
+    category: Text-Generation
+    owned_by: unsloth
+    model_family: gpt-oss-120b-GGUF
+    web_page: https://huggingface.co/unsloth/gpt-oss-120b-GGUF
+    template: gpt-oss.jinja
+    files:
+      models:
+        - url: https://huggingface.co/unsloth/gpt-oss-120b-GGUF/resolve/main/gpt-oss-120b-F16.gguf
+          size: 65.4 GiB
+    capabilities:
+      endpoint: chat_completion
+      streaming: true
+      reasoning: true
+      tooling: true
+    metadata:
+      created: 2025-08-08T00:00:00Z
+      collections: https://huggingface.co/collections/unsloth
+      description:
+        OpenAI's GPT-OSS (OpenAI Open-Source Series) are open-weight large
+        language models designed for powerful reasoning, agentic tasks, and on-premises
+        deployment, released under a permissive Apache 2.0 license.
+    config:
+      context-window: 131072
+      nbatch: 2048
+      nubatch: 512
+      cache-type-k: f16
+      cache-type-v: f16
+      nseq-max: 2
+      sampling-parameters:
+        temperature: 1
+        top_k: 50
+        top_p: 1
 
-- id: gpt-oss-120b-F16
-  category: Text-Generation
-  owned_by: unsloth
-  model_family: gpt-oss-120b-GGUF
-  web_page: https://huggingface.co/unsloth/gpt-oss-120b-GGUF
-  template: gpt-oss.jinja
-  files:
-    models:
-    - url: https://huggingface.co/unsloth/gpt-oss-120b-GGUF/resolve/main/gpt-oss-120b-F16.gguf
-      size: 65.4 GiB
-  capabilities:
-    endpoint: chat_completion
-    streaming: true
-    reasoning: true
-    tooling: true
-  metadata:
-    created: 2025-08-08T00:00:00Z
-    collections: https://huggingface.co/collections/unsloth
-    description: OpenAI's GPT-OSS (OpenAI Open-Source Series) are open-weight large
-      language models designed for powerful reasoning, agentic tasks, and on-premises
-      deployment, released under a permissive Apache 2.0 license.
-  config:
-    context-window: 131072
-    nbatch: 2048
-    nubatch: 512
-    cache-type-k: f16
-    cache-type-v: f16
-    nseq-max: 2
-    sampling-parameters:
-      temperature: 1
-      top_k: 50
-      top_p: 1
+  - id: gpt-oss-20b-Q8_0
+    category: Text-Generation
+    owned_by: unsloth
+    model_family: gpt-oss-20b-GGUF
+    web_page: https://huggingface.co/unsloth/gpt-oss-20b-GGUF
+    template: gpt-oss.jinja
+    files:
+      models:
+        - url: https://huggingface.co/unsloth/gpt-oss-20b-GGUF/resolve/main/gpt-oss-20b-Q8_0.gguf
+          size: 12.1 GiB
+    capabilities:
+      endpoint: chat_completion
+      streaming: true
+      reasoning: true
+      tooling: true
+    metadata:
+      created: 2025-08-08T00:00:00Z
+      collections: https://huggingface.co/collections/unsloth
+      description:
+        OpenAI's GPT-OSS (OpenAI Open-Source Series) are open-weight large
+        language models designed for powerful reasoning, agentic tasks, and on-premises
+        deployment, released under a permissive Apache 2.0 license.
+    config:
+      context-window: 98304
+      nbatch: 2048
+      nubatch: 512
+      cache-type-k: q8_0
+      cache-type-v: q8_0
+      nseq-max: 2
+      sampling-parameters:
+        temperature: 1
+        top_k: 50
+        top_p: 1
 
-- id: gpt-oss-20b-Q8_0
-  category: Text-Generation
-  owned_by: unsloth
-  model_family: gpt-oss-20b-GGUF
-  web_page: https://huggingface.co/unsloth/gpt-oss-20b-GGUF
-  template: gpt-oss.jinja
-  files:
-    models:
-    - url: https://huggingface.co/unsloth/gpt-oss-20b-GGUF/resolve/main/gpt-oss-20b-Q8_0.gguf
-      size: 12.1 GiB
-  capabilities:
-    endpoint: chat_completion
-    streaming: true
-    reasoning: true
-    tooling: true
-  metadata:
-    created: 2025-08-08T00:00:00Z
-    collections: https://huggingface.co/collections/unsloth
-    description: OpenAI's GPT-OSS (OpenAI Open-Source Series) are open-weight large
-      language models designed for powerful reasoning, agentic tasks, and on-premises
-      deployment, released under a permissive Apache 2.0 license.
-  config:
-    context-window: 98304
-    nbatch: 2048
-    nubatch: 512
-    cache-type-k: q8_0
-    cache-type-v: q8_0
-    nseq-max: 2
-    sampling-parameters:
-      temperature: 1
-      top_k: 50
-      top_p: 1
+  - id: GLM-4.7-Flash-Q8_0
+    category: Text-Generation
+    owned_by: unsloth
+    model_family: GLM-4.7-Flash-GGUF
+    web_page: https://huggingface.co/unsloth/GLM-4.7-Flash-GGUF
+    template: glm-4.jinja
+    files:
+      models:
+        - url: https://huggingface.co/unsloth/GLM-4.7-Flash-GGUF/resolve/main/GLM-4.7-Flash-Q8_0.gguf
+          size: 31.8 GiB
+    capabilities:
+      endpoint: chat_completion
+      streaming: true
+      tooling: true
+    metadata:
+      created: 2026-01-20T00:00:00Z
+      collections: https://huggingface.co/collections/unsloth
+      description:
+        GLM-4.7-Flash is a high-performance, lightweight Mixture-of-Experts
+        (MoE) model released by Z.ai in January 2026, designed specifically for efficient
+        coding, agentic workflows, and fast local deployment. It is positioned as the
+        strongest in the 30B parameter class, balancing high performance with lower
+        computational requirements.
+    config:
+      context-window: 131072
+      nbatch: 2048
+      nubatch: 512
+      cache-type-k: q8_0
+      cache-type-v: q8_0
+      nseq-max: 2
+      sampling-parameters:
+        temperature: 0.7
+        top_k: 20
+        top_p: 0.8
 
-- id: GLM-4.7-Flash-Q8_0
-  category: Text-Generation
-  owned_by: unsloth
-  model_family: GLM-4.7-Flash-GGUF
-  web_page: https://huggingface.co/unsloth/GLM-4.7-Flash-GGUF
-  template: glm-4.jinja
-  files:
-    models:
-    - url: https://huggingface.co/unsloth/GLM-4.7-Flash-GGUF/resolve/main/GLM-4.7-Flash-Q8_0.gguf
-      size: 31.8 GiB
-  capabilities:
-    endpoint: chat_completion
-    streaming: true
-    tooling: true
-  metadata:
-    created: 2026-01-20T00:00:00Z
-    collections: https://huggingface.co/collections/unsloth
-    description: GLM-4.7-Flash is a high-performance, lightweight Mixture-of-Experts
-      (MoE) model released by Z.ai in January 2026, designed specifically for efficient
-      coding, agentic workflows, and fast local deployment. It is positioned as the
-      strongest in the 30B parameter class, balancing high performance with lower
-      computational requirements.
-  config:
-    context-window: 131072
-    nbatch: 2048
-    nubatch: 512
-    cache-type-k: q8_0
-    cache-type-v: q8_0
-    nseq-max: 2
-    sampling-parameters:
-      temperature: 0.7
-      top_k: 20
-      top_p: 0.8
+  - id: GLM-4.7-Flash-UD-Q8_K_XL
+    category: Text-Generation
+    owned_by: unsloth
+    model_family: GLM-4.7-Flash-GGUF
+    web_page: https://huggingface.co/unsloth/GLM-4.7-Flash-GGUF
+    template: glm-4.jinja
+    files:
+      models:
+        - url: https://huggingface.co/unsloth/GLM-4.7-Flash-GGUF/resolve/main/GLM-4.7-Flash-UD-Q8_K_XL.gguf
+          size: 35.1 GiB
+    capabilities:
+      endpoint: chat_completion
+      streaming: true
+      tooling: true
+    metadata:
+      created: 2026-01-20T00:00:00Z
+      collections: https://huggingface.co/collections/unsloth
+      description:
+        GLM-4.7-Flash is a high-performance, lightweight Mixture-of-Experts
+        (MoE) model released by Z.ai in January 2026, designed specifically for efficient
+        coding, agentic workflows, and fast local deployment. It is positioned as the
+        strongest in the 30B parameter class, balancing high performance with lower
+        computational requirements.
+    config:
+      context-window: 131072
+      nbatch: 2048
+      nubatch: 512
+      cache-type-k: f16
+      cache-type-v: f16
+      nseq-max: 2
+      sampling-parameters:
+        temperature: 0.7
+        top_k: 20
+        top_p: 0.8
 
-- id: GLM-4.7-Flash-UD-Q8_K_XL
-  category: Text-Generation
-  owned_by: unsloth
-  model_family: GLM-4.7-Flash-GGUF
-  web_page: https://huggingface.co/unsloth/GLM-4.7-Flash-GGUF
-  template: glm-4.jinja
-  files:
-    models:
-    - url: https://huggingface.co/unsloth/GLM-4.7-Flash-GGUF/resolve/main/GLM-4.7-Flash-UD-Q8_K_XL.gguf
-      size: 35.1 GiB
-  capabilities:
-    endpoint: chat_completion
-    streaming: true
-    tooling: true
-  metadata:
-    created: 2026-01-20T00:00:00Z
-    collections: https://huggingface.co/collections/unsloth
-    description: GLM-4.7-Flash is a high-performance, lightweight Mixture-of-Experts
-      (MoE) model released by Z.ai in January 2026, designed specifically for efficient
-      coding, agentic workflows, and fast local deployment. It is positioned as the
-      strongest in the 30B parameter class, balancing high performance with lower
-      computational requirements.
-  config:
-    context-window: 131072
-    nbatch: 2048
-    nubatch: 512
-    cache-type-k: f16
-    cache-type-v: f16
-    nseq-max: 2
-    sampling-parameters:
-      temperature: 0.7
-      top_k: 20
-      top_p: 0.8
+  - id: Llama-3.3-70B-Instruct-Q8_0
+    category: Text-Generation
+    owned_by: unsloth
+    model_family: Llama-3.3-70B-Instruct-GGUF
+    web_page: https://huggingface.co/unsloth/Llama-3.3-70B-Instruct-GGUF
+    files:
+      models:
+        - url: https://huggingface.co/unsloth/Llama-3.3-70B-Instruct-GGUF/resolve/main/Llama-3.3-70B-Instruct-Q8_0/Llama-3.3-70B-Instruct-Q8_0-00001-of-00002.gguf
+          size: 39.8 GiB
+        - url: https://huggingface.co/unsloth/Llama-3.3-70B-Instruct-GGUF/resolve/main/Llama-3.3-70B-Instruct-Q8_0/Llama-3.3-70B-Instruct-Q8_0-00002-of-00002.gguf
+          size: 35.2 GiB
+    capabilities:
+      endpoint: chat_completion
+      streaming: true
+      reasoning: true
+      tooling: true
+    metadata:
+      created: 2025-05-10T00:00:00Z
+      collections: https://huggingface.co/collections/unsloth
+      description:
+        Llama 3.3 70B is Meta's advanced, multilingual, open-source large
+        language model (LLM) with 70 billion parameters, excelling in complex reasoning,
+        dialogue, and coding tasks, delivering flagship-level performance (like 405B
+        models) with better efficiency, optimized for text-only applications, and featuring
+        improved instruction-following, safety, and tool-use capabilities for enterprise
+        and research use.
+    config:
+      context-window: 131072
+      nbatch: 2048
+      nubatch: 512
+      cache-type-k: f16
+      cache-type-v: f16
+      nseq-max: 2
 
-- id: Llama-3.3-70B-Instruct-Q8_0
-  category: Text-Generation
-  owned_by: unsloth
-  model_family: Llama-3.3-70B-Instruct-GGUF
-  web_page: https://huggingface.co/unsloth/Llama-3.3-70B-Instruct-GGUF
-  files:
-    models:
-    - url: https://huggingface.co/unsloth/Llama-3.3-70B-Instruct-GGUF/resolve/main/Llama-3.3-70B-Instruct-Q8_0/Llama-3.3-70B-Instruct-Q8_0-00001-of-00002.gguf
-      size: 39.8 GiB
-    - url: https://huggingface.co/unsloth/Llama-3.3-70B-Instruct-GGUF/resolve/main/Llama-3.3-70B-Instruct-Q8_0/Llama-3.3-70B-Instruct-Q8_0-00002-of-00002.gguf
-      size: 35.2 GiB
-  capabilities:
-    endpoint: chat_completion
-    streaming: true
-    reasoning: true
-    tooling: true
-  metadata:
-    created: 2025-05-10T00:00:00Z
-    collections: https://huggingface.co/collections/unsloth
-    description: Llama 3.3 70B is Meta's advanced, multilingual, open-source large
-      language model (LLM) with 70 billion parameters, excelling in complex reasoning,
-      dialogue, and coding tasks, delivering flagship-level performance (like 405B
-      models) with better efficiency, optimized for text-only applications, and featuring
-      improved instruction-following, safety, and tool-use capabilities for enterprise
-      and research use.
-  config:
-    context-window: 131072
-    nbatch: 2048
-    nubatch: 512
-    cache-type-k: f16
-    cache-type-v: f16
-    nseq-max: 2
+  - id: Qwen3-8B-Q8_0
+    category: Text-Generation
+    owned_by: Qwen
+    model_family: Qwen3-8B-GGUF
+    web_page: https://huggingface.co/Qwen/Qwen3-8B-GGUF
+    files:
+      models:
+        - url: https://huggingface.co/Qwen/Qwen3-8B-GGUF/resolve/main/Qwen3-8B-Q8_0.gguf
+          size: 8.71 GiB
+    capabilities:
+      endpoint: chat_completion
+      streaming: true
+      reasoning: true
+      tooling: true
+    metadata:
+      created: 2025-05-03T00:00:00Z
+      collections: https://huggingface.co/collections/Qwen
+      description:
+        Qwen3 is the latest generation of large language models in Qwen series,
+        offering a comprehensive suite of dense and mixture-of-experts (MoE) models.
+    config:
+      context-window: 40960
+      nbatch: 2048
+      nubatch: 512
+      cache-type-k: q8_0
+      cache-type-v: q8_0
+      nseq-max: 2
+      sampling-parameters:
+        temperature: 0.7
+        top_k: 20
+        top_p: 0.8
 
-- id: Qwen3-8B-Q8_0
-  category: Text-Generation
-  owned_by: Qwen
-  model_family: Qwen3-8B-GGUF
-  web_page: https://huggingface.co/Qwen/Qwen3-8B-GGUF
-  files:
-    models:
-    - url: https://huggingface.co/Qwen/Qwen3-8B-GGUF/resolve/main/Qwen3-8B-Q8_0.gguf
-      size: 8.71 GiB
-  capabilities:
-    endpoint: chat_completion
-    streaming: true
-    reasoning: true
-    tooling: true
-  metadata:
-    created: 2025-05-03T00:00:00Z
-    collections: https://huggingface.co/collections/Qwen
-    description: Qwen3 is the latest generation of large language models in Qwen series,
-      offering a comprehensive suite of dense and mixture-of-experts (MoE) models.
-  config:
-    context-window: 40960
-    nbatch: 2048
-    nubatch: 512
-    cache-type-k: q8_0
-    cache-type-v: q8_0
-    nseq-max: 2
-    sampling-parameters:
-      temperature: 0.7
-      top_k: 20
-      top_p: 0.8
+  - id: Qwen3-Coder-30B-A3B-Instruct-Q8_0
+    category: Text-Generation
+    owned_by: unsloth
+    model_family: Qwen3-Coder-30B-A3B-Instruct-GGUF
+    web_page: https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF
+    template: qwen3-coder.jinja
+    files:
+      models:
+        - url: https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF/resolve/main/Qwen3-Coder-30B-A3B-Instruct-Q8_0.gguf
+          size: 32.5 GiB
+    capabilities:
+      endpoint: chat_completion
+      streaming: true
+      tooling: true
+    metadata:
+      created: 2025-08-05T00:00:00Z
+      collections: https://huggingface.co/collections/unsloth
+      description:
+        The Qwen3-Coder-30B-A3B-Instruct is a specialized, instruction-tuned
+        Mixture-of-Experts (MoE) model for agentic coding tasks. Developed by Alibaba,
+        it excels in code generation, understanding large codebases, and using external
+        tools with a high degree of efficiency.
+    config:
+      context-window: 131072
+      nbatch: 2048
+      nubatch: 512
+      cache-type-k: q8_0
+      cache-type-v: q8_0
+      nseq-max: 2
+      sampling-parameters:
+        temperature: 0.7
+        top_k: 20
+        top_p: 0.8
 
-- id: Qwen3-Coder-30B-A3B-Instruct-Q8_0
-  category: Text-Generation
-  owned_by: unsloth
-  model_family: Qwen3-Coder-30B-A3B-Instruct-GGUF
-  web_page: https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF
-  template: qwen3-coder.jinja
-  files:
-    models:
-    - url: https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF/resolve/main/Qwen3-Coder-30B-A3B-Instruct-Q8_0.gguf
-      size: 32.5 GiB
-  capabilities:
-    endpoint: chat_completion
-    streaming: true
-    tooling: true
-  metadata:
-    created: 2025-08-05T00:00:00Z
-    collections: https://huggingface.co/collections/unsloth
-    description: The Qwen3-Coder-30B-A3B-Instruct is a specialized, instruction-tuned
-      Mixture-of-Experts (MoE) model for agentic coding tasks. Developed by Alibaba,
-      it excels in code generation, understanding large codebases, and using external
-      tools with a high degree of efficiency.
-  config:
-    context-window: 131072
-    nbatch: 2048
-    nubatch: 512
-    cache-type-k: q8_0
-    cache-type-v: q8_0
-    nseq-max: 2
-    sampling-parameters:
-      temperature: 0.7
-      top_k: 20
-      top_p: 0.8
+  - id: Qwen3-Coder-30B-A3B-Instruct-UD-Q8_K_XL
+    category: Text-Generation
+    owned_by: unsloth
+    model_family: Qwen3-Coder-30B-A3B-Instruct-GGUF
+    web_page: https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF
+    template: qwen3-coder.jinja
+    files:
+      models:
+        - url: https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF/resolve/main/Qwen3-Coder-30B-A3B-Instruct-UD-Q8_K_XL.gguf
+          size: 36.0 GiB
+    capabilities:
+      endpoint: chat_completion
+      streaming: true
+      tooling: true
+    metadata:
+      created: 2025-08-05T00:00:00Z
+      collections: https://huggingface.co/collections/unsloth
+      description:
+        The Qwen3-Coder-30B-A3B-Instruct is a specialized, instruction-tuned
+        Mixture-of-Experts (MoE) model for agentic coding tasks. Developed by Alibaba,
+        it excels in code generation, understanding large codebases, and using external
+        tools with a high degree of efficiency.
+    config:
+      context-window: 131072
+      nbatch: 2048
+      nubatch: 512
+      cache-type-k: f16
+      cache-type-v: f16
+      nseq-max: 2
+      sampling-parameters:
+        temperature: 0.7
+        top_k: 20
+        top_p: 0.8
 
-- id: Qwen3-Coder-30B-A3B-Instruct-UD-Q8_K_XL
-  category: Text-Generation
-  owned_by: unsloth
-  model_family: Qwen3-Coder-30B-A3B-Instruct-GGUF
-  web_page: https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF
-  template: qwen3-coder.jinja
-  files:
-    models:
-    - url: https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF/resolve/main/Qwen3-Coder-30B-A3B-Instruct-UD-Q8_K_XL.gguf
-      size: 36.0 GiB
-  capabilities:
-    endpoint: chat_completion
-    streaming: true
-    tooling: true
-  metadata:
-    created: 2025-08-05T00:00:00Z
-    collections: https://huggingface.co/collections/unsloth
-    description: The Qwen3-Coder-30B-A3B-Instruct is a specialized, instruction-tuned
-      Mixture-of-Experts (MoE) model for agentic coding tasks. Developed by Alibaba,
-      it excels in code generation, understanding large codebases, and using external
-      tools with a high degree of efficiency.
-  config:
-    context-window: 131072
-    nbatch: 2048
-    nubatch: 512
-    cache-type-k: f16
-    cache-type-v: f16
-    nseq-max: 2
-    sampling-parameters:
-      temperature: 0.7
-      top_k: 20
-      top_p: 0.8
-
-- id: Ministral-3-14B-Instruct-2512-UD-Q8_K_XL
-  category: Text-Generation
-  owned_by: unsloth
-  model_family: Ministral-3-14B-Instruct-2512-GGUF
-  web_page: https://huggingface.co/unsloth/Ministral-3-14B-Instruct-2512-GGUF
-  files:
-    models:
-    - url: https://huggingface.co/unsloth/Ministral-3-14B-Instruct-2512-GGUF/resolve/main/Ministral-3-14B-Instruct-2512-UD-Q8_K_XL.gguf
-      size: 15.9 GiB
-  capabilities:
-    endpoint: chat_completion
-    streaming: true
-    reasoning: true
-    tooling: true
-  metadata:
-    created: 2025-12-02T00:00:00Z
-    collections: collections/unsloth
-    description: Ministral-3-14B-Instruct-2512-GGUF is the largest and most capable
-      model in the Mistral AI Ministral 3 family, specifically optimized for edge
-      deployment and high-performance local inference.
-  config:
-    context-window: 131072
-    nbatch: 2048
-    nubatch: 512
-    cache-type-k: f16
-    cache-type-v: f16
-    nseq-max: 2
-    sampling-parameters:
-      temperature: 0.7
-      top_p: 0.95
+  - id: Ministral-3-14B-Instruct-2512-UD-Q8_K_XL
+    category: Text-Generation
+    owned_by: unsloth
+    model_family: Ministral-3-14B-Instruct-2512-GGUF
+    web_page: https://huggingface.co/unsloth/Ministral-3-14B-Instruct-2512-GGUF
+    template: ministral.jinja
+    files:
+      models:
+        - url: https://huggingface.co/unsloth/Ministral-3-14B-Instruct-2512-GGUF/resolve/main/Ministral-3-14B-Instruct-2512-UD-Q8_K_XL.gguf
+          size: 15.9 GiB
+    capabilities:
+      endpoint: chat_completion
+      streaming: true
+      tooling: true
+    metadata:
+      created: 2025-12-02T00:00:00Z
+      collections: collections/unsloth
+      description:
+        Ministral-3-14B-Instruct-2512-GGUF is the largest and most capable
+        model in the Mistral AI Ministral 3 family, specifically optimized for edge
+        deployment and high-performance local inference.
+    config:
+      context-window: 131072
+      nbatch: 2048
+      nubatch: 512
+      cache-type-k: f16
+      cache-type-v: f16
+      nseq-max: 2
+      sampling-parameters:
+        temperature: 0.7
+        top_p: 0.95
