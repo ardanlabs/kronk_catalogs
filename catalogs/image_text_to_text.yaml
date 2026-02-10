@@ -72,7 +72,7 @@ models:
       flash-attention: enabled
 
   - id: Ministral-3-14B-Instruct-2512-UD-Q8_K_XL
-    category: Text-Generation
+    category: Image-Text-to-Text
     owned_by: unsloth
     model_family: Ministral-3-14B-Instruct-2512-GGUF
     web_page: https://huggingface.co/unsloth/Ministral-3-14B-Instruct-2512-GGUF
@@ -107,7 +107,7 @@ models:
         top_p: 0.95
 
   - id: Ministral-3-14B-Instruct-2512-Q4_0
-    category: Text-Generation
+    category: Image-Text-to-Text
     owned_by: unsloth
     model_family: Ministral-3-14B-Instruct-2512-GGUF
     web_page: https://huggingface.co/unsloth/Ministral-3-14B-Instruct-2512-GGUF
