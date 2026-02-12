@@ -305,38 +305,3 @@ models:
         temperature: 0.7
         top_k: 20
         top_p: 0.8
-
-  - id: nanbeige4.1-3b-q8_0
-    category: Text-Generation
-    owned_by: Edge-Quant
-    model_family: Nanbeige4.1-3B-Q8_0-GGUF
-    web_page: https://huggingface.co/Edge-Quant/Nanbeige4.1-3B-Q8_0-GGUF
-    template: nanbei.jinja
-    files:
-      models:
-        - url: https://huggingface.co/Edge-Quant/Nanbeige4.1-3B-Q8_0-GGUF/resolve/main/nanbeige4.1-3b-q8_0.gguf
-          size: 3.9 GiB
-    capabilities:
-      endpoint: chat_completion
-      streaming: true
-      reasoning: true
-      tooling: true
-    metadata:
-      created: 2026-02-11T00:00:00Z
-      collections: collections/Edge-Quant
-      description:
-        The Nanbeige4.1-3B-Q8_0-GGUF is a 3-billion parameter, high-performance
-        language model optimized for strong reasoning, agentic capabilities, and efficient
-        local deployment.
-    config:
-      context-window: 172032
-      nbatch: 2024
-      nubatch: 512
-      cache-type-k: f16
-      cache-type-v: f16
-      nseq-max: 2
-      incremental-cache: true
-      sampling-parameters:
-        temperature: 0.6
-        top_k: 20
-        top_p: 0.95
