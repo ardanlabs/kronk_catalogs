@@ -339,4 +339,4 @@ models:
       sampling-parameters:
         temperature: 0.6
         top_k: 20
-        top_p: 0.99
+        top_p: 0.95
