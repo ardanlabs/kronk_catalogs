@@ -31,7 +31,7 @@ models:
     config:
       context-window: 131072
       nbatch: 2048
-      nubatch: 512
+      nubatch: 2048
       cache-type-k: q8_0
       cache-type-v: q8_0
       flash-attention: enabled
@@ -66,7 +66,7 @@ models:
     config:
       context-window: 8192
       nbatch: 2048
-      nubatch: 512
+      nubatch: 2048
       cache-type-k: q8_0
       cache-type-v: q8_0
       flash-attention: enabled
@@ -98,7 +98,7 @@ models:
     config:
       context-window: 131072
       nbatch: 2048
-      nubatch: 512
+      nubatch: 2048
       cache-type-k: f16
       cache-type-v: f16
       nseq-max: 2
@@ -133,9 +133,115 @@ models:
     config:
       context-window: 131072
       nbatch: 2048
-      nubatch: 512
+      nubatch: 2048
       cache-type-k: q8_0
       cache-type-v: q8_0
       sampling-parameters:
         temperature: 0.7
+        top_p: 0.95
+
+  - id: GLM-4.6V-UD-Q2_K_XL
+    category: Image-Text-to-Text
+    owned_by: unsloth
+    model_family: GLM-4.6V-GGUF
+    web_page: https://huggingface.co/unsloth/GLM-4.6V-GGUF
+    files:
+      models:
+        - url: https://huggingface.co/unsloth/GLM-4.6V-GGUF/resolve/main/GLM-4.6V-UD-Q2_K_XL.gguf
+          size: 42.6 GiB
+      proj:
+        url: https://huggingface.co/unsloth/GLM-4.6V-GGUF/resolve/main/mmproj-F16.gguf
+        size: 1.72 GiB
+    capabilities:
+      endpoint: chat_completion
+      images: true
+      streaming: true
+      reasoning: true
+    metadata:
+      created: 2025-12-17T00:00:00Z
+      collections: collections/unsloth
+      description:
+        The model GLM-4.6V-UD-Q2_K_XL.gguf is a highly optimized, quantized
+        version of the GLM-4.6V multimodal large language model developed by Z.ai.
+    config:
+      context-window: 8196
+      nbatch: 2048
+      nubatch: 2048
+      cache-type-k: f16
+      cache-type-v: f16
+      sampling-parameters:
+        temperature: 1
+        top_k: 40
+        top_p: 0.95
+
+  - id: GLM-4.6V-UD-Q3_K_XL
+    category: Image-Text-to-Text
+    owned_by: unsloth
+    model_family: GLM-4.6V-GGUF
+    web_page: https://huggingface.co/unsloth/GLM-4.6V-GGUF
+    files:
+      models:
+        - url: https://huggingface.co/unsloth/GLM-4.6V-GGUF/resolve/main/UD-Q3_K_XL/GLM-4.6V-UD-Q3_K_XL-00001-of-00002.gguf
+          size: 50.0 GiB
+        - url: https://huggingface.co/unsloth/GLM-4.6V-GGUF/resolve/main/UD-Q3_K_XL/GLM-4.6V-UD-Q3_K_XL-00002-of-00002.gguf
+          size: 2.77 GiB
+      proj:
+        url: https://huggingface.co/unsloth/GLM-4.6V-GGUF/resolve/main/mmproj-F16.gguf
+        size: 1.72 GiB
+    capabilities:
+      endpoint: chat_completion
+      images: true
+      streaming: true
+      reasoning: true
+    metadata:
+      created: 2025-12-17T00:00:00Z
+      collections: collections/unsloth
+      description:
+        The model GLM-4.6V-UD-Q3_K_XL.gguf is a highly optimized, quantized
+        version of the GLM-4.6V multimodal large language model developed by Z.ai.
+    config:
+      context-window: 8196
+      nbatch: 2048
+      nubatch: 2048
+      cache-type-k: f16
+      cache-type-v: f16
+      sampling-parameters:
+        temperature: 1
+        top_k: 40
+        top_p: 0.95
+
+  - id: GLM-4.6V-UD-Q5_K_XL
+    category: Image-Text-to-Text
+    owned_by: unsloth
+    model_family: GLM-4.6V-GGUF
+    web_page: https://huggingface.co/unsloth/GLM-4.6V-GGUF
+    files:
+      models:
+        - url: https://huggingface.co/unsloth/GLM-4.6V-GGUF/resolve/main/UD-Q5_K_XL/GLM-4.6V-UD-Q5_K_XL-00001-of-00002.gguf
+          size: 49.6 GiB
+        - url: https://huggingface.co/unsloth/GLM-4.6V-GGUF/resolve/main/UD-Q5_K_XL/GLM-4.6V-UD-Q5_K_XL-00002-of-00002.gguf
+          size: 30.7 GiB
+      proj:
+        url: https://huggingface.co/unsloth/GLM-4.6V-GGUF/resolve/main/mmproj-F16.gguf
+        size: 30.7 GiB
+    capabilities:
+      endpoint: chat_completion
+      images: true
+      streaming: true
+      reasoning: true
+    metadata:
+      created: 2025-12-17T00:00:00Z
+      collections: collections/unsloth
+      description:
+        The model GLM-4.6V-UD-Q5_K_XL.gguf is a highly optimized, quantized
+        version of the GLM-4.6V multimodal large language model developed by Z.ai.
+    config:
+      context-window: 8196
+      nbatch: 2048
+      nubatch: 2048
+      cache-type-k: f16
+      cache-type-v: f16
+      sampling-parameters:
+        temperature: 1
+        top_k: 40
         top_p: 0.95
