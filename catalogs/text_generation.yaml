@@ -33,7 +33,6 @@ models:
         temperature: 0.8
         top_k: 40
         top_p: 0.9
-        grammar: hermestoolcalling.grm
 
   - id: gpt-oss-120b-F16
     category: Text-Generation
