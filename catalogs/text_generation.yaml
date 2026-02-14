@@ -6,7 +6,6 @@ models:
     model_family: cerebras_Qwen3-Coder-REAP-25B-A3B-GGUF
     web_page: https://huggingface.co/bartowski/cerebras_Qwen3-Coder-REAP-25B-A3B-GGUF
     template: qwen3-coder.jinja
-    grammar: hermestoolcalling.grm
     files:
       models:
         - url: https://huggingface.co/bartowski/cerebras_Qwen3-Coder-REAP-25B-A3B-GGUF/resolve/main/cerebras_Qwen3-Coder-REAP-25B-A3B-Q8_0.gguf
@@ -34,6 +33,7 @@ models:
         temperature: 0.7
         top_k: 20
         top_p: 0.8
+        grammar: hermestoolcalling.grm
 
   - id: gpt-oss-120b-F16
     category: Text-Generation
@@ -238,6 +238,7 @@ models:
         temperature: 0.7
         top_k: 20
         top_p: 0.8
+        grammar: hermestoolcalling.grm
 
   - id: Qwen3-Coder-30B-A3B-Instruct-Q8_0
     category: Text-Generation
@@ -245,7 +246,6 @@ models:
     model_family: Qwen3-Coder-30B-A3B-Instruct-GGUF
     web_page: https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF
     template: qwen3-coder.jinja
-    grammar: hermestoolcalling.grm
     files:
       models:
         - url: https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF/resolve/main/Qwen3-Coder-30B-A3B-Instruct-Q8_0.gguf
@@ -273,6 +273,7 @@ models:
         temperature: 0.7
         top_k: 20
         top_p: 0.8
+        grammar: hermestoolcalling.grm
 
   - id: Qwen3-Coder-30B-A3B-Instruct-UD-Q8_K_XL
     category: Text-Generation
@@ -280,7 +281,6 @@ models:
     model_family: Qwen3-Coder-30B-A3B-Instruct-GGUF
     web_page: https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF
     template: qwen3-coder.jinja
-    grammar: hermestoolcalling.grm
     files:
       models:
         - url: https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF/resolve/main/Qwen3-Coder-30B-A3B-Instruct-UD-Q8_K_XL.gguf
@@ -308,3 +308,4 @@ models:
         temperature: 0.7
         top_k: 20
         top_p: 0.8
+        grammar: hermestoolcalling.grm
