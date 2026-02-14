@@ -30,9 +30,9 @@ models:
       cache-type-v: f16
       nseq-max: 2
       sampling-parameters:
-        temperature: 0.7
-        top_k: 20
-        top_p: 0.8
+        temperature: 0.8
+        top_k: 40
+        top_p: 0.9
         grammar: hermestoolcalling.grm
 
   - id: gpt-oss-120b-F16
@@ -269,9 +269,9 @@ models:
       cache-type-v: q8_0
       nseq-max: 2
       sampling-parameters:
-        temperature: 0.7
-        top_k: 20
-        top_p: 0.8
+        temperature: 0.8
+        top_k: 40
+        top_p: 0.9
         grammar: hermestoolcalling.grm
 
   - id: Qwen3-Coder-30B-A3B-Instruct-UD-Q8_K_XL
@@ -304,7 +304,7 @@ models:
       cache-type-v: f16
       nseq-max: 2
       sampling-parameters:
-        temperature: 0.7
-        top_k: 20
-        top_p: 0.8
+        temperature: 0.8
+        top_k: 40
+        top_p: 0.9
         grammar: hermestoolcalling.grm
