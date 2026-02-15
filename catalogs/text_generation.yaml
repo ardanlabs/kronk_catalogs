@@ -271,7 +271,6 @@ models:
         temperature: 0.8
         top_k: 40
         top_p: 0.9
-        grammar: hermestoolcalling.grm
 
   - id: Qwen3-Coder-30B-A3B-Instruct-UD-Q8_K_XL
     category: Text-Generation
@@ -306,4 +305,3 @@ models:
         temperature: 0.8
         top_k: 40
         top_p: 0.9
-        grammar: hermestoolcalling.grm
