@@ -4,6 +4,8 @@
 
 This project contains a model catalog for the [Kronk](https://github.com/ardanlabs/kronk) project. Please provide a PR to update and add models to the catalog.
 
+See the full catalog [here](CATALOG.md).
+
 ### What's Kronk?
 
 Kronk lets you use Go for hardware accelerated local inference with llama.cpp directly integrated into your applications via the [yzma](https://github.com/hybridgroup/yzma) module. Kronk provides a high-level API that feels similar to using an OpenAI compatible API.
