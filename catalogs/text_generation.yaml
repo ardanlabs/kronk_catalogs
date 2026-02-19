@@ -25,7 +25,7 @@ models:
     config:
       context-window: 131072
       nbatch: 2048
-      nubatch: 512
+      nubatch: 2048
       cache-type-k: f16
       cache-type-v: f16
       nseq-max: 2
@@ -59,7 +59,7 @@ models:
     config:
       context-window: 131072
       nbatch: 2048
-      nubatch: 512
+      nubatch: 2048
       cache-type-k: f16
       cache-type-v: f16
       nseq-max: 2
@@ -163,7 +163,7 @@ models:
     config:
       context-window: 131072
       nbatch: 2048
-      nubatch: 512
+      nubatch: 2048
       cache-type-k: f16
       cache-type-v: f16
       nseq-max: 2
@@ -263,7 +263,7 @@ models:
     config:
       context-window: 131072
       nbatch: 2048
-      nubatch: 512
+      nubatch: 2048
       cache-type-k: q8_0
       cache-type-v: q8_0
       nseq-max: 2
@@ -297,7 +297,7 @@ models:
     config:
       context-window: 131072
       nbatch: 2048
-      nubatch: 512
+      nubatch: 2048
       cache-type-k: f16
       cache-type-v: f16
       nseq-max: 2
