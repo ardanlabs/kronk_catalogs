@@ -30,7 +30,7 @@ models:
     config:
       context-window: 8192
       nbatch: 2048
-      nubatch: 512
+      nubatch: 2048
       cache-type-k: q8_0
       cache-type-v: q8_0
       flash-attention: enabled
