@@ -340,6 +340,7 @@ models:
     owned_by: unsloth
     model_family: Qwen3-Coder-Next-GGUF
     web_page: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF
+    template: qwen3-next.jinja
     files:
       models:
         - url: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF/resolve/main/Qwen3-Coder-Next-UD-Q3_K_XL.gguf
@@ -373,6 +374,7 @@ models:
     owned_by: unsloth
     model_family: Qwen3-Coder-Next-GGUF
     web_page: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF
+    template: qwen3-next.jinja
     files:
       models:
         - url: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF/resolve/main/Qwen3-Coder-Next-UD-Q4_K_XL.gguf
