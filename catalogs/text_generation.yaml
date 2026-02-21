@@ -359,7 +359,7 @@ models:
         AI coding agents, offering performance competitive with top-tier, far larger
         models, while running on high-end consumer hardware.
     config:
-      context-window: 131072
+      context-window: 66560
       nbatch: 2048
       nubatch: 2048
       cache-type-k: f16
@@ -393,7 +393,7 @@ models:
         AI coding agents, offering performance competitive with top-tier, far larger
         models, while running on high-end consumer hardware.
     config:
-      context-window: 131072
+      context-window: 66560
       nbatch: 2048
       nubatch: 2048
       cache-type-k: f16
