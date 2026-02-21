@@ -335,7 +335,7 @@ models:
       cache-type-k: q8_0
       cache-type-v: q8_0
 
-  - id: Qwen3-Coder-Next-UD-Q3_K_XL
+  - id: Qwen3-Coder-Next-UD-Q2_K_XL
     category: Text-Generation
     owned_by: unsloth
     model_family: Qwen3-Coder-Next-GGUF
@@ -343,8 +343,8 @@ models:
     template: qwen3-next.jinja
     files:
       models:
-        - url: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF/resolve/main/Qwen3-Coder-Next-UD-Q3_K_XL.gguf
-          size: 33.4 GiB
+        - url: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF/resolve/main/Qwen3-Coder-Next-UD-Q2_K_XL.gguf
+          size: 30.2 GiB
     capabilities:
       endpoint: chat_completion
       streaming: true
@@ -353,7 +353,7 @@ models:
       created: 2026-02-03T00:00:00Z
       collections: collections/unsloth
       description:
-        The Qwen3-Coder-Next-UD-Q3_K_XL is a highly efficient, 3-bit quantized,
+        The Qwen3-Coder-Next-UD-Q2_K_XL is a highly efficient, 2-bit quantized,
         80-billion parameter Mixture-of-Experts (MoE) model released by Alibaba's Qwen
         team in February 2026. It is designed specifically for local, privacy-focused
         AI coding agents, offering performance competitive with top-tier, far larger
