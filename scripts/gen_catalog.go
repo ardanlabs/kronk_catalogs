@@ -154,9 +154,9 @@ func parseSizeToBytes(size string) float64 {
 
 	unit = strings.ToLower(unit)
 	switch unit {
-	case "gib", "gb":
+	case "GB", "gb":
 		return value * GB
-	case "mib", "mb":
+	case "MB", "mb":
 		return value * MB
 	case "kib", "kb":
 		return value * KB
