@@ -245,3 +245,38 @@ models:
         temperature: 1
         top_k: 40
         top_p: 0.95
+
+  - id: Qwen3-VL-30B-A3B-Instruct-UD-Q8_K_XL
+    category: Image-Text-to-Text
+    owned_by: unsloth
+    model_family: Qwen3-VL-30B-A3B-Instruct-GGUF
+    web_page: https://huggingface.co/unsloth/Qwen3-VL-30B-A3B-Instruct-GGUF
+    files:
+      models:
+        - url: https://huggingface.co/unsloth/Qwen3-VL-30B-A3B-Instruct-GGUF/resolve/main/Qwen3-VL-30B-A3B-Instruct-UD-Q8_K_XL.gguf
+          size: 36.0 GB
+      proj:
+        url: https://huggingface.co/unsloth/Qwen3-VL-30B-A3B-Instruct-GGUF/resolve/main/mmproj-F16.gguf
+        size: 1.08 GB
+    capabilities:
+      endpoint: chat_completion
+      images: true
+      streaming: true
+      reasoning: true
+    metadata:
+      created: 2026-01-01T00:00:00Z
+      collections: https://huggingface.co/unsloth
+      description:
+        This is a quantized version of Alibaba's Qwen3-VL multimodal large language
+        model, specifically designed for efficient inference on resource-constrained
+        hardware while maintaining high accuracy.
+    config:
+      context-window: 8196
+      nbatch: 2048
+      nubatch: 2048
+      cache-type-k: f16
+      cache-type-v: f16
+      sampling-parameters:
+        temperature: 1
+        top_k: 40
+        top_p: 0.95
