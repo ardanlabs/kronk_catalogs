@@ -28,7 +28,7 @@ models:
       collections: https://huggingface.co/mradermacher
       description: Qwen2-Audio is the new series of Qwen large audio-language models. Qwen2-Audio is capable of accepting various audio signal inputs and performing audio analysis or direct textual responses with regard to speech instructions.
     config:
-      context-window: 8192
+      context-window: 131072
       nbatch: 2048
       nubatch: 2048
       cache-type-k: q8_0
