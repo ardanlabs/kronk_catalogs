@@ -246,7 +246,7 @@ models:
         top_k: 40
         top_p: 0.95
 
-  - id: Qwen3-VL-30B-A3B-Instruct-UD-Q8
+  - id: Qwen3-VL-30B-A3B-Instruct-Q8_0
     category: Image-Text-to-Text
     owned_by: unsloth
     model_family: Qwen3-VL-30B-A3B-Instruct-GGUF
