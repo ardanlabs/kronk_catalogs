@@ -16,7 +16,7 @@ models:
       tooling: true
     metadata:
       created: 2025-10-21T00:00:00Z
-      collections: https://huggingface.co/collections/bartowski
+      collections: https://huggingface.co/bartowski
       description:
         The Qwen3-Coder-30B-A3B-Instruct is a specialized, instruction-tuned
         Mixture-of-Experts (MoE) model for agentic coding tasks. Developed by Alibaba,
@@ -51,7 +51,7 @@ models:
       tooling: true
     metadata:
       created: 2025-08-08T00:00:00Z
-      collections: https://huggingface.co/collections/unsloth
+      collections: https://huggingface.co/unsloth
       description:
         OpenAI's GPT-OSS (OpenAI Open-Source Series) are open-weight large
         language models designed for powerful reasoning, agentic tasks, and on-premises
@@ -85,7 +85,7 @@ models:
       tooling: true
     metadata:
       created: 2025-08-08T00:00:00Z
-      collections: https://huggingface.co/collections/unsloth
+      collections: https://huggingface.co/unsloth
       description:
         OpenAI's GPT-OSS (OpenAI Open-Source Series) are open-weight large
         language models designed for powerful reasoning, agentic tasks, and on-premises
@@ -118,7 +118,7 @@ models:
       tooling: true
     metadata:
       created: 2026-01-20T00:00:00Z
-      collections: https://huggingface.co/collections/unsloth
+      collections: https://huggingface.co/unsloth
       description:
         GLM-4.7-Flash is a high-performance, lightweight Mixture-of-Experts
         (MoE) model released by Z.ai in January 2026, designed specifically for efficient
@@ -153,7 +153,7 @@ models:
       tooling: true
     metadata:
       created: 2026-01-20T00:00:00Z
-      collections: https://huggingface.co/collections/unsloth
+      collections: https://huggingface.co/unsloth
       description:
         GLM-4.7-Flash is a high-performance, lightweight Mixture-of-Experts
         (MoE) model released by Z.ai in January 2026, designed specifically for efficient
@@ -190,7 +190,7 @@ models:
       tooling: true
     metadata:
       created: 2025-05-10T00:00:00Z
-      collections: https://huggingface.co/collections/unsloth
+      collections: https://huggingface.co/unsloth
       description:
         Llama 3.3 70B is Meta's advanced, multilingual, open-source large
         language model (LLM) with 70 billion parameters, excelling in complex reasoning,
@@ -222,7 +222,7 @@ models:
       tooling: true
     metadata:
       created: 2025-05-03T00:00:00Z
-      collections: https://huggingface.co/collections/Qwen
+      collections: https://huggingface.co/Qwen
       description:
         Qwen3 is the latest generation of large language models in Qwen series,
         offering a comprehensive suite of dense and mixture-of-experts (MoE) models.
@@ -254,7 +254,7 @@ models:
       tooling: true
     metadata:
       created: 2025-08-05T00:00:00Z
-      collections: https://huggingface.co/collections/unsloth
+      collections: https://huggingface.co/unsloth
       description:
         The Qwen3-Coder-30B-A3B-Instruct is a specialized, instruction-tuned
         Mixture-of-Experts (MoE) model for agentic coding tasks. Developed by Alibaba,
@@ -288,7 +288,7 @@ models:
       tooling: true
     metadata:
       created: 2025-08-05T00:00:00Z
-      collections: https://huggingface.co/collections/unsloth
+      collections: https://huggingface.co/unsloth
       description:
         The Qwen3-Coder-30B-A3B-Instruct is a specialized, instruction-tuned
         Mixture-of-Experts (MoE) model for agentic coding tasks. Developed by Alibaba,
@@ -323,7 +323,7 @@ models:
       tooling: true
     metadata:
       created: 2025-12-16T00:00:00Z
-      collections: collections/unsloth
+      collections: https://huggingface.co/unsloth
       description:
         The rnj-1-instruct-Q6_K is a quantized version of the rnj-1-instruct
         8-billion parameter model, specifically optimized for high-performance coding,
@@ -351,7 +351,7 @@ models:
       tooling: true
     metadata:
       created: 2026-02-03T00:00:00Z
-      collections: collections/unsloth
+      collections: https://huggingface.co/unsloth
       description:
         The Qwen3-Coder-Next-UD-Q2_K_XL is a highly efficient, 2-bit quantized,
         80-billion parameter Mixture-of-Experts (MoE) model released by Alibaba's Qwen
@@ -385,7 +385,7 @@ models:
       tooling: true
     metadata:
       created: 2026-02-03T00:00:00Z
-      collections: collections/unsloth
+      collections: https://huggingface.co/unsloth
       description:
         The Qwen3-Coder-Next-UD-Q4_K_XL is a highly efficient, 4-bit quantized,
         80-billion parameter Mixture-of-Experts (MoE) model released by Alibaba's Qwen
@@ -423,7 +423,7 @@ models:
       tooling: true
     metadata:
       created: 2026-02-03T00:00:00Z
-      collections: collections/unsloth
+      collections: https://huggingface.co/unsloth
       description:
         The Qwen3-Coder-Next-UD-Q5_K_XL is a highly efficient, 5-bit quantized,
         80-billion parameter Mixture-of-Experts (MoE) model released by Alibaba's Qwen
@@ -461,7 +461,7 @@ models:
       tooling: true
     metadata:
       created: 2026-02-03T00:00:00Z
-      collections: collections/unsloth
+      collections: https://huggingface.co/unsloth
       description:
         The Qwen3-Coder-Next-UD-Q6_K_XL is a highly efficient, 6-bit quantized,
         80-billion parameter Mixture-of-Experts (MoE) model released by Alibaba's Qwen
@@ -499,7 +499,7 @@ models:
       tooling: true
     metadata:
       created: 2026-02-03T00:00:00Z
-      collections: collections/unsloth
+      collections: https://huggingface.co/unsloth
       description:
         The Qwen3-Coder-Next-UD-Q8_K_XL is a highly efficient, 8-bit quantized,
         80-billion parameter Mixture-of-Experts (MoE) model released by Alibaba's Qwen
