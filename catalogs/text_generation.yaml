@@ -129,40 +129,6 @@ models:
         top_k: 40
         top_p: 0.9
 
-  - id: Qwen3.5-35B-A3B-UD-Q8_K_XL
-    category: Text-Generation
-    owned_by: unsloth
-    model_family: Qwen3.5-35B-A3B-UD-Q8_K_XL
-    web_page: https://huggingface.co/unsloth/Qwen3.5-35B-A3B-GGUF
-    template: qwen3.5.jinja
-    files:
-      models:
-        - url: https://huggingface.co/unsloth/Qwen3.5-35B-A3B-GGUF/resolve/main/Qwen3.5-35B-A3B-UD-Q8_K_XL.gguf
-          size: 42.0 GB
-    capabilities:
-      endpoint: chat_completion
-      streaming: true
-      tooling: true
-    metadata:
-      created: 2026-02-03T00:00:00Z
-      collections: https://huggingface.co/unsloth
-      description:
-        The Qwen3.5-35B-A3B-GGUF is a new, highly efficient, and powerful
-        medium-sized multimodal model from Alibaba's Qwen team, released in
-        February 2026. It is part of the Qwen3.5 family designed for local deployment,
-        featuring advanced Mixture-of-Experts (MoE) architecture that delivers high
-        performance with fewer activated parameters.
-    config:
-      context-window: 131072
-      nbatch: 2048
-      nubatch: 2048
-      cache-type-k: f16
-      cache-type-v: f16
-      sampling-parameters:
-        temperature: 1.0
-        top_k: 40
-        top_p: 0.95
-
   - id: gpt-oss-120b-F16
     category: Text-Generation
     owned_by: unsloth
