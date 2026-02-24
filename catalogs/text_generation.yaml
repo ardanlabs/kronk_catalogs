@@ -1,5 +1,36 @@
 catalog: Text-Generation
 models:
+  - id: Qwen3-0.6B-Q8_0
+    category: Text-Generation
+    owned_by: Qwen
+    model_family: Qwen3-0.6B-GGUF
+    web_page: https://huggingface.co/unsloth/Qwen3-0.6B-GGUF
+    files:
+      models:
+        - url: https://huggingface.co/unsloth/Qwen3-0.6B-GGUF/resolve/918ea7d329d2619ef2e2f3e92943cc561b00ecb5/Qwen3-0.6B-Q8_0.gguf
+          size: 639 MB
+    capabilities:
+      endpoint: chat_completion
+      streaming: true
+      reasoning: true
+    metadata:
+      created: 2025-05-03T00:00:00Z
+      collections: https://huggingface.co/Qwen
+      description:
+        Qwen3 is the latest generation of large language models in Qwen series,
+        offering a comprehensive suite of dense and mixture-of-experts (MoE) models.
+    config:
+      context-window: 40960
+      nbatch: 2048
+      nubatch: 512
+      cache-type-k: q8_0
+      cache-type-v: q8_0
+      nseq-max: 1
+      sampling-parameters:
+        temperature: 0.7
+        top_k: 20
+        top_p: 0.8
+
   - id: rnj-1-instruct-Q6_K
     category: Text-Generation
     owned_by: unsloth
