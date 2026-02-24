@@ -1,72 +1,65 @@
 catalog: Text-Generation
 models:
-  - id: cerebras_Qwen3-Coder-REAP-25B-A3B-Q8_0
-    category: Text-Generation
-    owned_by: bartowski
-    model_family: cerebras_Qwen3-Coder-REAP-25B-A3B-GGUF
-    web_page: https://huggingface.co/bartowski/cerebras_Qwen3-Coder-REAP-25B-A3B-GGUF
-    template: qwen3-coder.jinja
-    files:
-      models:
-        - url: https://huggingface.co/bartowski/cerebras_Qwen3-Coder-REAP-25B-A3B-GGUF/resolve/main/cerebras_Qwen3-Coder-REAP-25B-A3B-Q8_0.gguf
-          size: 26.5 GB
-    capabilities:
-      endpoint: chat_completion
-      streaming: true
-      tooling: true
-    metadata:
-      created: 2025-10-21T00:00:00Z
-      collections: https://huggingface.co/bartowski
-      description:
-        The Qwen3-Coder-30B-A3B-Instruct is a specialized, instruction-tuned
-        Mixture-of-Experts (MoE) model for agentic coding tasks. Developed by Alibaba,
-        it excels in code generation, understanding large codebases, and using external
-        tools with a high degree of efficiency.
-    config:
-      context-window: 131072
-      nbatch: 2048
-      nubatch: 2048
-      cache-type-k: f16
-      cache-type-v: f16
-      nseq-max: 1
-      sampling-parameters:
-        temperature: 0.8
-        top_k: 40
-        top_p: 0.9
-
-  - id: gpt-oss-120b-F16
+  - id: rnj-1-instruct-Q6_K
     category: Text-Generation
     owned_by: unsloth
-    model_family: gpt-oss-120b-GGUF
-    web_page: https://huggingface.co/unsloth/gpt-oss-120b-GGUF
-    template: gpt-oss.jinja
+    model_family: rnj-1-instruct-GGUF
+    web_page: https://huggingface.co/unsloth/rnj-1-instruct-GGUF
+    template: rnj-1.jinja
     files:
       models:
-        - url: https://huggingface.co/unsloth/gpt-oss-120b-GGUF/resolve/main/gpt-oss-120b-F16.gguf
-          size: 65.4 GB
+        - url: https://huggingface.co/unsloth/rnj-1-instruct-GGUF/resolve/main/rnj-1-instruct-Q6_K.gguf
+          size: 6.4 GB
     capabilities:
       endpoint: chat_completion
       streaming: true
       reasoning: true
       tooling: true
     metadata:
-      created: 2025-08-08T00:00:00Z
+      created: 2025-12-16T00:00:00Z
       collections: https://huggingface.co/unsloth
       description:
-        OpenAI's GPT-OSS (OpenAI Open-Source Series) are open-weight large
-        language models designed for powerful reasoning, agentic tasks, and on-premises
-        deployment, released under a permissive Apache 2.0 license.
+        The rnj-1-instruct-Q6_K is a quantized version of the rnj-1-instruct
+        8-billion parameter model, specifically optimized for high-performance coding,
+        STEM, and agentic workflows, developed by Essential AI.
     config:
-      context-window: 131072
+      context-window: 32768
       nbatch: 2048
-      nubatch: 2048
-      cache-type-k: f16
-      cache-type-v: f16
+      nubatch: 512
+      cache-type-k: q8_0
+      cache-type-v: q8_0
+
+  - id: Qwen3-8B-Q8_0
+    category: Text-Generation
+    owned_by: Qwen
+    model_family: Qwen3-8B-GGUF
+    web_page: https://huggingface.co/Qwen/Qwen3-8B-GGUF
+    files:
+      models:
+        - url: https://huggingface.co/Qwen/Qwen3-8B-GGUF/resolve/main/Qwen3-8B-Q8_0.gguf
+          size: 8.71 GB
+    capabilities:
+      endpoint: chat_completion
+      streaming: true
+      reasoning: true
+      tooling: true
+    metadata:
+      created: 2025-05-03T00:00:00Z
+      collections: https://huggingface.co/Qwen
+      description:
+        Qwen3 is the latest generation of large language models in Qwen series,
+        offering a comprehensive suite of dense and mixture-of-experts (MoE) models.
+    config:
+      context-window: 40960
+      nbatch: 2048
+      nubatch: 512
+      cache-type-k: q8_0
+      cache-type-v: q8_0
       nseq-max: 1
       sampling-parameters:
-        temperature: 1
-        top_k: 50
-        top_p: 1
+        temperature: 0.7
+        top_k: 20
+        top_p: 0.8
 
   - id: gpt-oss-20b-Q8_0
     category: Text-Generation
@@ -102,193 +95,23 @@ models:
         top_k: 50
         top_p: 1
 
-  - id: GLM-4.7-Flash-Q8_0
+  - id: cerebras_Qwen3-Coder-REAP-25B-A3B-Q8_0
     category: Text-Generation
-    owned_by: unsloth
-    model_family: GLM-4.7-Flash-GGUF
-    web_page: https://huggingface.co/unsloth/GLM-4.7-Flash-GGUF
-    template: glm-4.jinja
-    files:
-      models:
-        - url: https://huggingface.co/unsloth/GLM-4.7-Flash-GGUF/resolve/main/GLM-4.7-Flash-Q8_0.gguf
-          size: 31.8 GB
-    capabilities:
-      endpoint: chat_completion
-      streaming: true
-      tooling: true
-    metadata:
-      created: 2026-01-20T00:00:00Z
-      collections: https://huggingface.co/unsloth
-      description:
-        GLM-4.7-Flash is a high-performance, lightweight Mixture-of-Experts
-        (MoE) model released by Z.ai in January 2026, designed specifically for efficient
-        coding, agentic workflows, and fast local deployment. It is positioned as the
-        strongest in the 30B parameter class, balancing high performance with lower
-        computational requirements.
-    config:
-      context-window: 131072
-      nbatch: 2048
-      nubatch: 512
-      cache-type-k: q8_0
-      cache-type-v: q8_0
-      nseq-max: 1
-      sampling-parameters:
-        temperature: 0.7
-        top_k: 20
-        top_p: 0.8
-
-  - id: GLM-4.7-Flash-UD-Q8_K_XL
-    category: Text-Generation
-    owned_by: unsloth
-    model_family: GLM-4.7-Flash-GGUF
-    web_page: https://huggingface.co/unsloth/GLM-4.7-Flash-GGUF
-    template: glm-4.jinja
-    files:
-      models:
-        - url: https://huggingface.co/unsloth/GLM-4.7-Flash-GGUF/resolve/main/GLM-4.7-Flash-UD-Q8_K_XL.gguf
-          size: 35.1 GB
-    capabilities:
-      endpoint: chat_completion
-      streaming: true
-      tooling: true
-    metadata:
-      created: 2026-01-20T00:00:00Z
-      collections: https://huggingface.co/unsloth
-      description:
-        GLM-4.7-Flash is a high-performance, lightweight Mixture-of-Experts
-        (MoE) model released by Z.ai in January 2026, designed specifically for efficient
-        coding, agentic workflows, and fast local deployment. It is positioned as the
-        strongest in the 30B parameter class, balancing high performance with lower
-        computational requirements.
-    config:
-      context-window: 131072
-      nbatch: 2048
-      nubatch: 2048
-      cache-type-k: f16
-      cache-type-v: f16
-      nseq-max: 1
-      sampling-parameters:
-        temperature: 0.7
-        top_k: 20
-        top_p: 0.8
-
-  - id: Llama-3.3-70B-Instruct-Q8_0
-    category: Text-Generation
-    owned_by: unsloth
-    model_family: Llama-3.3-70B-Instruct-GGUF
-    web_page: https://huggingface.co/unsloth/Llama-3.3-70B-Instruct-GGUF
-    files:
-      models:
-        - url: https://huggingface.co/unsloth/Llama-3.3-70B-Instruct-GGUF/resolve/main/Llama-3.3-70B-Instruct-Q8_0/Llama-3.3-70B-Instruct-Q8_0-00001-of-00002.gguf
-          size: 39.8 GB
-        - url: https://huggingface.co/unsloth/Llama-3.3-70B-Instruct-GGUF/resolve/main/Llama-3.3-70B-Instruct-Q8_0/Llama-3.3-70B-Instruct-Q8_0-00002-of-00002.gguf
-          size: 35.2 GB
-    capabilities:
-      endpoint: chat_completion
-      streaming: true
-      reasoning: true
-      tooling: true
-    metadata:
-      created: 2025-05-10T00:00:00Z
-      collections: https://huggingface.co/unsloth
-      description:
-        Llama 3.3 70B is Meta's advanced, multilingual, open-source large
-        language model (LLM) with 70 billion parameters, excelling in complex reasoning,
-        dialogue, and coding tasks, delivering flagship-level performance (like 405B
-        models) with better efficiency, optimized for text-only applications, and featuring
-        improved instruction-following, safety, and tool-use capabilities for enterprise
-        and research use.
-    config:
-      context-window: 131072
-      nbatch: 2048
-      nubatch: 512
-      cache-type-k: f16
-      cache-type-v: f16
-      nseq-max: 1
-
-  - id: Qwen3-8B-Q8_0
-    category: Text-Generation
-    owned_by: Qwen
-    model_family: Qwen3-8B-GGUF
-    web_page: https://huggingface.co/Qwen/Qwen3-8B-GGUF
-    files:
-      models:
-        - url: https://huggingface.co/Qwen/Qwen3-8B-GGUF/resolve/main/Qwen3-8B-Q8_0.gguf
-          size: 8.71 GB
-    capabilities:
-      endpoint: chat_completion
-      streaming: true
-      reasoning: true
-      tooling: true
-    metadata:
-      created: 2025-05-03T00:00:00Z
-      collections: https://huggingface.co/Qwen
-      description:
-        Qwen3 is the latest generation of large language models in Qwen series,
-        offering a comprehensive suite of dense and mixture-of-experts (MoE) models.
-    config:
-      context-window: 40960
-      nbatch: 2048
-      nubatch: 512
-      cache-type-k: q8_0
-      cache-type-v: q8_0
-      nseq-max: 1
-      sampling-parameters:
-        temperature: 0.7
-        top_k: 20
-        top_p: 0.8
-
-  - id: Qwen3-Coder-30B-A3B-Instruct-Q8_0
-    category: Text-Generation
-    owned_by: unsloth
-    model_family: Qwen3-Coder-30B-A3B-Instruct-GGUF
-    web_page: https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF
+    owned_by: bartowski
+    model_family: cerebras_Qwen3-Coder-REAP-25B-A3B-GGUF
+    web_page: https://huggingface.co/bartowski/cerebras_Qwen3-Coder-REAP-25B-A3B-GGUF
     template: qwen3-coder.jinja
     files:
       models:
-        - url: https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF/resolve/main/Qwen3-Coder-30B-A3B-Instruct-Q8_0.gguf
-          size: 32.5 GB
+        - url: https://huggingface.co/bartowski/cerebras_Qwen3-Coder-REAP-25B-A3B-GGUF/resolve/main/cerebras_Qwen3-Coder-REAP-25B-A3B-Q8_0.gguf
+          size: 26.5 GB
     capabilities:
       endpoint: chat_completion
       streaming: true
       tooling: true
     metadata:
-      created: 2025-08-05T00:00:00Z
-      collections: https://huggingface.co/unsloth
-      description:
-        The Qwen3-Coder-30B-A3B-Instruct is a specialized, instruction-tuned
-        Mixture-of-Experts (MoE) model for agentic coding tasks. Developed by Alibaba,
-        it excels in code generation, understanding large codebases, and using external
-        tools with a high degree of efficiency.
-    config:
-      context-window: 131072
-      nbatch: 2048
-      nubatch: 2048
-      cache-type-k: q8_0
-      cache-type-v: q8_0
-      nseq-max: 1
-      sampling-parameters:
-        temperature: 0.8
-        top_k: 40
-        top_p: 0.9
-
-  - id: Qwen3-Coder-30B-A3B-Instruct-UD-Q8_K_XL
-    category: Text-Generation
-    owned_by: unsloth
-    model_family: Qwen3-Coder-30B-A3B-Instruct-GGUF
-    web_page: https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF
-    template: qwen3-coder.jinja
-    files:
-      models:
-        - url: https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF/resolve/main/Qwen3-Coder-30B-A3B-Instruct-UD-Q8_K_XL.gguf
-          size: 36.0 GB
-    capabilities:
-      endpoint: chat_completion
-      streaming: true
-      tooling: true
-    metadata:
-      created: 2025-08-05T00:00:00Z
-      collections: https://huggingface.co/unsloth
+      created: 2025-10-21T00:00:00Z
+      collections: https://huggingface.co/bartowski
       description:
         The Qwen3-Coder-30B-A3B-Instruct is a specialized, instruction-tuned
         Mixture-of-Experts (MoE) model for agentic coding tasks. Developed by Alibaba,
@@ -306,140 +129,73 @@ models:
         top_k: 40
         top_p: 0.9
 
-  - id: rnj-1-instruct-Q6_K
+  - id: Qwen3.5-35B-A3B-UD-Q8_K_XL
     category: Text-Generation
     owned_by: unsloth
-    model_family: rnj-1-instruct-GGUF
-    web_page: https://huggingface.co/unsloth/rnj-1-instruct-GGUF
-    template: rnj-1.jinja
+    model_family: Qwen3.5-35B-A3B-UD-Q8_K_XL
+    web_page: https://huggingface.co/unsloth/Qwen3.5-35B-A3B-GGUF
+    template: qwen3.5.jinja
     files:
       models:
-        - url: https://huggingface.co/unsloth/rnj-1-instruct-GGUF/resolve/main/rnj-1-instruct-Q6_K.gguf
-          size: 6.4 GB
+        - url: https://huggingface.co/unsloth/Qwen3.5-35B-A3B-GGUF/resolve/main/Qwen3.5-35B-A3B-UD-Q8_K_XL.gguf
+          size: 42.0 GB
+    capabilities:
+      endpoint: chat_completion
+      streaming: true
+      tooling: true
+    metadata:
+      created: 2026-02-03T00:00:00Z
+      collections: https://huggingface.co/unsloth
+      description:
+        The Qwen3.5-35B-A3B-GGUF is a new, highly efficient, and powerful
+        medium-sized multimodal model from Alibaba's Qwen team, released in
+        February 2026. It is part of the Qwen3.5 family designed for local deployment,
+        featuring advanced Mixture-of-Experts (MoE) architecture that delivers high
+        performance with fewer activated parameters.
+    config:
+      context-window: 131072
+      nbatch: 2048
+      nubatch: 2048
+      cache-type-k: f16
+      cache-type-v: f16
+      sampling-parameters:
+        temperature: 1.0
+        top_k: 40
+        top_p: 0.95
+
+  - id: gpt-oss-120b-F16
+    category: Text-Generation
+    owned_by: unsloth
+    model_family: gpt-oss-120b-GGUF
+    web_page: https://huggingface.co/unsloth/gpt-oss-120b-GGUF
+    template: gpt-oss.jinja
+    files:
+      models:
+        - url: https://huggingface.co/unsloth/gpt-oss-120b-GGUF/resolve/main/gpt-oss-120b-F16.gguf
+          size: 65.4 GB
     capabilities:
       endpoint: chat_completion
       streaming: true
       reasoning: true
       tooling: true
     metadata:
-      created: 2025-12-16T00:00:00Z
+      created: 2025-08-08T00:00:00Z
       collections: https://huggingface.co/unsloth
       description:
-        The rnj-1-instruct-Q6_K is a quantized version of the rnj-1-instruct
-        8-billion parameter model, specifically optimized for high-performance coding,
-        STEM, and agentic workflows, developed by Essential AI.
+        OpenAI's GPT-OSS (OpenAI Open-Source Series) are open-weight large
+        language models designed for powerful reasoning, agentic tasks, and on-premises
+        deployment, released under a permissive Apache 2.0 license.
     config:
-      context-window: 32768
-      nbatch: 2048
-      nubatch: 512
-      cache-type-k: q8_0
-      cache-type-v: q8_0
-
-  - id: Qwen3-Coder-Next-UD-Q2_K_XL
-    category: Text-Generation
-    owned_by: unsloth
-    model_family: Qwen3-Coder-Next-GGUF
-    web_page: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF
-    template: qwen3-next.jinja
-    files:
-      models:
-        - url: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF/resolve/main/Qwen3-Coder-Next-UD-Q2_K_XL.gguf
-          size: 30.2 GB
-    capabilities:
-      endpoint: chat_completion
-      streaming: true
-      tooling: true
-    metadata:
-      created: 2026-02-03T00:00:00Z
-      collections: https://huggingface.co/unsloth
-      description:
-        The Qwen3-Coder-Next-UD-Q2_K_XL is a highly efficient, 2-bit quantized,
-        80-billion parameter Mixture-of-Experts (MoE) model released by Alibaba's Qwen
-        team in February 2026. It is designed specifically for local, privacy-focused
-        AI coding agents, offering performance competitive with top-tier, far larger
-        models, while running on high-end consumer hardware.
-    config:
-      context-window: 98304
+      context-window: 131072
       nbatch: 2048
       nubatch: 2048
       cache-type-k: f16
       cache-type-v: f16
+      nseq-max: 1
       sampling-parameters:
-        temperature: 1.0
-        top_k: 40
-        top_p: 0.95
-
-  - id: Qwen3-Coder-Next-UD-Q4_K_XL
-    category: Text-Generation
-    owned_by: unsloth
-    model_family: Qwen3-Coder-Next-GGUF
-    web_page: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF
-    template: qwen3-next.jinja
-    files:
-      models:
-        - url: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF/resolve/main/Qwen3-Coder-Next-UD-Q4_K_XL.gguf
-          size: 44.6 GB
-    capabilities:
-      endpoint: chat_completion
-      streaming: true
-      tooling: true
-    metadata:
-      created: 2026-02-03T00:00:00Z
-      collections: https://huggingface.co/unsloth
-      description:
-        The Qwen3-Coder-Next-UD-Q4_K_XL is a highly efficient, 4-bit quantized,
-        80-billion parameter Mixture-of-Experts (MoE) model released by Alibaba's Qwen
-        team in February 2026. It is designed specifically for local, privacy-focused
-        AI coding agents, offering performance competitive with top-tier, far larger
-        models, while running on high-end consumer hardware.
-    config:
-      context-window: 98304
-      nbatch: 2048
-      nubatch: 2048
-      cache-type-k: f16
-      cache-type-v: f16
-      sampling-parameters:
-        temperature: 1.0
-        top_k: 40
-        top_p: 0.95
-
-  - id: Qwen3-Coder-Next-UD-Q5_K_XL
-    category: Text-Generation
-    owned_by: unsloth
-    model_family: Qwen3-Coder-Next-GGUF
-    web_page: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF
-    template: qwen3-next.jinja
-    files:
-      models:
-        - url: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF/resolve/main/UD-Q5_K_XL/Qwen3-Coder-Next-UD-Q5_K_XL-00001-of-00003.gguf
-          size: 5.94 MB
-        - url: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF/resolve/main/UD-Q5_K_XL/Qwen3-Coder-Next-UD-Q5_K_XL-00002-of-00003.gguf
-          size: 49.7 GB
-        - url: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF/resolve/main/UD-Q5_K_XL/Qwen3-Coder-Next-UD-Q5_K_XL-00003-of-00003.gguf
-          size: 7.14 GB
-    capabilities:
-      endpoint: chat_completion
-      streaming: true
-      tooling: true
-    metadata:
-      created: 2026-02-03T00:00:00Z
-      collections: https://huggingface.co/unsloth
-      description:
-        The Qwen3-Coder-Next-UD-Q5_K_XL is a highly efficient, 5-bit quantized,
-        80-billion parameter Mixture-of-Experts (MoE) model released by Alibaba's Qwen
-        team in February 2026. It is designed specifically for local, privacy-focused
-        AI coding agents, offering performance competitive with top-tier, far larger
-        models, while running on high-end consumer hardware.
-    config:
-      context-window: 98304
-      nbatch: 2048
-      nubatch: 2048
-      cache-type-k: f16
-      cache-type-v: f16
-      sampling-parameters:
-        temperature: 1.0
-        top_k: 40
-        top_p: 0.95
+        temperature: 1
+        top_k: 50
+        top_p: 1
 
   - id: Qwen3-Coder-Next-UD-Q6_K_XL
     category: Text-Generation
@@ -464,44 +220,6 @@ models:
       collections: https://huggingface.co/unsloth
       description:
         The Qwen3-Coder-Next-UD-Q6_K_XL is a highly efficient, 6-bit quantized,
-        80-billion parameter Mixture-of-Experts (MoE) model released by Alibaba's Qwen
-        team in February 2026. It is designed specifically for local, privacy-focused
-        AI coding agents, offering performance competitive with top-tier, far larger
-        models, while running on high-end consumer hardware.
-    config:
-      context-window: 98304
-      nbatch: 2048
-      nubatch: 2048
-      cache-type-k: f16
-      cache-type-v: f16
-      sampling-parameters:
-        temperature: 1.0
-        top_k: 40
-        top_p: 0.95
-
-  - id: Qwen3-Coder-Next-UD-Q8_K_XL
-    category: Text-Generation
-    owned_by: unsloth
-    model_family: Qwen3-Coder-Next-GGUF
-    web_page: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF
-    template: qwen3-next.jinja
-    files:
-      models:
-        - url: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF/resolve/main/UD-Q8_K_XL/Qwen3-Coder-Next-UD-Q8_K_XL-00001-of-00003.gguf
-          size: 5.94 MB
-        - url: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF/resolve/main/UD-Q8_K_XL/Qwen3-Coder-Next-UD-Q8_K_XL-00002-of-00003.gguf
-          size: 50.0 GB
-        - url: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF/resolve/main/UD-Q8_K_XL/Qwen3-Coder-Next-UD-Q8_K_XL-00003-of-00003.gguf
-          size: 43.4 GB
-    capabilities:
-      endpoint: chat_completion
-      streaming: true
-      tooling: true
-    metadata:
-      created: 2026-02-03T00:00:00Z
-      collections: https://huggingface.co/unsloth
-      description:
-        The Qwen3-Coder-Next-UD-Q8_K_XL is a highly efficient, 8-bit quantized,
         80-billion parameter Mixture-of-Experts (MoE) model released by Alibaba's Qwen
         team in February 2026. It is designed specifically for local, privacy-focused
         AI coding agents, offering performance competitive with top-tier, far larger
