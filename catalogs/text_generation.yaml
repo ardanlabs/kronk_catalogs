@@ -123,7 +123,7 @@ models:
       nseq-max: 1
       sampling-parameters:
         temperature: 1
-        top_k: 20
+        top_k: 0
         top_p: 1
 
   - id: cerebras_Qwen3-Coder-REAP-25B-A3B-Q8_0
@@ -191,7 +191,7 @@ models:
       nseq-max: 1
       sampling-parameters:
         temperature: 1
-        top_k: 50
+        top_k: 0
         top_p: 1
 
   - id: Qwen3-Coder-Next-UD-Q6_K_XL
