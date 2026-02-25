@@ -211,7 +211,7 @@ models:
       cache-type-v: f16
       sampling-parameters:
         temperature: 1.0
-        top_k: 40
+        top_k: 20
         top_p: 0.95
 
   - id: Qwen3.5-35B-A3B-UD-Q8_K_XL
@@ -286,5 +286,5 @@ models:
       cache-type-v: f16
       sampling-parameters:
         temperature: 1
-        top_k: 40
+        top_k: 20
         top_p: 0.95
