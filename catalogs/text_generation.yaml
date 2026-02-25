@@ -194,6 +194,44 @@ models:
         top_k: 0
         top_p: 1
 
+  - id: Qwen3-Coder-Next-Q6_K
+    category: Text-Generation
+    owned_by: unsloth
+    model_family: Qwen3-Coder-Next-GGUF
+    web_page: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF
+    template: qwen3-next.jinja
+    files:
+      models:
+        - url: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF/resolve/main/Q6_K/Qwen3-Coder-Next-Q6_K-00001-of-00003.gguf
+          size: 5.94 MB
+        - url: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF/resolve/main/Q6_K/Qwen3-Coder-Next-Q6_K-00002-of-00003.gguf
+          size: 49.8 GB
+        - url: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF/resolve/main/Q6_K/Qwen3-Coder-Next-Q6_K-00003-of-00003.gguf
+          size: 15.8 GB
+    capabilities:
+      endpoint: chat_completion
+      streaming: true
+      tooling: true
+    metadata:
+      created: 2026-02-03T00:00:00Z
+      collections: https://huggingface.co/unsloth
+      description:
+        The Qwen3-Coder-Next-GGUF is a highly efficient, 6-bit quantized,
+        80-billion parameter Mixture-of-Experts (MoE) model released by Alibaba's Qwen
+        team in February 2026. It is designed specifically for local, privacy-focused
+        AI coding agents, offering performance competitive with top-tier, far larger
+        models, while running on high-end consumer hardware.
+    config:
+      context-window: 98304
+      nbatch: 2048
+      nubatch: 2048
+      cache-type-k: f16
+      cache-type-v: f16
+      sampling-parameters:
+        temperature: 1.0
+        top_k: 20
+        top_p: 0.95
+
   - id: Qwen3-Coder-Next-UD-Q6_K_XL
     category: Text-Generation
     owned_by: unsloth
@@ -216,7 +254,7 @@ models:
       created: 2026-02-03T00:00:00Z
       collections: https://huggingface.co/unsloth
       description:
-        The Qwen3-Coder-Next-UD-Q6_K_XL is a highly efficient, 6-bit quantized,
+        The Qwen3-Coder-Next-GGUF is a highly efficient, 6-bit quantized,
         80-billion parameter Mixture-of-Experts (MoE) model released by Alibaba's Qwen
         team in February 2026. It is designed specifically for local, privacy-focused
         AI coding agents, offering performance competitive with top-tier, far larger
