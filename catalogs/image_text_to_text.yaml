@@ -4,6 +4,7 @@ models:
     category: Image-Text-to-Text
     owned_by: google
     model_family: gemma-3-4b-it-qat-q4_0-gguf
+    architecture: Dense
     web_page: https://huggingface.co/google/gemma-3-4b-it-qat-q4_0-gguf
     gated_model: true
     template: gemma-3.jinja
@@ -40,6 +41,7 @@ models:
     category: Image-Text-to-Text
     owned_by: ggml-org
     model_family: Qwen2.5-VL-3B-Instruct-GGUF
+    architecture: Dense
     web_page: https://huggingface.co/ggml-org/Qwen2.5-VL-3B-Instruct-GGUF
     template:
     files:
@@ -75,6 +77,7 @@ models:
     category: Image-Text-to-Text
     owned_by: unsloth
     model_family: Ministral-3-14B-Instruct-2512-GGUF
+    architecture: Dense
     web_page: https://huggingface.co/unsloth/Ministral-3-14B-Instruct-2512-GGUF
     template: ministral.jinja
     files:
@@ -109,6 +112,7 @@ models:
     category: Image-Text-to-Text
     owned_by: unsloth
     model_family: Ministral-3-14B-Instruct-2512-GGUF
+    architecture: Dense
     web_page: https://huggingface.co/unsloth/Ministral-3-14B-Instruct-2512-GGUF
     template: ministral.jinja
     files:
@@ -144,6 +148,7 @@ models:
     category: Image-Text-to-Text
     owned_by: unsloth
     model_family: Qwen3-VL-30B-A3B-Instruct-GGUF
+    architecture: MoE
     web_page: https://huggingface.co/unsloth/Qwen3-VL-30B-A3B-Instruct-GGUF
     files:
       models:
@@ -179,6 +184,7 @@ models:
     category: Image-Text-to-Text
     owned_by: unsloth
     model_family: Qwen3.5-35B-A3B-GGUF
+    architecture: Hybrid
     web_page: https://huggingface.co/unsloth/Qwen3.5-35B-A3B-GGUF
     template: qwen3.5.jinja
     files:
@@ -218,6 +224,7 @@ models:
     category: Image-Text-to-Text
     owned_by: unsloth
     model_family: Qwen3.5-35B-A3B-GGUF
+    architecture: Hybrid
     web_page: https://huggingface.co/unsloth/Qwen3.5-35B-A3B-GGUF
     template: qwen3.5.jinja
     files:
@@ -257,6 +264,7 @@ models:
     category: Image-Text-to-Text
     owned_by: unsloth
     model_family: Qwen3.5-35B-A3B-GGUF
+    architecture: Hybrid
     web_page: https://huggingface.co/unsloth/Qwen3.5-35B-A3B-GGUF
     template: qwen3.5.jinja
     files:
@@ -296,6 +304,7 @@ models:
     category: Image-Text-to-Text
     owned_by: unsloth
     model_family: Qwen3.5-35B-A3B-UD-Q8_K_XL
+    architecture: Hybrid
     web_page: https://huggingface.co/unsloth/Qwen3.5-35B-A3B-GGUF
     template: qwen3.5.jinja
     files:
@@ -335,6 +344,7 @@ models:
     category: Image-Text-to-Text
     owned_by: unsloth
     model_family: GLM-4.6V-GGUF
+    architecture: MoE
     web_page: https://huggingface.co/unsloth/GLM-4.6V-GGUF
     files:
       models:

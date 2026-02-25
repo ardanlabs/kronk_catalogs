@@ -4,6 +4,7 @@ models:
     category: Rerank
     owned_by: ggml-org
     model_family: bge-reranker-v2-m3-GGUF
+    architecture: Dense
     web_page: https://huggingface.co/gpustack/bge-reranker-v2-m3-GGUF
     template:
     files:

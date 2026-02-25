@@ -4,6 +4,7 @@ models:
     category: Audio-Text-to-Text
     owned_by: mradermacher
     model_family: Qwen2-Audio-7B-GGUF
+    architecture: Dense
     web_page: https://huggingface.co/mradermacher/Qwen2-Audio-7B-GGUF
     template:
     files:

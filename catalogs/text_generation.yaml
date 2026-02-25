@@ -4,6 +4,7 @@ models:
     category: Text-Generation
     owned_by: Qwen
     model_family: Qwen3-0.6B-GGUF
+    architecture: Dense
     web_page: https://huggingface.co/unsloth/Qwen3-0.6B-GGUF
     files:
       models:
@@ -35,6 +36,7 @@ models:
     category: Text-Generation
     owned_by: unsloth
     model_family: rnj-1-instruct-GGUF
+    architecture: Dense
     web_page: https://huggingface.co/unsloth/rnj-1-instruct-GGUF
     template: rnj-1.jinja
     files:
@@ -64,6 +66,7 @@ models:
     category: Text-Generation
     owned_by: Qwen
     model_family: Qwen3-8B-GGUF
+    architecture: Dense
     web_page: https://huggingface.co/Qwen/Qwen3-8B-GGUF
     files:
       models:
@@ -96,6 +99,7 @@ models:
     category: Text-Generation
     owned_by: unsloth
     model_family: gpt-oss-20b-GGUF
+    architecture: Dense
     web_page: https://huggingface.co/unsloth/gpt-oss-20b-GGUF
     template: gpt-oss.jinja
     files:
@@ -130,6 +134,7 @@ models:
     category: Text-Generation
     owned_by: bartowski
     model_family: cerebras_Qwen3-Coder-REAP-25B-A3B-GGUF
+    architecture: MoE
     web_page: https://huggingface.co/bartowski/cerebras_Qwen3-Coder-REAP-25B-A3B-GGUF
     template: qwen3-coder.jinja
     files:
@@ -164,6 +169,7 @@ models:
     category: Text-Generation
     owned_by: unsloth
     model_family: gpt-oss-120b-GGUF
+    architecture: Dense
     web_page: https://huggingface.co/unsloth/gpt-oss-120b-GGUF
     template: gpt-oss.jinja
     files:
@@ -198,6 +204,7 @@ models:
     category: Text-Generation
     owned_by: unsloth
     model_family: Qwen3-Coder-Next-GGUF
+    architecture: Hybrid
     web_page: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF
     template: qwen3-next.jinja
     files:
@@ -236,6 +243,7 @@ models:
     category: Text-Generation
     owned_by: unsloth
     model_family: Qwen3-Coder-Next-GGUF
+    architecture: Hybrid
     web_page: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF
     template: qwen3-next.jinja
     files:
