@@ -250,7 +250,7 @@ models:
       cache-type-v: f16
       sampling-parameters:
         temperature: 1.0
-        top_k: 40
+        top_k: 20
         top_p: 0.95
 
   - id: GLM-4.6V-UD-Q5_K_XL
