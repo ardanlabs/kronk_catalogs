@@ -32,7 +32,7 @@ models:
         top_k: 20
         top_p: 0.8
 
-  - id: LFM2-700M-UD-Q8_0
+  - id: LFM2-700M-Q8_0
     category: Text-Generation
     owned_by: unsloth
     model_family: LFM2-700M-GGUF
@@ -83,9 +83,9 @@ models:
     config:
       context-window: 32768
       nbatch: 2048
-      nubatch: 512
-      cache-type-k: q8_0
-      cache-type-v: q8_0
+      nubatch: 2048
+      cache-type-k: f16
+      cache-type-v: f16
       sampling-parameters:
         temperature: 0.3
         min_p: 0.15
