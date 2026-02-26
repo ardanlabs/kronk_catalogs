@@ -32,6 +32,95 @@ models:
         top_k: 20
         top_p: 0.8
 
+  - id: LFM2-700M-UD-Q8_0
+    category: Text-Generation
+    owned_by: unsloth
+    model_family: LFM2-700M-GGUF
+    web_page: https://huggingface.co/unsloth/LFM2-700M-GGUF
+    files:
+      models:
+        - url: https://huggingface.co/unsloth/LFM2-700M-GGUF/resolve/main/LFM2-700M-Q8_0.gguf
+          size: 792 MB
+    capabilities:
+      endpoint: chat_completion
+      streaming: true
+    metadata:
+      created: 2025-07-11T00:00:00Z
+      collections: collections/unsloth
+      description:
+        LFM2 is a new generation of hybrid models developed by Liquid AI,
+        specifically designed for edge AI and on-device deployment. It sets a new standard
+        in terms of quality, speed, and memory efficiency.
+    config:
+      context-window: 32768
+      nbatch: 2048
+      nubatch: 512
+      cache-type-k: q8_0
+      cache-type-v: q8_0
+      sampling-parameters:
+        temperature: 0.3
+        min_p: 0.15
+
+  - id: LFM2-700M-UD-Q8_K_XL
+    category: Text-Generation
+    owned_by: unsloth
+    model_family: LFM2-700M-GGUF
+    web_page: https://huggingface.co/unsloth/LFM2-700M-GGUF
+    files:
+      models:
+        - url: https://huggingface.co/unsloth/LFM2-700M-GGUF/resolve/main/LFM2-700M-UD-Q8_K_XL.gguf
+          size: 866 MB
+    capabilities:
+      endpoint: chat_completion
+      streaming: true
+    metadata:
+      created: 2025-07-11T00:00:00Z
+      collections: collections/unsloth
+      description:
+        LFM2 is a new generation of hybrid models developed by Liquid AI,
+        specifically designed for edge AI and on-device deployment. It sets a new standard
+        in terms of quality, speed, and memory efficiency.
+    config:
+      context-window: 32768
+      nbatch: 2048
+      nubatch: 512
+      cache-type-k: q8_0
+      cache-type-v: q8_0
+      sampling-parameters:
+        temperature: 0.3
+        min_p: 0.15
+
+  - id: LFM2-700M-F16
+    category: Text-Generation
+    owned_by: unsloth
+    model_family: LFM2-700M-GGUF
+    web_page: https://huggingface.co/unsloth/LFM2-700M-GGUF
+    files:
+      models:
+        - url: https://huggingface.co/unsloth/LFM2-700M-GGUF/resolve/main/LFM2-700M-F16.gguf
+          size: 1.5 GB
+    capabilities:
+      endpoint: chat_completion
+      streaming: true
+    metadata:
+      created: 2025-07-11T00:00:00Z
+      collections: collections/unsloth
+      description:
+        LFM2 is a new generation of hybrid models developed by Liquid AI,
+        specifically designed for edge AI and on-device deployment. It sets a new standard
+        in terms of quality, speed, and memory efficiency.
+    config:
+      context-window: 32768
+      nbatch: 2048
+      nubatch: 2048
+      cache-type-k: f16
+      cache-type-v: f16
+      sampling-parameters:
+        temperature: 0.3
+        min_p: 0.15
+        enable_thinking: "true"
+        reasoning_effort: medium
+
   - id: rnj-1-instruct-Q6_K
     category: Text-Generation
     owned_by: unsloth
@@ -127,7 +216,6 @@ models:
       nseq-max: 1
       sampling-parameters:
         temperature: 1
-        top_k: 0
         top_p: 1
 
   - id: cerebras_Qwen3-Coder-REAP-25B-A3B-Q8_0
@@ -197,7 +285,6 @@ models:
       nseq-max: 1
       sampling-parameters:
         temperature: 1
-        top_k: 0
         top_p: 1
 
   - id: Qwen3-Coder-Next-Q6_K
@@ -235,7 +322,7 @@ models:
       cache-type-k: f16
       cache-type-v: f16
       sampling-parameters:
-        temperature: 1.0
+        temperature: 1
         top_k: 20
         top_p: 0.95
 
@@ -274,6 +361,6 @@ models:
       cache-type-k: f16
       cache-type-v: f16
       sampling-parameters:
-        temperature: 1.0
+        temperature: 1
         top_k: 20
         top_p: 0.95

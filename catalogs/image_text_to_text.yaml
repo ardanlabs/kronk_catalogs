@@ -1,41 +1,70 @@
 catalog: Image-Text-to-Text
 models:
-  - id: gemma-3-4b-it-q4_0
-    category: Image-Text-to-Text
-    owned_by: google
-    model_family: gemma-3-4b-it-qat-q4_0-gguf
-    architecture: Dense
-    web_page: https://huggingface.co/google/gemma-3-4b-it-qat-q4_0-gguf
-    gated_model: true
-    template: gemma-3.jinja
+  - id: LFM2.5-VL-1.6B-Q8_0
+    category: Text-Generation
+    owned_by: unsloth
+    model_family: LFM2.5-VL-1.6B-GGUF
+    web_page: https://huggingface.co/unsloth/LFM2.5-VL-1.6B-GGUF
     files:
       models:
-        - url: https://huggingface.co/google/gemma-3-4b-it-qat-q4_0-gguf/resolve/main/gemma-3-4b-it-q4_0.gguf
-          size: 3.16 GB
+        - url: https://huggingface.co/unsloth/LFM2.5-VL-1.6B-GGUF/resolve/main/LFM2.5-VL-1.6B-Q8_0.gguf
+          size: 1.25 GB
       proj:
-        url: https://huggingface.co/google/gemma-3-4b-it-qat-q4_0-gguf/resolve/main/mmproj-model-f16-4B.gguf
-        size: 851 MB
+        url: https://huggingface.co/unsloth/LFM2.5-VL-1.6B-GGUF/resolve/main/mmproj-F16.gguf
+        size: 854 MB
     capabilities:
       endpoint: chat_completion
-      images: true
-      audio: false
-      video: true
       streaming: true
-      reasoning: false
-      tooling: false
-      embedding: false
-      rerank: false
+      images: true
     metadata:
-      created: 2025-04-11T0:00:00Z
-      collections: https://huggingface.co/ggml-org
-      description: Gemma 3 is a new family of lightweight, open-weight AI models from Google, based on Gemini technology. It supports multiple types of data, such as text, images, and audio. It has a large context window of 128k and supports more than 140 languages.
+      created: 2025-07-11T00:00:00Z
+      collections: collections/unsloth
+      description:
+        LFM2.5-VL-1.6B is Liquid AI's refreshed version of the first vision-language
+        model, LFM2-VL-1.6B, built on an updated backbone LFM2.5-1.2B-Base and
+        tuned for stronger real-world performance.
     config:
       context-window: 131072
       nbatch: 2048
-      nubatch: 2048
+      nubatch: 512
       cache-type-k: q8_0
       cache-type-v: q8_0
-      flash-attention: enabled
+      sampling-parameters:
+        temperature: 0.1
+        min_p: 0.15
+
+  - id: LFM2.5-VL-1.6B-UD-Q8_K_XL
+    category: Text-Generation
+    owned_by: unsloth
+    model_family: LFM2.5-VL-1.6B-GGUF
+    web_page: https://huggingface.co/unsloth/LFM2.5-VL-1.6B-GGUF
+    files:
+      models:
+        - url: https://huggingface.co/unsloth/LFM2.5-VL-1.6B-GGUF/resolve/main/LFM2.5-VL-1.6B-UD-Q8_K_XL.gguf
+          size: 1.37 GB
+      proj:
+        url: https://huggingface.co/unsloth/LFM2.5-VL-1.6B-GGUF/resolve/main/mmproj-F16.gguf
+        size: 854 MB
+    capabilities:
+      endpoint: chat_completion
+      streaming: true
+      images: true
+    metadata:
+      created: 2025-07-11T00:00:00Z
+      collections: collections/unsloth
+      description:
+        LFM2.5-VL-1.6B is Liquid AI's refreshed version of the first vision-language
+        model, LFM2-VL-1.6B, built on an updated backbone LFM2.5-1.2B-Base and
+        tuned for stronger real-world performance.
+    config:
+      context-window: 131072
+      nbatch: 2048
+      nubatch: 512
+      cache-type-k: q8_0
+      cache-type-v: q8_0
+      sampling-parameters:
+        temperature: 0.1
+        min_p: 0.15
 
   - id: Qwen2.5-VL-3B-Instruct-Q8_0
     category: Image-Text-to-Text
@@ -54,13 +83,8 @@ models:
     capabilities:
       endpoint: chat_completion
       images: true
-      audio: false
       video: true
       streaming: true
-      reasoning: false
-      tooling: false
-      embedding: false
-      rerank: false
     metadata:
       created: 2025-04-13T0:00:00Z
       collections: https://huggingface.co/ggml-org
