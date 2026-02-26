@@ -3,6 +3,7 @@ models:
   - id: LFM2.5-VL-1.6B-Q8_0
     category: Image-Text-to-Text
     owned_by: unsloth
+    architecture: Hybrid
     model_family: LFM2.5-VL-1.6B-GGUF
     web_page: https://huggingface.co/unsloth/LFM2.5-VL-1.6B-GGUF
     template: lfm2.5-vl.jinja
@@ -28,8 +29,8 @@ models:
       context-window: 131072
       nbatch: 2048
       nubatch: 512
-      cache-type-k: q8_0
-      cache-type-v: q8_0
+      cache-type-k: f16
+      cache-type-v: f16
       sampling-parameters:
         temperature: 0.1
         min_p: 0.15
@@ -38,6 +39,7 @@ models:
     category: Image-Text-to-Text
     owned_by: unsloth
     model_family: LFM2.5-VL-1.6B-GGUF
+    architecture: Hybrid
     web_page: https://huggingface.co/unsloth/LFM2.5-VL-1.6B-GGUF
     template: lfm2.5-vl.jinja
     files:

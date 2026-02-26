@@ -36,6 +36,7 @@ models:
     category: Text-Generation
     owned_by: unsloth
     model_family: LFM2-700M-GGUF
+    architecture: Hybrid
     web_page: https://huggingface.co/unsloth/LFM2-700M-GGUF
     files:
       models:
@@ -55,8 +56,8 @@ models:
       context-window: 32768
       nbatch: 2048
       nubatch: 512
-      cache-type-k: q8_0
-      cache-type-v: q8_0
+      cache-type-k: f16
+      cache-type-v: f16
       sampling-parameters:
         temperature: 0.3
         min_p: 0.15
@@ -64,6 +65,7 @@ models:
   - id: LFM2-700M-UD-Q8_K_XL
     category: Text-Generation
     owned_by: unsloth
+    architecture: Hybrid
     model_family: LFM2-700M-GGUF
     web_page: https://huggingface.co/unsloth/LFM2-700M-GGUF
     files:
@@ -93,6 +95,7 @@ models:
   - id: LFM2-700M-F16
     category: Text-Generation
     owned_by: unsloth
+    architecture: Hybrid
     model_family: LFM2-700M-GGUF
     web_page: https://huggingface.co/unsloth/LFM2-700M-GGUF
     files:
