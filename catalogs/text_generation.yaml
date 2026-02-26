@@ -173,8 +173,9 @@ models:
       created: 2025-05-03T00:00:00Z
       collections: https://huggingface.co/Qwen
       description:
-        Qwen3 is the latest generation of large language models in Qwen series,
-        offering a comprehensive suite of dense and mixture-of-experts (MoE) models.
+        The Qwen3-8B-Q8_0 is a highly efficient, 8.2 billion parameter causal
+        language model from the Qwen3 series, heavily quantized using 8-bit
+        precision (Q8_0) for improved performance on consumer hardware
     config:
       context-window: 40960
       nbatch: 2048
