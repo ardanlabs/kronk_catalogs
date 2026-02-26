@@ -1,10 +1,11 @@
 catalog: Image-Text-to-Text
 models:
   - id: LFM2.5-VL-1.6B-Q8_0
-    category: Text-Generation
+    category: Image-Text-to-Text
     owned_by: unsloth
     model_family: LFM2.5-VL-1.6B-GGUF
     web_page: https://huggingface.co/unsloth/LFM2.5-VL-1.6B-GGUF
+    template: lfm2.5-vl.jinja
     files:
       models:
         - url: https://huggingface.co/unsloth/LFM2.5-VL-1.6B-GGUF/resolve/main/LFM2.5-VL-1.6B-Q8_0.gguf
@@ -34,10 +35,11 @@ models:
         min_p: 0.15
 
   - id: LFM2.5-VL-1.6B-UD-Q8_K_XL
-    category: Text-Generation
+    category: Image-Text-to-Text
     owned_by: unsloth
     model_family: LFM2.5-VL-1.6B-GGUF
     web_page: https://huggingface.co/unsloth/LFM2.5-VL-1.6B-GGUF
+    template: lfm2.5-vl.jinja
     files:
       models:
         - url: https://huggingface.co/unsloth/LFM2.5-VL-1.6B-GGUF/resolve/main/LFM2.5-VL-1.6B-UD-Q8_K_XL.gguf
@@ -59,9 +61,9 @@ models:
     config:
       context-window: 131072
       nbatch: 2048
-      nubatch: 512
-      cache-type-k: q8_0
-      cache-type-v: q8_0
+      nubatch: 2048
+      cache-type-k: f16
+      cache-type-v: f16
       sampling-parameters:
         temperature: 0.1
         min_p: 0.15
