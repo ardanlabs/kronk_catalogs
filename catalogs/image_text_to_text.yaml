@@ -208,7 +208,7 @@ models:
         top_k: 20
         top_p: 0.8
 
-  - id: Qwen3.5-35B-A3B-Q2_K_L
+  - id: Qwen3.5-35B-A3B-UD-Q2_K_XL
     category: Image-Text-to-Text
     owned_by: unsloth
     model_family: Qwen3.5-35B-A3B-GGUF
@@ -217,8 +217,8 @@ models:
     template: qwen3.5.jinja
     files:
       models:
-        - url: https://huggingface.co/unsloth/Qwen3.5-35B-A3B-GGUF/resolve/main/Qwen3.5-35B-A3B-Q2_K_L.gguf
-          size: 13 GB
+        - url: https://huggingface.co/unsloth/Qwen3.5-35B-A3B-GGUF/resolve/main/Qwen3.5-35B-A3B-UD-Q2_K_XL.gguf
+          size: 12.9 GB
       proj:
         url: https://huggingface.co/unsloth/Qwen3.5-35B-A3B-GGUF/resolve/main/mmproj-F16.gguf
         size: 899 MB
@@ -248,7 +248,7 @@ models:
         top_k: 20
         top_p: 0.95
 
-  - id: Qwen3.5-35B-A3B-UD-Q2_K_XL
+  - id: Qwen3.5-35B-A3B-Q8_0
     category: Image-Text-to-Text
     owned_by: unsloth
     model_family: Qwen3.5-35B-A3B-GGUF
@@ -257,8 +257,8 @@ models:
     template: qwen3.5.jinja
     files:
       models:
-        - url: https://huggingface.co/unsloth/Qwen3.5-35B-A3B-GGUF/resolve/main/Qwen3.5-35B-A3B-UD-Q2_K_XL.gguf
-          size: 13.6 GB
+        - url: https://huggingface.co/unsloth/Qwen3.5-35B-A3B-GGUF/resolve/main/Qwen3.5-35B-A3B-Q8_0.gguf
+          size: 36.9 GB
       proj:
         url: https://huggingface.co/unsloth/Qwen3.5-35B-A3B-GGUF/resolve/main/mmproj-F16.gguf
         size: 899 MB
@@ -298,7 +298,7 @@ models:
     files:
       models:
         - url: https://huggingface.co/unsloth/Qwen3.5-35B-A3B-GGUF/resolve/main/Qwen3.5-35B-A3B-UD-Q6_K_XL.gguf
-          size: 42.0 GB
+          size: 30.3 GB
       proj:
         url: https://huggingface.co/unsloth/Qwen3.5-35B-A3B-GGUF/resolve/main/mmproj-F16.gguf
         size: 899 MB
@@ -337,8 +337,8 @@ models:
     template: qwen3.5.jinja
     files:
       models:
-        - url: https://huggingface.co/unsloth/Qwen3.5-35B-A3B-GGUF/resolve/main/Qwen3.5-35B-A3B-UD-Q8_K_XL.gguf
-          size: 42.0 GB
+        - url: https://huggingface.co/unsloth/Qwen3.5-35B-A3B-GGUF/resolve/302b5995c34cc09188edb9b0680ad54b9e848154/Qwen3.5-35B-A3B-UD-Q8_K_XL.gguf
+          size: 38.7 GB
       proj:
         url: https://huggingface.co/unsloth/Qwen3.5-35B-A3B-GGUF/resolve/main/mmproj-F16.gguf
         size: 899 MB

@@ -368,3 +368,42 @@ models:
         temperature: 1
         top_k: 20
         top_p: 0.95
+
+  - id: Qwen3-Coder-Next-Q8_0
+    category: Text-Generation
+    owned_by: unsloth
+    model_family: Qwen3-Coder-Next-GGUF
+    architecture: Hybrid
+    web_page: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF
+    template: qwen3-next.jinja
+    files:
+      models:
+        - url: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF/resolve/main/Q8_0/Qwen3-Coder-Next-Q8_0-00001-of-00003.gguf
+          size: 5.94 MB
+        - url: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF/resolve/main/Q8_0/Qwen3-Coder-Next-Q8_0-00002-of-00003.gguf
+          size: 49.8 GB
+        - url: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF/resolve/main/Q8_0/Qwen3-Coder-Next-Q8_0-00003-of-00003.gguf
+          size: 35.0 GB
+    capabilities:
+      endpoint: chat_completion
+      streaming: true
+      tooling: true
+    metadata:
+      created: 2026-02-03T00:00:00Z
+      collections: https://huggingface.co/unsloth
+      description:
+        The Qwen3-Coder-Next-GGUF is a highly efficient, 6-bit quantized,
+        80-billion parameter Mixture-of-Experts (MoE) model released by Alibaba's Qwen
+        team in February 2026. It is designed specifically for local, privacy-focused
+        AI coding agents, offering performance competitive with top-tier, far larger
+        models, while running on high-end consumer hardware.
+    config:
+      context-window: 98304
+      nbatch: 2048
+      nubatch: 2048
+      cache-type-k: f16
+      cache-type-v: f16
+      sampling-parameters:
+        temperature: 1
+        top_k: 20
+        top_p: 0.95
