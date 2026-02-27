@@ -288,17 +288,17 @@ models:
         top_k: 20
         top_p: 0.95
 
-  - id: Qwen3.5-35B-A3B-Q8_0
+  - id: Qwen3.5-35B-A3B-UD-Q6_K_XL
     category: Image-Text-to-Text
     owned_by: unsloth
-    model_family: Qwen3.5-35B-A3B-GGUF
+    model_family: Qwen3.5-35B-A3B-UD-Q6_K_XL
     architecture: Hybrid
     web_page: https://huggingface.co/unsloth/Qwen3.5-35B-A3B-GGUF
     template: qwen3.5.jinja
     files:
       models:
-        - url: https://huggingface.co/unsloth/Qwen3.5-35B-A3B-GGUF/resolve/main/Qwen3.5-35B-A3B-Q8_0.gguf
-          size: 36.9 GB
+        - url: https://huggingface.co/unsloth/Qwen3.5-35B-A3B-GGUF/resolve/main/Qwen3.5-35B-A3B-UD-Q6_K_XL.gguf
+          size: 42.0 GB
       proj:
         url: https://huggingface.co/unsloth/Qwen3.5-35B-A3B-GGUF/resolve/main/mmproj-F16.gguf
         size: 899 MB
