@@ -62,36 +62,6 @@ models:
         temperature: 0.3
         min_p: 0.15
 
-  - id: LFM2-700M-UD-Q8_K_XL
-    category: Text-Generation
-    owned_by: unsloth
-    architecture: Hybrid
-    model_family: LFM2-700M-GGUF
-    web_page: https://huggingface.co/unsloth/LFM2-700M-GGUF
-    files:
-      models:
-        - url: https://huggingface.co/unsloth/LFM2-700M-GGUF/resolve/main/LFM2-700M-UD-Q8_K_XL.gguf
-          size: 866 MB
-    capabilities:
-      endpoint: chat_completion
-      streaming: true
-    metadata:
-      created: 2025-07-11T00:00:00Z
-      collections: collections/unsloth
-      description:
-        LFM2 is a new generation of hybrid models developed by Liquid AI,
-        specifically designed for edge AI and on-device deployment. It sets a new standard
-        in terms of quality, speed, and memory efficiency.
-    config:
-      context-window: 32768
-      nbatch: 2048
-      nubatch: 2048
-      cache-type-k: f16
-      cache-type-v: f16
-      sampling-parameters:
-        temperature: 0.3
-        min_p: 0.15
-
   - id: LFM2-700M-F16
     category: Text-Generation
     owned_by: unsloth
@@ -291,7 +261,7 @@ models:
         temperature: 1
         top_p: 1
 
-  - id: Qwen3-Coder-Next-Q6_K
+  - id: Qwen3-Coder-Next-Q4_0
     category: Text-Generation
     owned_by: unsloth
     model_family: Qwen3-Coder-Next-GGUF
@@ -300,51 +270,8 @@ models:
     template: qwen3-next.jinja
     files:
       models:
-        - url: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF/resolve/main/Q6_K/Qwen3-Coder-Next-Q6_K-00001-of-00003.gguf
-          size: 5.94 MB
-        - url: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF/resolve/main/Q6_K/Qwen3-Coder-Next-Q6_K-00002-of-00003.gguf
-          size: 49.8 GB
-        - url: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF/resolve/main/Q6_K/Qwen3-Coder-Next-Q6_K-00003-of-00003.gguf
-          size: 15.8 GB
-    capabilities:
-      endpoint: chat_completion
-      streaming: true
-      tooling: true
-    metadata:
-      created: 2026-02-03T00:00:00Z
-      collections: https://huggingface.co/unsloth
-      description:
-        The Qwen3-Coder-Next-GGUF is a highly efficient, 6-bit quantized,
-        80-billion parameter Mixture-of-Experts (MoE) model released by Alibaba's Qwen
-        team in February 2026. It is designed specifically for local, privacy-focused
-        AI coding agents, offering performance competitive with top-tier, far larger
-        models, while running on high-end consumer hardware.
-    config:
-      context-window: 98304
-      nbatch: 2048
-      nubatch: 2048
-      cache-type-k: f16
-      cache-type-v: f16
-      sampling-parameters:
-        temperature: 1
-        top_k: 40
-        top_p: 0.95
-
-  - id: Qwen3-Coder-Next-UD-Q6_K_XL
-    category: Text-Generation
-    owned_by: unsloth
-    model_family: Qwen3-Coder-Next-GGUF
-    architecture: Hybrid
-    web_page: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF
-    template: qwen3-next.jinja
-    files:
-      models:
-        - url: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF/resolve/main/UD-Q6_K_XL/Qwen3-Coder-Next-UD-Q6_K_XL-00001-of-00003.gguf
-          size: 5.94 MB
-        - url: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF/resolve/main/UD-Q6_K_XL/Qwen3-Coder-Next-UD-Q6_K_XL-00002-of-00003.gguf
-          size: 49.9 GB
-        - url: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF/resolve/main/UD-Q6_K_XL/Qwen3-Coder-Next-UD-Q6_K_XL-00003-of-00003.gguf
-          size: 18.7 GB
+        - url: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF/resolve/main/Qwen3-Coder-Next-Q4_0.gguf
+          size: 45.3 MB
     capabilities:
       endpoint: chat_completion
       streaming: true
