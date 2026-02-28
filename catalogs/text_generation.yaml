@@ -327,7 +327,7 @@ models:
       cache-type-v: f16
       sampling-parameters:
         temperature: 1
-        top_k: 20
+        top_k: 40
         top_p: 0.95
 
   - id: Qwen3-Coder-Next-UD-Q6_K_XL
@@ -366,7 +366,7 @@ models:
       cache-type-v: f16
       sampling-parameters:
         temperature: 1
-        top_k: 20
+        top_k: 40
         top_p: 0.95
 
   - id: Qwen3-Coder-Next-Q8_0
@@ -405,5 +405,5 @@ models:
       cache-type-v: f16
       sampling-parameters:
         temperature: 1
-        top_k: 20
+        top_k: 40
         top_p: 0.95
