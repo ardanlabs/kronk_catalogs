@@ -1,6 +1,7 @@
 catalog: Rerank
 models:
   - id: bge-reranker-v2-m3-Q8_0
+    testing_model: true
     category: Rerank
     owned_by: ggml-org
     model_family: bge-reranker-v2-m3-GGUF

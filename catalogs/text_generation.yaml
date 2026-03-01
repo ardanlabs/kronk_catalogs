@@ -1,6 +1,7 @@
 catalog: Text-Generation
 models:
   - id: Qwen3-0.6B-Q8_0
+    testing_model: true
     category: Text-Generation
     owned_by: Qwen
     model_family: Qwen3-0.6B-GGUF
@@ -129,6 +130,7 @@ models:
       cache-type-v: q8_0
 
   - id: Qwen3-8B-Q8_0
+    testing_model: true
     category: Text-Generation
     owned_by: Qwen
     model_family: Qwen3-8B-GGUF
@@ -164,6 +166,7 @@ models:
         top_p: 0.8
 
   - id: gpt-oss-20b-Q8_0
+    testing_model: true
     category: Text-Generation
     owned_by: unsloth
     model_family: gpt-oss-20b-GGUF
@@ -199,6 +202,7 @@ models:
         top_p: 1
 
   - id: cerebras_Qwen3-Coder-REAP-25B-A3B-Q8_0
+    testing_model: true
     category: Text-Generation
     owned_by: bartowski
     model_family: cerebras_Qwen3-Coder-REAP-25B-A3B-GGUF
