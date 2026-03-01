@@ -27,11 +27,11 @@ models:
         model, LFM2-VL-1.6B, built on an updated backbone LFM2.5-1.2B-Base and tuned
         for stronger real-world performance.
     config:
-      context-window: 131072
+      context-window: 8196
       nbatch: 2048
       nubatch: 512
-      cache-type-k: f16
-      cache-type-v: f16
+      cache-type-k: q8_0
+      cache-type-v: q8_0
       sampling-parameters:
         temperature: 0.1
         min_p: 0.15
@@ -65,9 +65,9 @@ models:
         enabling object localization, structured data extraction (JSON), and complex
         visual reasoning.
     config:
-      context-window: 131072
+      context-window: 8196
       nbatch: 2048
-      nubatch: 2048
+      nubatch: 512
       cache-type-k: q8_0
       cache-type-v: q8_0
 
@@ -98,9 +98,9 @@ models:
         model in the Mistral AI Ministral 3 family, specifically optimized for edge
         deployment and high-performance local inference.
     config:
-      context-window: 131072
+      context-window: 32768
       nbatch: 2048
-      nubatch: 2048
+      nubatch: 512
       cache-type-k: q8_0
       cache-type-v: q8_0
       sampling-parameters:
@@ -134,11 +134,11 @@ models:
         model in the Mistral AI Ministral 3 family, specifically optimized for edge
         deployment and high-performance local inference.
     config:
-      context-window: 131072
+      context-window: 32768
       nbatch: 2048
-      nubatch: 2048
-      cache-type-k: f16
-      cache-type-v: f16
+      nubatch: 512
+      cache-type-k: q8_0
+      cache-type-v: q8_0
       nseq-max: 2
       sampling-parameters:
         temperature: 0.7
