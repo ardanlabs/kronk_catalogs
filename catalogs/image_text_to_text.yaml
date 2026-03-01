@@ -65,7 +65,7 @@ models:
         enabling object localization, structured data extraction (JSON), and complex
         visual reasoning.
     config:
-      context-window: 131072
+      context-window: 32768
       nbatch: 2048
       nubatch: 2048
       cache-type-k: f16
