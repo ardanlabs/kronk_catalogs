@@ -65,11 +65,11 @@ models:
         enabling object localization, structured data extraction (JSON), and complex
         visual reasoning.
     config:
-      context-window: 8196
+      context-window: 131072
       nbatch: 2048
-      nubatch: 512
-      cache-type-k: q8_0
-      cache-type-v: q8_0
+      nubatch: 2048
+      cache-type-k: f16
+      cache-type-v: f16
 
   - id: Ministral-3-14B-Instruct-2512-Q4_0
     category: Image-Text-to-Text
