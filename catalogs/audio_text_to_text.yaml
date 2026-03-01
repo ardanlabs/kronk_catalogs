@@ -5,8 +5,8 @@ models:
     owned_by: mradermacher
     model_family: Qwen2-Audio-7B-GGUF
     architecture: Dense
+    gguf_arch: qwen2
     web_page: https://huggingface.co/mradermacher/Qwen2-Audio-7B-GGUF
-    template:
     files:
       models:
         - url: https://huggingface.co/mradermacher/Qwen2-Audio-7B-GGUF/resolve/main/Qwen2-Audio-7B.Q8_0.gguf
@@ -16,22 +16,18 @@ models:
         size: 695 MB
     capabilities:
       endpoint: chat_completion
-      images: false
       audio: true
-      video: false
       streaming: true
-      reasoning: false
-      tooling: false
-      embedding: false
-      rerank: false
     metadata:
-      created: 2025-06-04T0:00:00Z
+      created: 2025-06-04T00:00:00Z
       collections: https://huggingface.co/mradermacher
-      description: Qwen2-Audio is the new series of Qwen large audio-language models. Qwen2-Audio is capable of accepting various audio signal inputs and performing audio analysis or direct textual responses with regard to speech instructions.
+      description:
+        Qwen2-Audio is the new series of Qwen large audio-language models.
+        Qwen2-Audio is capable of accepting various audio signal inputs and performing
+        audio analysis or direct textual responses with regard to speech instructions.
     config:
       context-window: 8192
       nbatch: 2048
       nubatch: 2048
       cache-type-k: q8_0
       cache-type-v: q8_0
-      flash-attention: enabled

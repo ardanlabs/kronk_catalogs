@@ -5,6 +5,7 @@ models:
     owned_by: Qwen
     model_family: Qwen3-0.6B-GGUF
     architecture: Dense
+    gguf_arch: qwen3
     web_page: https://huggingface.co/unsloth/Qwen3-0.6B-GGUF
     files:
       models:
@@ -37,6 +38,7 @@ models:
     owned_by: unsloth
     model_family: LFM2-700M-GGUF
     architecture: Hybrid
+    gguf_arch: lfm2
     web_page: https://huggingface.co/unsloth/LFM2-700M-GGUF
     files:
       models:
@@ -65,8 +67,9 @@ models:
   - id: LFM2-700M-F16
     category: Text-Generation
     owned_by: unsloth
-    architecture: Hybrid
     model_family: LFM2-700M-GGUF
+    architecture: Hybrid
+    gguf_arch: lfm2
     web_page: https://huggingface.co/unsloth/LFM2-700M-GGUF
     files:
       models:
@@ -99,6 +102,7 @@ models:
     owned_by: unsloth
     model_family: rnj-1-instruct-GGUF
     architecture: Dense
+    gguf_arch: gemma3
     web_page: https://huggingface.co/unsloth/rnj-1-instruct-GGUF
     template: rnj-1.jinja
     files:
@@ -129,6 +133,7 @@ models:
     owned_by: Qwen
     model_family: Qwen3-8B-GGUF
     architecture: Dense
+    gguf_arch: qwen3
     web_page: https://huggingface.co/Qwen/Qwen3-8B-GGUF
     files:
       models:
@@ -144,8 +149,8 @@ models:
       collections: https://huggingface.co/Qwen
       description:
         The Qwen3-8B-Q8_0 is a highly efficient, 8.2 billion parameter causal
-        language model from the Qwen3 series, heavily quantized using 8-bit
-        precision (Q8_0) for improved performance on consumer hardware
+        language model from the Qwen3 series, heavily quantized using 8-bit precision
+        (Q8_0) for improved performance on consumer hardware
     config:
       context-window: 40960
       nbatch: 2048
@@ -162,7 +167,8 @@ models:
     category: Text-Generation
     owned_by: unsloth
     model_family: gpt-oss-20b-GGUF
-    architecture: Dense
+    architecture: MoE
+    gguf_arch: gpt-oss
     web_page: https://huggingface.co/unsloth/gpt-oss-20b-GGUF
     template: gpt-oss.jinja
     files:
@@ -197,6 +203,7 @@ models:
     owned_by: bartowski
     model_family: cerebras_Qwen3-Coder-REAP-25B-A3B-GGUF
     architecture: MoE
+    gguf_arch: qwen3moe
     web_page: https://huggingface.co/bartowski/cerebras_Qwen3-Coder-REAP-25B-A3B-GGUF
     template: qwen3-coder.jinja
     files:
@@ -227,11 +234,48 @@ models:
         top_k: 20
         top_p: 0.9
 
+  - id: Qwen3-Coder-Next-Q4_0
+    category: Text-Generation
+    owned_by: unsloth
+    model_family: Qwen3-Coder-Next-GGUF
+    architecture: Hybrid
+    gguf_arch: qwen3next
+    web_page: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF
+    template: qwen3-next.jinja
+    files:
+      models:
+        - url: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF/resolve/main/Qwen3-Coder-Next-Q4_0.gguf
+          size: 45.3 GB
+    capabilities:
+      endpoint: chat_completion
+      streaming: true
+      tooling: true
+    metadata:
+      created: 2026-02-03T00:00:00Z
+      collections: https://huggingface.co/unsloth
+      description:
+        The Qwen3-Coder-Next-GGUF is a highly efficient, 6-bit quantized,
+        80-billion parameter Mixture-of-Experts (MoE) model released by Alibaba's Qwen
+        team in February 2026. It is designed specifically for local, privacy-focused
+        AI coding agents, offering performance competitive with top-tier, far larger
+        models, while running on high-end consumer hardware.
+    config:
+      context-window: 98304
+      nbatch: 2048
+      nubatch: 2048
+      cache-type-k: f16
+      cache-type-v: f16
+      sampling-parameters:
+        temperature: 1
+        top_k: 40
+        top_p: 0.95
+
   - id: gpt-oss-120b-F16
     category: Text-Generation
     owned_by: unsloth
     model_family: gpt-oss-120b-GGUF
-    architecture: Dense
+    architecture: MoE
+    gguf_arch: gpt-oss
     web_page: https://huggingface.co/unsloth/gpt-oss-120b-GGUF
     template: gpt-oss.jinja
     files:
@@ -261,46 +305,12 @@ models:
         temperature: 1
         top_p: 1
 
-  - id: Qwen3-Coder-Next-Q4_0
-    category: Text-Generation
-    owned_by: unsloth
-    model_family: Qwen3-Coder-Next-GGUF
-    architecture: Hybrid
-    web_page: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF
-    template: qwen3-next.jinja
-    files:
-      models:
-        - url: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF/resolve/main/Qwen3-Coder-Next-Q4_0.gguf
-          size: 45.3 MB
-    capabilities:
-      endpoint: chat_completion
-      streaming: true
-      tooling: true
-    metadata:
-      created: 2026-02-03T00:00:00Z
-      collections: https://huggingface.co/unsloth
-      description:
-        The Qwen3-Coder-Next-GGUF is a highly efficient, 6-bit quantized,
-        80-billion parameter Mixture-of-Experts (MoE) model released by Alibaba's Qwen
-        team in February 2026. It is designed specifically for local, privacy-focused
-        AI coding agents, offering performance competitive with top-tier, far larger
-        models, while running on high-end consumer hardware.
-    config:
-      context-window: 98304
-      nbatch: 2048
-      nubatch: 2048
-      cache-type-k: f16
-      cache-type-v: f16
-      sampling-parameters:
-        temperature: 1
-        top_k: 40
-        top_p: 0.95
-
   - id: Qwen3-Coder-Next-Q8_0
     category: Text-Generation
     owned_by: unsloth
     model_family: Qwen3-Coder-Next-GGUF
     architecture: Hybrid
+    gguf_arch: qwen3next
     web_page: https://huggingface.co/unsloth/Qwen3-Coder-Next-GGUF
     template: qwen3-next.jinja
     files:
