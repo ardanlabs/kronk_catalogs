@@ -243,8 +243,8 @@ models:
     category: Text-Generation
     owned_by: unsloth
     model_family: Qwen3-Coder-30B-A3B-Instruct-GGUF
-    architecture: qwen3moe
-    gguf_arch: MoE
+    architecture: MoE
+    gguf_arch: qwen3moe
     web_page: https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF
     template: qwen3-coder.jinja
     files:
