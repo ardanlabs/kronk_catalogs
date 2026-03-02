@@ -59,8 +59,8 @@ models:
       context-window: 32768
       nbatch: 2048
       nubatch: 512
-      cache-type-k: q8_0
-      cache-type-v: q8_0
+      cache-type-k: f16
+      cache-type-v: f16
       sampling-parameters:
         temperature: 0.3
         min_p: 0.15
