@@ -1,5 +1,46 @@
 catalog: Image-Text-to-Text
 models:
+  - id: Qwen3.5-0.8B-Q8_0
+    category: Image-Text-to-Text
+    owned_by: unsloth
+    model_family: Qwen3.5-0.8B-GGUF
+    architecture: Hybrid
+    gguf_arch: qwen35
+    web_page: https://huggingface.co/unsloth/Qwen3.5-0.8B-GGUF
+    template: qwen3.5.jinja
+    files:
+      models:
+        - url: https://huggingface.co/unsloth/Qwen3.5-0.8B-GGUF/resolve/main/Qwen3.5-0.8B-Q8_0.gguf
+          size: 36.9 GB
+      proj:
+        url: https://huggingface.co/unsloth/Qwen3.5-0.8B-GGUF/resolve/main/mmproj-F16.gguf
+        size: 205 MB
+    capabilities:
+      endpoint: chat_completion
+      images: true
+      streaming: true
+      reasoning: true
+      tooling: true
+    metadata:
+      created: 2026-03-02T00:00:00Z
+      collections: https://huggingface.co/bartowski
+      description:
+        The Qwen3.5-0.8B-GGUF is an ultra-lightweight, quantized 0.8 billion
+        parameter language model optimized by Unsloth for high-speed, local
+        inference on CPU or low-end GPU devices. Based on Alibaba's Qwen3.5
+        architecture, it provides efficient, fast responses suitable for edge
+        computing and basic text tasks.
+    config:
+      context-window: 8196
+      nbatch: 2048
+      nubatch: 512
+      cache-type-k: q8_0
+      cache-type-v: q8_0
+      sampling-parameters:
+        temperature: 1
+        top_k: 20
+        top_p: 0.95
+
   - id: LFM2.5-VL-1.6B-Q8_0
     category: Image-Text-to-Text
     owned_by: unsloth
