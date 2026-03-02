@@ -10,7 +10,7 @@ models:
     web_page: https://huggingface.co/unsloth/Qwen3-0.6B-GGUF
     files:
       models:
-        - url: https://huggingface.co/unsloth/Qwen3-0.6B-GGUF/resolve/918ea7d329d2619ef2e2f3e92943cc561b00ecb5/Qwen3-0.6B-Q8_0.gguf
+        - url: https://huggingface.co/unsloth/Qwen3-0.6B-GGUF/resolve/main/Qwen3-0.6B-Q8_0.gguf
           size: 639 MB
     capabilities:
       endpoint: chat_completion
