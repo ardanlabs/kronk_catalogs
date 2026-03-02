@@ -11,7 +11,7 @@ models:
     files:
       models:
         - url: https://huggingface.co/unsloth/Qwen3.5-0.8B-GGUF/resolve/main/Qwen3.5-0.8B-Q8_0.gguf
-          size: 36.9 GB
+          size: 812 MB
       proj:
         url: https://huggingface.co/unsloth/Qwen3.5-0.8B-GGUF/resolve/main/mmproj-F16.gguf
         size: 205 MB
