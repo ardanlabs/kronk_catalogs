@@ -267,7 +267,7 @@ models:
 
   - id: Qwen3.5-35B-A3B-UD-Q8_K_XL
     category: Image-Text-to-Text
-    owned_by: bartowski
+    owned_by: unsloth
     model_family: Qwen3.5-35B-A3B-GGUF
     architecture: Hybrid
     gguf_arch: qwen35moe
