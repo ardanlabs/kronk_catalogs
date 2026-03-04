@@ -28,3 +28,33 @@ models:
       nubatch: 512
       cache-type-k: q8_0
       cache-type-v: q8_0
+
+  - id: Qwen3-Embedding-0.6B-Q8_0
+    testing_model: true
+    category: Embedding
+    owned_by: Qwen
+    model_family: Qwen3-Embedding-0.6B-GGUF
+    architecture: Dense
+    gguf_arch: qwen3
+    web_page: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B-GGUF
+    files:
+      models:
+        - url: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B-GGUF/resolve/main/Qwen3-Embedding-0.6B-Q8_0.gguf
+          size: 639 MB
+    capabilities:
+      endpoint: embeddings
+      embedding: true
+    metadata:
+      created: 2025-07-14T00:00:00Z
+      collections: https://huggingface.co/Qwen
+      description:
+        The Qwen3-Embedding-0.6B is a highly efficient, 8-bit quantized text
+        embedding model from Alibaba's Qwen3 series. It is designed for high-speed
+        retrieval, classification, and clustering tasks while maintaining a small
+        memory footprint.
+    config:
+      context-window: 2048
+      nbatch: 1024
+      nubatch: 512
+      cache-type-k: q8_0
+      cache-type-v: q8_0
