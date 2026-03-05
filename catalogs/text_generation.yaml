@@ -24,7 +24,7 @@ models:
         offering a comprehensive suite of dense and mixture-of-experts (MoE) models.
     config:
       context-window: 8196
-      nbatch: 2048
+      nbatch: 1024
       nubatch: 512
       cache-type-k: q8_0
       cache-type-v: q8_0
@@ -57,7 +57,7 @@ models:
         in terms of quality, speed, and memory efficiency.
     config:
       context-window: 32768
-      nbatch: 2048
+      nbatch: 1024
       nubatch: 512
       cache-type-k: f16
       cache-type-v: f16
@@ -228,8 +228,8 @@ models:
         tools with a high degree of efficiency.
     config:
       context-window: 131072
-      nbatch: 2048
-      nubatch: 2048
+      nbatch: 4096
+      nubatch: 512
       cache-type-k: f16
       cache-type-v: f16
       nseq-max: 1
@@ -264,8 +264,8 @@ models:
         workflows, and long-context understanding.
     config:
       context-window: 131072
-      nbatch: 2048
-      nubatch: 2048
+      nbatch: 4096
+      nubatch: 512
       cache-type-k: f16
       cache-type-v: f16
       nseq-max: 1
@@ -301,8 +301,8 @@ models:
         models, while running on high-end consumer hardware.
     config:
       context-window: 98304
-      nbatch: 2048
-      nubatch: 2048
+      nbatch: 4096
+      nubatch: 512
       cache-type-k: f16
       cache-type-v: f16
       sampling-parameters:
@@ -336,8 +336,8 @@ models:
         deployment, released under a permissive Apache 2.0 license.
     config:
       context-window: 131072
-      nbatch: 2048
-      nubatch: 2048
+      nbatch: 4096
+      nubatch: 512
       cache-type-k: f16
       cache-type-v: f16
       nseq-max: 1
@@ -376,8 +376,8 @@ models:
         models, while running on high-end consumer hardware.
     config:
       context-window: 98304
-      nbatch: 2048
-      nubatch: 2048
+      nbatch: 4096
+      nubatch: 512
       cache-type-k: f16
       cache-type-v: f16
       sampling-parameters:

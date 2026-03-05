@@ -32,7 +32,7 @@ models:
         computing and basic text tasks.
     config:
       context-window: 8196
-      nbatch: 2048
+      nbatch: 1024
       nubatch: 512
       cache-type-k: f16
       cache-type-v: f16
@@ -69,7 +69,7 @@ models:
         for stronger real-world performance.
     config:
       context-window: 8196
-      nbatch: 2048
+      nbatch: 1024
       nubatch: 512
       cache-type-k: f16
       cache-type-v: f16
@@ -109,7 +109,7 @@ models:
     config:
       context-window: 32768
       nbatch: 2048
-      nubatch: 2048
+      nubatch: 512
       cache-type-k: f16
       cache-type-v: f16
 
@@ -215,8 +215,8 @@ models:
         hardware while maintaining high accuracy.
     config:
       context-window: 131072
-      nbatch: 2048
-      nubatch: 2048
+      nbatch: 4096
+      nubatch: 512
       cache-type-k: f16
       cache-type-v: f16
       sampling-parameters:
@@ -257,8 +257,8 @@ models:
         with fewer activated parameters.
     config:
       context-window: 131072
-      nbatch: 2048
-      nubatch: 2048
+      nbatch: 4096
+      nubatch: 512
       cache-type-k: f16
       cache-type-v: f16
       sampling-parameters:
@@ -298,8 +298,8 @@ models:
         with fewer activated parameters.
     config:
       context-window: 131072
-      nbatch: 2048
-      nubatch: 2048
+      nbatch: 4096
+      nubatch: 512
       cache-type-k: f16
       cache-type-v: f16
       sampling-parameters:
@@ -336,8 +336,8 @@ models:
         version of the GLM-4.6V multimodal large language model developed by Z.ai.
     config:
       context-window: 131072
-      nbatch: 2048
-      nubatch: 2048
+      nbatch: 4096
+      nubatch: 512
       cache-type-k: f16
       cache-type-v: f16
       sampling-parameters:
