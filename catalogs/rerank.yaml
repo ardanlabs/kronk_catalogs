@@ -3,7 +3,7 @@ models:
   - id: bge-reranker-v2-m3-Q8_0
     testing_model: true
     category: Rerank
-    owned_by: ggml-org
+    owned_by: gpustack
     model_family: bge-reranker-v2-m3-GGUF
     architecture: Dense
     gguf_arch: bert
@@ -25,6 +25,35 @@ models:
         and a passage as input and directly output a similarity score (relevance) rather
         than generating embeddings, allowing for more accurate ranking in RAG (Retrieval-Augmented
         Generation) systems.
+    config:
+      context-window: 8192
+      nbatch: 1024
+      nubatch: 512
+      cache-type-k: q8_0
+      cache-type-v: q8_0
+
+  - id: qwen3-reranker-0.6b-q8_0
+    category: Rerank
+    owned_by: ggml-org
+    model_family: Qwen3-Reranker-0.6B-Q8_0-GGUF
+    architecture: Dense
+    gguf_arch: bert
+    web_page: https://huggingface.co/ggml-org/Qwen3-Reranker-0.6B-Q8_0-GGUF
+    files:
+      models:
+        - url: https://huggingface.co/ggml-org/Qwen3-Reranker-0.6B-Q8_0-GGUF/resolve/main/qwen3-reranker-0.6b-q8_0.gguf
+          size: 636 MB
+    capabilities:
+      endpoint: rerank
+      rerank: true
+    metadata:
+      created: 2025-10-03T00:00:00Z
+      collections: https://huggingface.co/collections/ggml-org
+      description:
+        The Qwen3-Reranker-0.6B-Q8_0-GGUF is a compact, high-precision cross-encoder
+        model designed for the second stage of information retrieval pipelines.
+        Released in June 2025 as part of the Qwen3-Embedding series, it specializes
+        in re-scoring and reordering initial search results to improve accuracy.
     config:
       context-window: 8192
       nbatch: 1024
