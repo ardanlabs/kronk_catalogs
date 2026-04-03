@@ -150,7 +150,7 @@
     {{- ns.result | trim -}}
 {%- endmacro -%}
 
-{%- set ns = namespace(prev_message_type=None) -%}
+{%- set ns = namespace(prev_message_type=None, pending_turn_close=false) -%}
 {%- set loop_messages = messages -%}
 {{ bos_token }}
 {#- Handle System/Tool Definitions Block -#}
@@ -182,7 +182,19 @@
 
 {#- Loop through messages -#}
 {%- for message in loop_messages -%}
+    {%- if message['role'] == 'tool' -%}
+        {#- OpenAI-style tool result: convert to Gemma tool_response format -#}
+        {%- set tool_name = message['name'] | default('unknown') -%}
+        {%- set tool_content = message['content'] -%}
+        {{- '<|tool_response>response:' + tool_name + '{value:' + format_argument(tool_content, escape_keys=False) + '}<tool_response|>' -}}
+        {%- set ns.prev_message_type = 'tool_response' -%}
+    {%- else -%}
     {%- set ns.prev_message_type = None -%}
+        {#- Close pending turn from previous assistant tool_calls before starting new turn -#}
+        {%- if ns.pending_turn_close -%}
+            {{- '<turn|>\n' -}}
+            {%- set ns.pending_turn_close = false -%}
+        {%- endif -%}
     {%- set role = 'model' if message['role'] == 'assistant' else message['role'] -%}
         {{- '<|turn>' + role + '\n' }}
 
@@ -251,10 +263,19 @@
                 {%- endfor -%}
             {%- endif -%}
 
-        {%- if not (message['tool_responses'] is defined and message['tool_responses'] and not message['content']) -%}
+        {%- if message['tool_calls'] is defined and message['tool_calls'] and not (message['tool_responses'] is defined and message['tool_responses']) -%}
+            {#- Assistant has tool_calls but no tool_responses: keep turn open for OpenAI-style tool messages -#}
+            {%- set ns.pending_turn_close = true -%}
+        {%- elif not (message['tool_responses'] is defined and message['tool_responses'] and not message['content']) -%}
             {{- '<turn|>\n' -}}
         {%- endif -%}
+    {%- endif -%}
 {%- endfor -%}
+
+{#- Close any pending turn from OpenAI-style tool calls at end of history -#}
+{%- if ns.pending_turn_close and not add_generation_prompt -%}
+    {{- '<turn|>\n' -}}
+{%- endif -%}
 
 {%- if add_generation_prompt -%}
     {%- if ns.prev_message_type != 'tool_response' -%}
