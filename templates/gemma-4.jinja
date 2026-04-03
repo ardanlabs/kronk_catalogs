@@ -230,7 +230,7 @@
                 {%- else -%}
                     {{- message['content'] | trim -}}
                 {%- endif -%}
-            {%- elif message['content'] is iterable -%}
+            {%- elif message['content'] is sequence -%}
                 {%- for item in message['content'] -%}
                     {%- if item['type'] == 'text' -%}
                         {%- if role == 'model' -%}
@@ -239,7 +239,7 @@
                             {{- item['text'] | trim -}}
                         {%- endif -%}
                     {%- elif item['type'] == 'image' -%}
-                        {{- '<|image|>' -}}
+                        {{- '\n\n<|image|>\n\n' -}}
                         {%- set ns.prev_message_type = 'image' -%}
                     {%- elif item['type'] == 'audio' -%}
                         {{- '<|audio|>' -}}

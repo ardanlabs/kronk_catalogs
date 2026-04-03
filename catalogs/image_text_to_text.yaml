@@ -270,7 +270,7 @@ models:
     category: Image-Text-to-Text
     owned_by: unsloth
     model_family: gemma-4-31B-it-GGUF
-    architecture: Dense
+    architecture: Hybrid
     gguf_arch: gemma4
     web_page: https://huggingface.co/unsloth/gemma-4-31B-it-GGUF
     template: gemma-4.jinja
@@ -301,6 +301,7 @@ models:
       nubatch: 512
       cache-type-k: f16
       cache-type-v: f16
+      flash-attention: disabled
       sampling-parameters:
         temperature: 1.0
         top_k: 64
