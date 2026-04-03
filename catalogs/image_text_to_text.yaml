@@ -270,7 +270,7 @@ models:
     category: Image-Text-to-Text
     owned_by: unsloth
     model_family: gemma-4-31B-it-GGUF
-    architecture: MoE
+    architecture: Dense
     gguf_arch: gemma4
     web_page: https://huggingface.co/unsloth/gemma-4-31B-it-GGUF
     template: gemma-4.jinja
