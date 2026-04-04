@@ -23,12 +23,6 @@ models:
         Qwen3 is the latest generation of large language models in Qwen series,
         offering a comprehensive suite of dense and mixture-of-experts (MoE) models.
     config:
-      context-window: 8196
-      nbatch: 1024
-      nubatch: 512
-      cache-type-k: q8_0
-      cache-type-v: q8_0
-      nseq-max: 1
       sampling-parameters:
         temperature: 0.7
         top_k: 20
@@ -56,11 +50,6 @@ models:
         specifically designed for edge AI and on-device deployment. It sets a new standard
         in terms of quality, speed, and memory efficiency.
     config:
-      context-window: 32768
-      nbatch: 1024
-      nubatch: 512
-      cache-type-k: f16
-      cache-type-v: f16
       sampling-parameters:
         temperature: 0.3
         min_p: 0.15
@@ -87,11 +76,6 @@ models:
         specifically designed for edge AI and on-device deployment. It sets a new standard
         in terms of quality, speed, and memory efficiency.
     config:
-      context-window: 32768
-      nbatch: 2048
-      nubatch: 512
-      cache-type-k: f16
-      cache-type-v: f16
       sampling-parameters:
         temperature: 0.3
         min_p: 0.15
@@ -122,12 +106,6 @@ models:
         The rnj-1-instruct-Q6_K is a quantized version of the rnj-1-instruct
         8-billion parameter model, specifically optimized for high-performance coding,
         STEM, and agentic workflows, developed by Essential AI.
-    config:
-      context-window: 32768
-      nbatch: 2048
-      nubatch: 512
-      cache-type-k: q8_0
-      cache-type-v: q8_0
 
   - id: Qwen3-8B-Q8_0
     testing_model: true
@@ -154,12 +132,6 @@ models:
         language model from the Qwen3 series, heavily quantized using 8-bit precision
         (Q8_0) for improved performance on consumer hardware
     config:
-      context-window: 40960
-      nbatch: 2048
-      nubatch: 512
-      cache-type-k: q8_0
-      cache-type-v: q8_0
-      nseq-max: 1
       sampling-parameters:
         temperature: 0.7
         top_k: 20
@@ -191,12 +163,6 @@ models:
         language models designed for powerful reasoning, agentic tasks, and on-premises
         deployment, released under a permissive Apache 2.0 license.
     config:
-      context-window: 98304
-      nbatch: 2048
-      nubatch: 512
-      cache-type-k: q8_0
-      cache-type-v: q8_0
-      nseq-max: 1
       sampling-parameters:
         temperature: 1
         top_p: 1
@@ -227,12 +193,6 @@ models:
         it excels in code generation, understanding large codebases, and using external
         tools with a high degree of efficiency.
     config:
-      context-window: 131072
-      nbatch: 4096
-      nubatch: 512
-      cache-type-k: f16
-      cache-type-v: f16
-      nseq-max: 1
       sampling-parameters:
         temperature: 0.8
         top_k: 20
@@ -263,12 +223,6 @@ models:
         Mixture-of-Experts (MoE) model designed for advanced coding, agentic
         workflows, and long-context understanding.
     config:
-      context-window: 131072
-      nbatch: 4096
-      nubatch: 512
-      cache-type-k: f16
-      cache-type-v: f16
-      nseq-max: 1
       sampling-parameters:
         temperature: 0.7
         top_k: 20
@@ -300,11 +254,6 @@ models:
         AI coding agents, offering performance competitive with top-tier, far larger
         models, while running on high-end consumer hardware.
     config:
-      context-window: 98304
-      nbatch: 4096
-      nubatch: 512
-      cache-type-k: f16
-      cache-type-v: f16
       sampling-parameters:
         temperature: 1
         top_k: 40
@@ -335,12 +284,6 @@ models:
         language models designed for powerful reasoning, agentic tasks, and on-premises
         deployment, released under a permissive Apache 2.0 license.
     config:
-      context-window: 131072
-      nbatch: 4096
-      nubatch: 512
-      cache-type-k: f16
-      cache-type-v: f16
-      nseq-max: 1
       sampling-parameters:
         temperature: 1
         top_p: 1
@@ -375,11 +318,6 @@ models:
         AI coding agents, offering performance competitive with top-tier, far larger
         models, while running on high-end consumer hardware.
     config:
-      context-window: 98304
-      nbatch: 4096
-      nubatch: 512
-      cache-type-k: f16
-      cache-type-v: f16
       sampling-parameters:
         temperature: 1
         top_k: 40

@@ -22,12 +22,6 @@ models:
         The embeddinggemma-300M-GGUF model is a quantized version of Google's
         EmbeddingGemma, a lightweight, open, and multilingual text embedding model designed
         for efficient performance on on-device hardware like laptops, phones, and desktops.
-    config:
-      context-window: 2048
-      nbatch: 1024
-      nubatch: 512
-      cache-type-k: q8_0
-      cache-type-v: q8_0
 
   - id: Qwen3-Embedding-0.6B-Q8_0
     testing_model: true
@@ -52,9 +46,3 @@ models:
         embedding model from Alibaba's Qwen3 series. It is designed for high-speed
         retrieval, classification, and clustering tasks while maintaining a small
         memory footprint.
-    config:
-      context-window: 2048
-      nbatch: 1024
-      nubatch: 512
-      cache-type-k: q8_0
-      cache-type-v: q8_0

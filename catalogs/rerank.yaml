@@ -25,12 +25,6 @@ models:
         and a passage as input and directly output a similarity score (relevance) rather
         than generating embeddings, allowing for more accurate ranking in RAG (Retrieval-Augmented
         Generation) systems.
-    config:
-      context-window: 8192
-      nbatch: 1024
-      nubatch: 512
-      cache-type-k: q8_0
-      cache-type-v: q8_0
 
   - id: qwen3-reranker-0.6b-q8_0
     category: Rerank
@@ -54,9 +48,3 @@ models:
         model designed for the second stage of information retrieval pipelines.
         Released in June 2025 as part of the Qwen3-Embedding series, it specializes
         in re-scoring and reordering initial search results to improve accuracy.
-    config:
-      context-window: 8192
-      nbatch: 1024
-      nubatch: 512
-      cache-type-k: q8_0
-      cache-type-v: q8_0

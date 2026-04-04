@@ -31,11 +31,6 @@ models:
         architecture, it provides efficient, fast responses suitable for edge
         computing and basic text tasks.
     config:
-      context-window: 8196
-      nbatch: 2048
-      nubatch: 512
-      cache-type-k: f16
-      cache-type-v: f16
       sampling-parameters:
         temperature: 1
         top_k: 20
@@ -68,11 +63,6 @@ models:
         model, LFM2-VL-1.6B, built on an updated backbone LFM2.5-1.2B-Base and tuned
         for stronger real-world performance.
     config:
-      context-window: 8196
-      nbatch: 2048
-      nubatch: 512
-      cache-type-k: f16
-      cache-type-v: f16
       sampling-parameters:
         temperature: 0.1
         min_p: 0.15
@@ -106,12 +96,6 @@ models:
         features robust capabilities in interpreting images, charts, and even long videos,
         enabling object localization, structured data extraction (JSON), and complex
         visual reasoning.
-    config:
-      context-window: 32768
-      nbatch: 2048
-      nubatch: 512
-      cache-type-k: f16
-      cache-type-v: f16
 
   - id: Ministral-3-14B-Instruct-2512-Q4_0
     category: Image-Text-to-Text
@@ -140,11 +124,6 @@ models:
         model in the Mistral AI Ministral 3 family, specifically optimized for edge
         deployment and high-performance local inference.
     config:
-      context-window: 32768
-      nbatch: 2048
-      nubatch: 512
-      cache-type-k: q8_0
-      cache-type-v: q8_0
       sampling-parameters:
         temperature: 0.7
         top_p: 0.95
@@ -176,12 +155,6 @@ models:
         model in the Mistral AI Ministral 3 family, specifically optimized for edge
         deployment and high-performance local inference.
     config:
-      context-window: 32768
-      nbatch: 2048
-      nubatch: 512
-      cache-type-k: q8_0
-      cache-type-v: q8_0
-      nseq-max: 2
       sampling-parameters:
         temperature: 0.7
         top_p: 0.95
@@ -217,11 +190,6 @@ models:
         Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks
         like text generation, coding, and reasoning.
     config:
-      context-window: 131072
-      nbatch: 4096
-      nubatch: 512
-      cache-type-k: f16
-      cache-type-v: f16
       sampling-parameters:
         temperature: 1.0
         top_k: 64
@@ -255,11 +223,6 @@ models:
         language model, specifically designed for efficient inference on resource-constrained
         hardware while maintaining high accuracy.
     config:
-      context-window: 131072
-      nbatch: 4096
-      nubatch: 512
-      cache-type-k: f16
-      cache-type-v: f16
       sampling-parameters:
         temperature: 0.7
         top_k: 20
@@ -296,11 +259,6 @@ models:
         Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks
         like text generation, coding, and reasoning.
     config:
-      context-window: 65536
-      nbatch: 4096
-      nubatch: 512
-      cache-type-k: f16
-      cache-type-v: f16
       sampling-parameters:
         temperature: 1.0
         top_k: 64
@@ -338,11 +296,6 @@ models:
         advanced Mixture-of-Experts (MoE) architecture that delivers high performance
         with fewer activated parameters.
     config:
-      context-window: 131072
-      nbatch: 4096
-      nubatch: 512
-      cache-type-k: f16
-      cache-type-v: f16
       sampling-parameters:
         temperature: 1
         top_k: 20
@@ -379,11 +332,6 @@ models:
         advanced Mixture-of-Experts (MoE) architecture that delivers high performance
         with fewer activated parameters.
     config:
-      context-window: 131072
-      nbatch: 4096
-      nubatch: 512
-      cache-type-k: f16
-      cache-type-v: f16
       sampling-parameters:
         temperature: 1
         top_k: 20
@@ -417,11 +365,6 @@ models:
         The model GLM-4.6V-UD-Q5_K_XL.gguf is a highly optimized, quantized
         version of the GLM-4.6V multimodal large language model developed by Z.ai.
     config:
-      context-window: 131072
-      nbatch: 4096
-      nubatch: 512
-      cache-type-k: f16
-      cache-type-v: f16
       sampling-parameters:
         temperature: 1
         top_k: 20
