@@ -296,7 +296,7 @@ models:
         Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks
         like text generation, coding, and reasoning.
     config:
-      context-window: 131072
+      context-window: 65536
       nbatch: 4096
       nubatch: 512
       cache-type-k: f16
