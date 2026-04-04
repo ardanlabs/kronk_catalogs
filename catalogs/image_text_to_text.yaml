@@ -301,7 +301,6 @@ models:
       nubatch: 512
       cache-type-k: f16
       cache-type-v: f16
-      flash-attention: disabled
       sampling-parameters:
         temperature: 1.0
         top_k: 64
