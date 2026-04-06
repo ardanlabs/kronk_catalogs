@@ -159,6 +159,42 @@ models:
         temperature: 0.7
         top_p: 0.95
 
+  - id: gemma-4-26B-A4B-it-Q8_0
+    testing_model: false
+    category: Image-Text-to-Text
+    owned_by: unsloth
+    model_family: gemma-4-26B-A4B-it-GGUF
+    architecture: MoE
+    gguf_arch: gemma4
+    web_page: https://huggingface.co/ggml-org/gemma-4-26B-A4B-it-GGUF
+    template: gemma-4.jinja
+    files:
+      models:
+        - url: https://huggingface.co/ggml-org/gemma-4-26B-A4B-it-GGUF/resolve/main/gemma-4-26B-A4B-it-Q8_0.gguf
+          size: 26.9 GB
+      proj:
+        url: https://huggingface.co/ggml-org/gemma-4-26B-A4B-it-GGUF/resolve/main/mmproj-gemma-4-26B-A4B-it-f16.gguf
+        size: 1.19 GB
+    capabilities:
+      endpoint: chat_completion
+      images: true
+      streaming: true
+      reasoning: true
+    metadata:
+      created: 2026-04-02T00:00:00Z
+      collections: https://huggingface.co/ggml-org
+      description:
+        Gemma is a family of open models built by Google DeepMind. Gemma 4 models
+        are multimodal, handling text and image input (with audio supported on
+        small models) and generating text output. Featuring both Dense and
+        Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks
+        like text generation, coding, and reasoning.
+    config:
+      sampling-parameters:
+        temperature: 1.0
+        top_k: 64
+        top_p: 0.95
+
   - id: gemma-4-26B-A4B-it-UD-Q8_K_XL
     testing_model: false
     category: Image-Text-to-Text
@@ -181,7 +217,7 @@ models:
       streaming: true
       reasoning: true
     metadata:
-      created: 2026-04-02T00:00:00Z
+      created: 2026-04-06T00:00:00Z
       collections: https://huggingface.co/unsloth
       description:
         Gemma is a family of open models built by Google DeepMind. Gemma 4 models
