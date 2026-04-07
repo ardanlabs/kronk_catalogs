@@ -162,7 +162,7 @@ models:
   - id: gemma-4-26B-A4B-it-Q8_0
     testing_model: false
     category: Image-Text-to-Text
-    owned_by: unsloth
+    owned_by: ggml-org
     model_family: gemma-4-26B-A4B-it-GGUF
     architecture: MoE
     gguf_arch: gemma4
@@ -269,7 +269,7 @@ models:
     category: Image-Text-to-Text
     owned_by: unsloth
     model_family: gemma-4-31B-it-GGUF
-    architecture: Hybrid
+    architecture: Dense
     gguf_arch: gemma4
     web_page: https://huggingface.co/unsloth/gemma-4-31B-it-GGUF
     template: gemma-4.jinja
@@ -376,7 +376,7 @@ models:
   - id: gemma-4-26B-A4B-it-f16
     testing_model: false
     category: Image-Text-to-Text
-    owned_by: unsloth
+    owned_by: ggml-org
     model_family: gemma-4-26B-A4B-it-GGUF
     architecture: MoE
     gguf_arch: gemma4
