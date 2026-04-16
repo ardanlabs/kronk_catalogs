@@ -7,7 +7,6 @@ models:
     architecture: Hybrid
     gguf_arch: qwen35
     web_page: https://huggingface.co/unsloth/Qwen3.5-0.8B-GGUF
-    template: qwen3.5.jinja
     files:
       models:
         - url: https://huggingface.co/unsloth/Qwen3.5-0.8B-GGUF/resolve/main/Qwen3.5-0.8B-Q8_0.gguf
@@ -43,7 +42,6 @@ models:
     architecture: Hybrid
     gguf_arch: lfm2
     web_page: https://huggingface.co/unsloth/LFM2.5-VL-1.6B-GGUF
-    template: lfm2.5-vl.jinja
     files:
       models:
         - url: https://huggingface.co/unsloth/LFM2.5-VL-1.6B-GGUF/resolve/main/LFM2.5-VL-1.6B-Q8_0.gguf
@@ -104,7 +102,6 @@ models:
     architecture: Dense
     gguf_arch: mistral3
     web_page: https://huggingface.co/unsloth/Ministral-3-14B-Instruct-2512-GGUF
-    template: ministral.jinja
     files:
       models:
         - url: https://huggingface.co/unsloth/Ministral-3-14B-Instruct-2512-GGUF/resolve/main/Ministral-3-14B-Instruct-2512-Q4_0.gguf
@@ -135,7 +132,6 @@ models:
     architecture: Dense
     gguf_arch: mistral3
     web_page: https://huggingface.co/unsloth/Ministral-3-14B-Instruct-2512-GGUF
-    template: ministral.jinja
     files:
       models:
         - url: https://huggingface.co/unsloth/Ministral-3-14B-Instruct-2512-GGUF/resolve/main/Ministral-3-14B-Instruct-2512-Q8_0.gguf
@@ -167,7 +163,6 @@ models:
     architecture: MoE
     gguf_arch: gemma4
     web_page: https://huggingface.co/ggml-org/gemma-4-26B-A4B-it-GGUF
-    template: gemma-4.jinja
     files:
       models:
         - url: https://huggingface.co/ggml-org/gemma-4-26B-A4B-it-GGUF/resolve/main/gemma-4-26B-A4B-it-Q8_0.gguf
@@ -203,7 +198,6 @@ models:
     architecture: MoE
     gguf_arch: gemma4
     web_page: https://huggingface.co/unsloth/gemma-4-26B-A4B-it-GGUF
-    template: gemma-4.jinja
     files:
       models:
         - url: https://huggingface.co/unsloth/gemma-4-26B-A4B-it-GGUF/resolve/main/gemma-4-26B-A4B-it-UD-Q8_K_XL.gguf
@@ -272,7 +266,6 @@ models:
     architecture: Dense
     gguf_arch: gemma4
     web_page: https://huggingface.co/unsloth/gemma-4-31B-it-GGUF
-    template: gemma-4.jinja
     files:
       models:
         - url: https://huggingface.co/unsloth/gemma-4-31B-it-GGUF/resolve/main/gemma-4-31B-it-UD-Q8_K_XL.gguf
@@ -308,7 +301,6 @@ models:
     architecture: Hybrid
     gguf_arch: qwen35moe
     web_page: https://huggingface.co/unsloth/Qwen3.5-35B-A3B-GGUF
-    template: qwen3.5.jinja
     files:
       models:
         - url: https://huggingface.co/unsloth/Qwen3.5-35B-A3B-GGUF/resolve/main/Qwen3.5-35B-A3B-Q8_0.gguf
@@ -344,7 +336,6 @@ models:
     architecture: Hybrid
     gguf_arch: qwen35moe
     web_page: https://huggingface.co/unsloth/Qwen3.5-35B-A3B-GGUF
-    template: qwen3.5.jinja
     files:
       models:
         - url: https://huggingface.co/unsloth/Qwen3.5-35B-A3B-GGUF/resolve/main/Qwen3.5-35B-A3B-UD-Q8_K_XL.gguf
@@ -381,7 +372,6 @@ models:
     architecture: MoE
     gguf_arch: gemma4
     web_page: https://huggingface.co/ggml-org/gemma-4-26B-A4B-it-GGUF
-    template: gemma-4.jinja
     files:
       models:
         - url: https://huggingface.co/ggml-org/gemma-4-26B-A4B-it-GGUF/resolve/main/gemma-4-26B-A4B-it-f16.gguf
