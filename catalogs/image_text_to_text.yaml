@@ -1,5 +1,4 @@
 catalog: Image-Text-to-Text
-
 models:
   - id: Qwen3.5-0.8B-Q8_0
     category: Image-Text-to-Text
@@ -186,10 +185,13 @@ models:
         Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks
         like text generation, coding, and reasoning.
     config:
+      flash-attention: enabled
       sampling-parameters:
         temperature: 1.0
         top_k: 64
         top_p: 0.95
+        repeat_penalty: 1.1
+        repeat_last_n: 256
 
   - id: Qwen3-VL-30B-A3B-Instruct-Q8_0
     testing_model: true
@@ -253,6 +255,7 @@ models:
         uses only 3 billion active parameters to provide high-performance coding
         and multimodal reasoning.
     config:
+      flash-attention: enabled
       sampling-parameters:
         temperature: 0.6
         top_k: 20
