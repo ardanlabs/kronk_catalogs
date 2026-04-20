@@ -156,6 +156,40 @@ models:
         temperature: 0.7
         top_p: 0.95
 
+  - id: gemma-4-31B-it-UD-Q6_K_XL
+    category: Image-Text-to-Text
+    owned_by: unsloth
+    model_family: gemma-4-31B-it-GGUF
+    architecture: Dense
+    gguf_arch: gemma4
+    web_page: https://huggingface.co/unsloth/gemma-4-31B-it-GGUF
+    files:
+      models:
+        - url: https://huggingface.co/unsloth/gemma-4-31B-it-GGUF/resolve/main/gemma-4-31B-it-UD-Q6_K_XL.gguf
+          size: 27.5 GB
+      proj:
+        url: https://huggingface.co/unsloth/gemma-4-31B-it-GGUF/resolve/main/mmproj-F16.gguf
+        size: 1.2 GB
+    capabilities:
+      endpoint: chat_completion
+      images: true
+      streaming: true
+      reasoning: true
+    metadata:
+      created: 2026-04-09T00:00:00Z
+      collections: https://huggingface.co/unsloth
+      description:
+        Gemma is a family of open models built by Google DeepMind. Gemma 4 models
+        are multimodal, handling text and image input and generating text output.
+        The 31B Dense variant is the largest in the Gemma 4 family, featuring a
+        256K context window, native function calling, and configurable thinking
+        modes for step-by-step reasoning.
+    config:
+      sampling-parameters:
+        temperature: 1.0
+        top_k: 64
+        top_p: 0.95
+
   - id: gemma-4-26B-A4B-it-UD-Q8_K_XL
     category: Image-Text-to-Text
     owned_by: unsloth
@@ -225,6 +259,40 @@ models:
         temperature: 0.7
         top_k: 20
         top_p: 0.8
+
+  - id: gemma-4-31B-it-UD-Q8_K_XL
+    category: Image-Text-to-Text
+    owned_by: unsloth
+    model_family: gemma-4-31B-it-GGUF
+    architecture: Dense
+    gguf_arch: gemma4
+    web_page: https://huggingface.co/unsloth/gemma-4-31B-it-GGUF
+    files:
+      models:
+        - url: https://huggingface.co/unsloth/gemma-4-31B-it-GGUF/resolve/main/gemma-4-31B-it-UD-Q8_K_XL.gguf
+          size: 35 GB
+      proj:
+        url: https://huggingface.co/unsloth/gemma-4-31B-it-GGUF/resolve/main/mmproj-F16.gguf
+        size: 1.2 GB
+    capabilities:
+      endpoint: chat_completion
+      images: true
+      streaming: true
+      reasoning: true
+    metadata:
+      created: 2026-04-09T00:00:00Z
+      collections: https://huggingface.co/unsloth
+      description:
+        Gemma is a family of open models built by Google DeepMind. Gemma 4 models
+        are multimodal, handling text and image input and generating text output.
+        The 31B Dense variant is the largest in the Gemma 4 family, featuring a
+        256K context window, native function calling, and configurable thinking
+        modes for step-by-step reasoning.
+    config:
+      sampling-parameters:
+        temperature: 1.0
+        top_k: 64
+        top_p: 0.95
 
   - id: Qwen3.6-35B-A3B-UD-Q8_K_XL
     testing_model: true
