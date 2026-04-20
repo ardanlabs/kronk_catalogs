@@ -219,7 +219,6 @@ models:
         Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks
         like text generation, coding, and reasoning.
     config:
-      flash-attention: enabled
       sampling-parameters:
         temperature: 1.0
         top_k: 64
@@ -323,7 +322,6 @@ models:
         uses only 3 billion active parameters to provide high-performance coding
         and multimodal reasoning.
     config:
-      flash-attention: enabled
       sampling-parameters:
         temperature: 0.6
         top_k: 20
