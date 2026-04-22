@@ -222,8 +222,6 @@ models:
         temperature: 1.0
         top_k: 64
         top_p: 0.95
-        repeat_penalty: 1.1
-        repeat_last_n: 256
 
   - id: Qwen3-VL-30B-A3B-Instruct-Q8_0
     testing_model: true
