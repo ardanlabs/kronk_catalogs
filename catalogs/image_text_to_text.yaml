@@ -125,6 +125,41 @@ models:
         temperature: 0.7
         top_p: 0.95
 
+  - id: Qwen3.6-27B-Q4_K_M
+    testing_model: true
+    category: Image-Text-to-Text
+    owned_by: unsloth
+    model_family: Qwen3.6-27B-GGUF
+    architecture: Dense
+    gguf_arch: qwen35
+    web_page: https://huggingface.co/unsloth/Qwen3.6-27B-GGUF
+    files:
+      models:
+        - url: https://huggingface.co/unsloth/Qwen3.6-27B-GGUF/resolve/main/Qwen3.6-27B-Q4_K_M.gguf
+          size: 16.8 GB
+      proj:
+        url: https://huggingface.co/unsloth/Qwen3.6-27B-GGUF/resolve/main/mmproj-F16.gguf
+        size: 899 MB
+    capabilities:
+      endpoint: chat_completion
+      images: true
+      streaming: true
+      reasoning: true
+      tooling: true
+    metadata:
+      created: 2026-04-16T00:00:00Z
+      collections: https://huggingface.co/unsloth
+      description:
+        The Qwen3.6-27B-GGUF is a flagship-level 27 billion parameter dense
+        model optimized for coding, multimodal reasoning, and vision tasks,
+        featuring a hybrid architecture with Gated DeltaNet and Gated Attention
+        layers.
+    config:
+      sampling-parameters:
+        temperature: 1.0
+        top_k: 20
+        top_p: 0.95
+
   - id: gemma-4-26B-A4B-it-UD-Q4_K_M
     category: Image-Text-to-Text
     owned_by: unsloth
