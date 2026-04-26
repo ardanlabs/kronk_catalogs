@@ -136,33 +136,3 @@ models:
       sampling-parameters:
         temperature: 1
         top_p: 1
-
-  - id: cerebras_Qwen3-Coder-REAP-25B-A3B-Q8_0
-    testing_model: true
-    category: Text-Generation
-    owned_by: bartowski
-    model_family: cerebras_Qwen3-Coder-REAP-25B-A3B-GGUF
-    architecture: MoE
-    gguf_arch: qwen3moe
-    web_page: https://huggingface.co/bartowski/cerebras_Qwen3-Coder-REAP-25B-A3B-GGUF
-    files:
-      models:
-        - url: https://huggingface.co/bartowski/cerebras_Qwen3-Coder-REAP-25B-A3B-GGUF/resolve/main/cerebras_Qwen3-Coder-REAP-25B-A3B-Q8_0.gguf
-          size: 26.5 GB
-    capabilities:
-      endpoint: chat_completion
-      streaming: true
-      tooling: true
-    metadata:
-      created: 2025-10-21T00:00:00Z
-      collections: https://huggingface.co/bartowski
-      description:
-        The Qwen3-Coder-30B-A3B-Instruct is a specialized, instruction-tuned
-        Mixture-of-Experts (MoE) model for agentic coding tasks. Developed by Alibaba,
-        it excels in code generation, understanding large codebases, and using external
-        tools with a high degree of efficiency.
-    config:
-      sampling-parameters:
-        temperature: 0.8
-        top_k: 20
-        top_p: 0.9
