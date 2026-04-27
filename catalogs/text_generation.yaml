@@ -3,7 +3,7 @@ models:
   - id: Qwen3-0.6B-Q8_0
     testing_model: true
     category: Text-Generation
-    owned_by: Qwen
+    owned_by: unsloth
     model_family: Qwen3-0.6B-GGUF
     architecture: Dense
     gguf_arch: qwen3
